@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+.main-heading {
+  font-family:LoLato, san-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #007bff;
+  text-align: center;
+}
+
+.Sub-Heading  {
+  font-family:LoLato, san-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #007bff;
+  text-align: center;
+}
+.paragraph-element{
+  font-family:LoLato, san-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.program-list {
+  list-style-type: disc; /* Bullet points */
+  padding-left: 20px; /* Indent */
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #f8f9fa; /* Light grey background */
+  box-shadow: 2px 2px 10px rgba(0, 0, 2, 0.5);
+}
