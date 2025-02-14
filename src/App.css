@@ -71,3 +71,10 @@
   background-color: #f8f9fa; /* Light grey background */
   box-shadow: 2px 2px 10px rgba(0, 0, 2, 0.5);
 }
+
+.paragraph-element strong {
+  font-weight: 900;  
+  font-size:24px;
+  font-family:LoLato, san-serif;
+}
+
