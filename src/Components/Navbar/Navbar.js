@@ -20,7 +20,8 @@ const Navbar = () => {
 
           {/* Dropdown for Services */}
           <li className="navbar-item dropdown">
-            <Link to="/services" className="dropdown-toggle">Services</Link>
+            {/* <Link to="/services" className="dropdown-toggle">Services</Link> */}
+            <Link  className="dropdown-toggle">Services</Link>
             <ul className="dropdown-list">
               <li className="dropdown-item"><Link to="/services/spark-curiosity">Spark of Curiosity</Link></li>
               <li className="dropdown-item"><Link to="/services/mobile-planetarium">Mobile Planetorium</Link></li>
