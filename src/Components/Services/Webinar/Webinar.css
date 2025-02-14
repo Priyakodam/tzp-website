@@ -1,0 +1,67 @@
+/* .webinar-container {
+    position: relative;
+    min-height: 100vh;
+    padding: 30px 0;
+    background: linear-gradient(45deg, #e0bec0, #4c281d, #fad0c4, #ffdde1);
+    background-size: 300% 300%;
+    animation: gradientAnimation 6s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  } */
+
+
+  /* Floating Animation (Slight Up & Down Movement) */
+  /* .webinar-container {
+    position: relative;
+    min-height: 100vh;
+    padding: 30px 0;
+    background: linear-gradient(45deg, #e0bec0, #4c281d, #fad0c4, #ffdde1);
+    background-size: 300% 300%;
+    animation: floating 6s infinite ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+ */
+
+/* 
+ //Wavy Background Animation */
+ .webinar-container {
+    position: relative;
+    min-height: 100vh;
+    padding: 30px 0;
+    background: linear-gradient(45deg, #e0bec0, #4c281d, #fad0c4, #ffdde1);
+    background-size: 300% 300%;
+    animation: wavyBackground 5s infinite linear;
+}
+
+@keyframes wavyBackground {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 50% 75%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 25%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* //Color Shifting Animation (Fast Gradient Change) */
+/* .webinar-container {
+    position: relative;
+    min-height: 100vh;
+    padding: 30px 0;
+    background: linear-gradient(45deg, #e0bec0, #4c281d, #fad0c4, #ffdde1);
+    background-size: 400% 400%;
+    animation: colorShift 3s infinite alternate ease-in-out;
+}
+
+@keyframes colorShift {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+} */
