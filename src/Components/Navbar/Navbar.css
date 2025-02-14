@@ -65,10 +65,6 @@ body {
   width: 200px;
 }
 
-.dropdown:hover .dropdown-list {
-  display: flex;
-}
-
 .dropdown-item {
   list-style: none;
 }
@@ -83,6 +79,11 @@ body {
 
 .dropdown-item a:hover {
   background-color: #555;
+}
+
+/* Show dropdown when open */
+.dropdown.open .dropdown-list {
+  display: flex;
 }
 
 /* Hamburger Icon */
