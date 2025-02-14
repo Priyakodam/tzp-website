@@ -1,0 +1,24 @@
+/* SchoolAlliance.css */
+
+/* General styling for images */
+.img-fluid {
+    border-radius: 50px; /* Rounded corners */
+  }
+  
+  /* .img-fluid:hover {
+    transform: scale(1.05); 
+  } */
+  
+  /* Styling for the text */
+  .text-start {
+    padding-left: 15px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  
+  /* Center the last image */
+  .text-center img {
+    margin-top: 10px;
+  }
+  
