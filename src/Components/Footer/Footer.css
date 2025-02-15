@@ -78,8 +78,11 @@
 }
 
 .footer-root {
-    background-color: #c3c3c3; /* Light beige background color */
+    background-color: #333; 
     padding: 50px 0;
+    width:100%;
+    color:white
+    
   }
   
   .footer-container {
@@ -98,29 +101,33 @@
   }
   
   .footer-logo {
-    flex: 1;
+    flex: 1 1;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    margin-left: -70%;
+
   }
   
   .footer-section {
     flex: 1;
     padding: 0 20px;
+    color:white;
+    margin-top: 40px;
   }
   
   .footer-heading {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #333;
+    color: white;
     margin-bottom: 10px;
   }
   
   .footer-link,
   .footer-info {
     font-size: 17px;
-    color:#545252;
+    color:white;
     font-weight: 500;
     margin: 5px 0;
     text-decoration: none;
@@ -136,7 +143,7 @@
   .footer-container p {
     /* text-align: center; */
     font-size: 17px;
-    color:#545252;
+    color:white;
     font-weight: 500;
     /* margin-top: 10px; */
     padding-bottom: 1px;
@@ -148,6 +155,7 @@
     padding: 0;
     font-family: Arial, sans-serif;
   } */
+  
   
   .social-container {
     display: flex;
@@ -167,7 +175,7 @@
     align-items: center;
     gap: 15px;
     font-size: 1rem;
-    color: #333;
+    color: white;
     text-decoration: none;
   }
   
@@ -195,7 +203,7 @@
   .last-footer p {
     margin: 5px 0; /* Adds spacing between elements */
     font-size: 14px; /* Adjust font size */
-    color:black;
+    color:white;
     font-weight: 500;        flex: 1 1 auto; /* Ensures both items grow/shrink equally */
     margin-left: -420px;
   }
