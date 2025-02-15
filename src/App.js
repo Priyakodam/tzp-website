@@ -20,6 +20,11 @@ import Webinar from "./Components/Services/Webinar/Webinar_old";
 import JupiterCuriosity from "./Components/Services/JupiterCuriosity/JupiterCuriosity";
 import SchoolAlliance from "./Components/Services/SchoolAlliance/SchoolAlliance";
 import KstepsCategory from "./Components/Csr/KstepsCategory/Kstepcategory";
+import Card1 from "./Components/Csr/KstepsCategory/CSR/Card1";
+import Card2 from "./Components/Csr/KstepsCategory/CSR/Card2";
+import Card3 from "./Components/Csr/KstepsCategory/Education/Card3";
+import Card4 from "./Components/Csr/KstepsCategory/Education/Card4";
+import Card5 from "./Components/Csr/KstepsCategory/Education/Card5";
 
 function App() {
   return (
@@ -57,6 +62,16 @@ function App() {
             path="/services/school-alliance"
             element={<SchoolAlliance />}
           />
+          
+          {/* csr category cards */}
+          <Route path="/csrcard1" element={<Card1 />} />
+          <Route path="/csrcard2" element={<Card2 />} />
+
+          {/* Education category cards */}
+          <Route path="/educard1" element={<Card3 />} />
+          <Route path="/educard2" element={<Card4 />} />
+          <Route path="/educard3" element={<Card5 />} />
+
 
         </Routes>
       </div>
