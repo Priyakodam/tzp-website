@@ -19,6 +19,7 @@ import MobileScience from "./Components/Services/MobileScience/MobileScience";
 import Webinar from "./Components/Services/Webinar/Webinar_old";
 import JupiterCuriosity from "./Components/Services/JupiterCuriosity/JupiterCuriosity";
 import SchoolAlliance from "./Components/Services/SchoolAlliance/SchoolAlliance";
+import Footer from "./Components/Footer/Footer";
 
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
           />
 
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );
