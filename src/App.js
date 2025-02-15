@@ -19,7 +19,7 @@ import MobileScience from "./Components/Services/MobileScience/MobileScience";
 import Webinar from "./Components/Services/Webinar/Webinar_old";
 import JupiterCuriosity from "./Components/Services/JupiterCuriosity/JupiterCuriosity";
 import SchoolAlliance from "./Components/Services/SchoolAlliance/SchoolAlliance";
-
+import KstepsCategory from "./Components/Csr/KstepsCategory/Kstepcategory";
 
 function App() {
   return (
@@ -37,6 +37,7 @@ function App() {
           <Route path="/motilal-oswal-foundation" element={<MotilalOswal />} />
           <Route path="/aviratha" element={<Aviratha />} />
           <Route path="/lti" element={<Lti />} />
+          <Route path="/ksteps-categories" element={<KstepsCategory />} />
           {/* Routes for Individual Services */}
           <Route
             path="/services/spark-curiosity"
