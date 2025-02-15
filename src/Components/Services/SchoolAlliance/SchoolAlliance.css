@@ -3,22 +3,27 @@
 /* General styling for images */
 .img-fluid {
     border-radius: 50px; /* Rounded corners */
-  }
-  
-  /* .img-fluid:hover {
-    transform: scale(1.05); 
-  } */
-  
-  /* Styling for the text */
-  .text-start {
+}
+
+/* Styling for the text */
+.text-start {
     padding-left: 15px;
     font-size: 1rem;
     color: #333;
-  }
-  
-  
-  /* Center the last image */
-  .text-center img {
+}
+
+/* Center the last image */
+.text-center img {
     margin-top: 10px;
-  }
+}
+
+/* Add spacing between image and text on smaller screens */
+@media (max-width: 768px) {
+    .row {
+        margin-bottom: 30px; /* Increases space between sections */
+    }
   
+    .col-md-6 {
+        margin-bottom: 15px; /* Adds space between image and text */
+    }
+}
