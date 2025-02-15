@@ -41,9 +41,9 @@ const Footer = () => {
         </div>
         <hr className="footer-divider" />
         <section className="last-footer">
-          <p className="last-footer-copyright">
+          {/* <p className="last-footer-copyright">
             Copyright © 2024 SadāShri Ventures Private Limited. All rights reserved.
-          </p>
+          </p> */}
          
           <div className="footer">
             <span className="float-left pr-2">
