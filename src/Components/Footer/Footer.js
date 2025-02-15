@@ -9,7 +9,7 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons"; // Import the speci
 
 const Footer = () => {
   return (
-    <footer className="footer-root">
+    <footer className="footer-root mt-5">
       <div className="footer-container">
         <div className="footer-content">
           <div className="footermainsection">
