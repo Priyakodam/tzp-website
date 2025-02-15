@@ -19,7 +19,16 @@ import MobileScience from "./Components/Services/MobileScience/MobileScience";
 import Webinar from "./Components/Services/Webinar/Webinar_old";
 import JupiterCuriosity from "./Components/Services/JupiterCuriosity/JupiterCuriosity";
 import SchoolAlliance from "./Components/Services/SchoolAlliance/SchoolAlliance";
+
 import Footer from "./Components/Footer/Footer";
+
+
+import KstepsCategory from "./Components/Csr/KstepsCategory/Kstepcategory";
+import Card1 from "./Components/Csr/KstepsCategory/CSR/Card1";
+import Card2 from "./Components/Csr/KstepsCategory/CSR/Card2";
+import Card3 from "./Components/Csr/KstepsCategory/Education/Card3";
+import Card4 from "./Components/Csr/KstepsCategory/Education/Card4";
+import Card5 from "./Components/Csr/KstepsCategory/Education/Card5";
 
 
 function App() {
@@ -38,6 +47,7 @@ function App() {
           <Route path="/motilal-oswal-foundation" element={<MotilalOswal />} />
           <Route path="/aviratha" element={<Aviratha />} />
           <Route path="/lti" element={<Lti />} />
+          <Route path="/ksteps-categories" element={<KstepsCategory />} />
           {/* Routes for Individual Services */}
           <Route
             path="/services/spark-curiosity"
@@ -57,6 +67,16 @@ function App() {
             path="/services/school-alliance"
             element={<SchoolAlliance />}
           />
+          
+          {/* csr category cards */}
+          <Route path="/csrcard1" element={<Card1 />} />
+          <Route path="/csrcard2" element={<Card2 />} />
+
+          {/* Education category cards */}
+          <Route path="/educard1" element={<Card3 />} />
+          <Route path="/educard2" element={<Card4 />} />
+          <Route path="/educard3" element={<Card5 />} />
+
 
         </Routes>
         <Footer />
