@@ -19,6 +19,10 @@ import MobileScience from "./Components/Services/MobileScience/MobileScience";
 import Webinar from "./Components/Services/Webinar/Webinar_old";
 import JupiterCuriosity from "./Components/Services/JupiterCuriosity/JupiterCuriosity";
 import SchoolAlliance from "./Components/Services/SchoolAlliance/SchoolAlliance";
+
+import Footer from "./Components/Footer/Footer";
+
+
 import KstepsCategory from "./Components/Csr/KstepsCategory/Kstepcategory";
 import Card1 from "./Components/Csr/KstepsCategory/CSR/Card1";
 import Card2 from "./Components/Csr/KstepsCategory/CSR/Card2";
@@ -28,6 +32,7 @@ import Card5 from "./Components/Csr/KstepsCategory/Education/Card5";
 import Card6 from "./Components/Csr/KstepsCategory/Education/Card6";
 import Card7 from "./Components/Csr/KstepsCategory/Education/Card7";
 import Card8 from "./Components/Csr/KstepsCategory/Education/Card8";
+
 
 function App() {
   return (
@@ -80,6 +85,7 @@ function App() {
 
 
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );
