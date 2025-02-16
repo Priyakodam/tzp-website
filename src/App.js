@@ -25,6 +25,9 @@ import Card2 from "./Components/Csr/KstepsCategory/CSR/Card2";
 import Card3 from "./Components/Csr/KstepsCategory/Education/Card3";
 import Card4 from "./Components/Csr/KstepsCategory/Education/Card4";
 import Card5 from "./Components/Csr/KstepsCategory/Education/Card5";
+import Card6 from "./Components/Csr/KstepsCategory/Education/Card6";
+import Card7 from "./Components/Csr/KstepsCategory/Education/Card7";
+import Card8 from "./Components/Csr/KstepsCategory/Education/Card8";
 
 function App() {
   return (
@@ -71,6 +74,9 @@ function App() {
           <Route path="/educard1" element={<Card3 />} />
           <Route path="/educard2" element={<Card4 />} />
           <Route path="/educard3" element={<Card5 />} />
+          <Route path="/educard4" element={<Card6 />} />
+          <Route path="/educard5" element={<Card7 />} />
+          <Route path="/educard6" element={<Card8 />} />
 
 
         </Routes>

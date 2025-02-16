@@ -10,8 +10,9 @@ const categories = {
     "Celebration of National Space Day: India's Journey to the Moon",
     "Immersive Learning - Transformation of Modern Education with VR and AR",
     "From Fields to Classrooms: Thoughts by the Founder",
-    "From Fields to Classrooms: Thoughts by the Founder",
-    "From Fields to Classrooms: Thoughts by the Founder",
+    "SDG4:Thoughts by the Co-Fouder",
+    "The Need for Science Outreach Programs under SDG4",
+    "Hands-On Science: Engaging Students with Science Kits",
     
     
   ],
