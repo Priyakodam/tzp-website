@@ -15,7 +15,9 @@ const categories = {
       ],
   Education: [
     "Immersive Learning - Transformation of Modern Education with VR and AR",
+
     "Celebration of National Space Day: India's Journey to the Moon",
+
     
     "From Fields to Classrooms: Thoughts by the Founder",
     "SDG4: Thoughts by the Co-Founder",
