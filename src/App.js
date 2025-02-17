@@ -34,6 +34,7 @@ import Card7 from "./Components/Csr/KstepsCategory/Education/Card7";
 import Card8 from "./Components/Csr/KstepsCategory/Education/Card8";
 import Card9 from "./Components/Csr/KstepsCategory/Planetorium/Card9";
 import Card10 from "./Components/Csr/KstepsCategory/Planetorium/Card10";
+import Card11 from "./Components/Csr/KstepsCategory/STEMLabs/Card11";
 
 
 function App() {
@@ -89,7 +90,8 @@ function App() {
           <Route path="/planecard1" element={<Card9 />} />
           <Route path="/planecard2" element={<Card10 />} />
           
-
+          {/* STEM category cards */}
+          <Route path="/stemcard" element={<Card11 />} />
 
         </Routes>
         <Footer />
