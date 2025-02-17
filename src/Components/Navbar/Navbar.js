@@ -148,12 +148,12 @@ const Navbar = () => {
           <li className="navbar-item"><Link to="/">Home</Link></li>
           
           {/* Dropdown for About Us */}
-          <li className={`navbar-item dropdown ${isAboutDropdownOpen ? 'open' : ''}`} onClick={toggleAboutDropdown}>
-            <Link className="dropdown-toggle">About Us</Link>
+          <li className={`navbar-item dropdown ${isAboutDropdownOpen ? 'open' : ''}`} 
+              onMouseEnter={toggleAboutDropdown} onMouseLeave={() => setIsAboutDropdownOpen(false)}>
+            <Link className="dropdown-toggle" to="/about">About Us</Link>
             {isAboutDropdownOpen && (
               <ul className="dropdown-list">
                 <li className="dropdown-item"><Link to="/about/ourhistory">Our History</Link></li>
-                {/* <li className="dropdown-item"><Link to="/services/mobile-planetarium">Blog</Link></li> */}
                 <li className="dropdown-item"><Link to="/about/team">Team</Link></li>
                 <li className="dropdown-item"><Link to="/about/missionvision">Mission & Vision</Link></li>
                 <li className="dropdown-item"><Link to="/about/ourvalues">Our Values</Link></li>
@@ -164,7 +164,8 @@ const Navbar = () => {
           </li>
 
           {/* Dropdown for Services */}
-          <li className={`navbar-item dropdown ${isServicesDropdownOpen ? 'open' : ''}`} onClick={toggleServicesDropdown}>
+          <li className={`navbar-item dropdown ${isServicesDropdownOpen ? 'open' : ''}`} 
+              onMouseEnter={toggleServicesDropdown} onMouseLeave={() => setIsServicesDropdownOpen(false)}>
             <Link className="dropdown-toggle">Services</Link>
             {isServicesDropdownOpen && (
               <ul className="dropdown-list">
@@ -181,8 +182,9 @@ const Navbar = () => {
           <li className="navbar-item"><Link to="/csr">CSR</Link></li>
 
           {/* Dropdown for Gallery */}
-          <li className={`navbar-item dropdown ${isGalleryDropdownOpen ? 'open' : ''}`} onClick={toggleGalleryDropdown}>
-            <Link className="dropdown-toggle">Gallery</Link>
+          <li className={`navbar-item dropdown ${isGalleryDropdownOpen ? 'open' : ''}`} 
+              onMouseEnter={toggleGalleryDropdown} onMouseLeave={() => setIsGalleryDropdownOpen(false)}>
+            <Link className="dropdown-toggle" to="/gallery">Gallery</Link>
             {isGalleryDropdownOpen && (
               <ul className="dropdown-list">
                 <li className="dropdown-item"><Link to="/gallery/testimonials">Testimonials</Link></li>
@@ -202,3 +204,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
