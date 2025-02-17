@@ -1,0 +1,97 @@
+/* Container Styling */
+.mission-vision-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Mission & Vision Sections */
+.mission-section, .vision-section {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Headings */
+.mission-section h2, .vision-section h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Add animations to the headings */
+.mission-section h2 {
+    animation: slideInLeft 1s ease-out;
+}
+
+.vision-section h2 {
+    animation: slideInRight 1s ease-out;
+}
+
+/* Keyframes for sliding in from left */
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Keyframes for sliding in from right */
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Paragraph Styling */
+.mission-section p, .vision-section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Mobile View (max-width: 767px) */
+@media (max-width: 767px) {
+    .mission-vision-container {
+        padding: 20px;
+    }
+
+    .mission-section, .vision-section {
+        padding: 20px;
+    }
+
+    .mission-section h2, .vision-section h2 {
+        font-size: 24px;
+    }
+
+    .mission-section p, .vision-section p {
+        font-size: 16px;
+    }
+}
+
+/* Tablet View (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .mission-section, .vision-section {
+        padding: 25px;
+    }
+
+    .mission-section h2, .vision-section h2 {
+        font-size: 26px;
+    }
+
+    .mission-section p, .vision-section p {
+        font-size: 17px;
+    }
+}
