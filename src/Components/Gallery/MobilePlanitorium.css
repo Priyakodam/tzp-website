@@ -1,0 +1,250 @@
+/* Base styles for the Mobile Planetarium section */
+.mobile-planetarium {
+        width: 90%;
+        /* max-width: 800px; */
+        margin:10px auto;
+        padding: 20px;
+        font-family: sans-serif;
+        text-align: left;
+      }
+      
+      .mobile-planetarium-heading {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #333;
+      }
+      
+      .mobile-planetarium-list {
+        list-style: disc;
+        padding-left: 20px;
+        color: #555;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+      
+      /* Mobile view (max-width: 767px) */
+      @media (max-width: 767px) {
+        .mobile-planetarium {
+          padding: 15px;
+        }
+        .mobile-planetarium-heading {
+          font-size: 1.5rem;
+        }
+        .mobile-planetarium-list {
+          font-size: 0.9rem;
+        }
+      }
+      
+      /* iPad view (min-width: 768px and max-width: 1024px) */
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .mobile-planetarium {
+          padding: 20px;
+        }
+        .mobile-planetarium-heading {
+          font-size: 1.75rem;
+        }
+        .mobile-planetarium-list {
+          font-size: 1rem;
+        }
+      }
+      
+
+
+
+
+
+
+
+
+
+
+
+      /* Base container styles */
+.benefits-section {
+        width: 90%;
+        margin: 0 auto;
+        padding: 40px 0;
+        font-family: sans-serif;
+        text-align: center;
+      }
+      
+      /* Heading styles */
+      .benefits-heading {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      
+      /* Paragraph styles */
+      .benefits-paragraph {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        color: #555;
+        text-align: justify;
+      }
+      
+      /* Images container */
+      .benefits-images {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      
+      /* Individual image styles */
+      .benefit-image {
+        width: 100%;
+        max-width:671px;
+        height: 450px;
+        border-radius: 8px;
+      }
+      
+      /* Mobile View (max-width: 767px) */
+      @media (max-width: 767px) {
+        .benefits-heading {
+          font-size: 1.5rem;
+        }
+        .benefits-paragraph {
+          font-size: 0.9rem;
+        }
+        /* Stack images vertically */
+        .benefits-images {
+          flex-direction: column;
+        }
+      }
+      
+      /* iPad View (min-width: 768px and max-width: 1024px) */
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .benefits-heading {
+          font-size: 1.75rem;
+        }
+        .benefits-paragraph {
+          font-size: 1rem;
+        }
+        /* Keep images in a row with proper spacing */
+        .benefits-images {
+          flex-direction: row;
+        }
+      }
+      
+
+
+
+
+
+
+
+
+      .gallery-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      .image-grid {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .gallery-image {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .gallery-image:hover {
+        transform: scale(1.05);
+      }
+      
+      /* Mobile View (Max 767px) - One image per row */
+      @media (max-width: 767px) {
+        .image-grid {
+          flex-direction: column;
+          align-items: center;
+        }
+        .gallery-image {
+          max-width: 100%;
+        }
+      }
+      
+      /* iPad / Tablet View (768px - 1024px) - Two images per row */
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .image-grid {
+          justify-content: space-around;
+        }
+        .gallery-image {
+          max-width: 45%;
+        }
+      }
+      
+      /* Desktop View (1025px and above) - Three images in a row */
+      @media (min-width: 1025px) {
+        /* .gallery-image {
+          max-width: 30%;
+        } */
+      }
+      
+
+
+
+
+
+
+
+
+      .products-container {
+        width: 80%;
+        margin-bottom: 20px;
+        margin: 0 auto;
+        padding: 20px;
+        /* background: #f9f9f9; */
+        border-radius: 10px;
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+      }
+      
+      .products-heading {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 15px;
+      }
+      
+      .products-list {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+      
+      .products-list li {
+        font-size: 18px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+        color: #555;
+      }
+      
+      /* Responsive Design */
+      @media (max-width: 767px) {
+        .products-container {
+          padding: 15px;
+        }
+        .products-heading {
+          font-size: 22px;
+        }
+        .products-list li {
+          font-size: 16px;
+        }
+      }
+      
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .products-container {
+          max-width: 90%;
+        }
+      }
+      

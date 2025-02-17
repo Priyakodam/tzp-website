@@ -1,0 +1,127 @@
+/* Base styles for the history section */
+.history-section {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        /* background-color: #f9f9f9; */
+        color: #333;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+
+
+      }
+
+      .history-section strong {
+        font-size: 30px;
+        font-weight: 700;
+        color: #000;
+
+      }
+
+
+      .history-section p {
+        font-size: 17px;
+        text-align: justify;
+      }
+
+
+      
+
+
+      .history-section2{
+        width: 80%;
+        margin: 0 auto;
+       
+      }
+
+
+      .history-section2 p{
+        font-size: 17px;
+        text-align: justify;
+      }
+
+
+      /* Mobile view: devices with a maximum width of 767px */
+      @media only screen and (max-width: 767px) {
+        .history-section {
+          padding: 15px;
+          font-size: 1rem;
+        }
+      }
+      
+      /* iPad view: devices between 768px and 1024px in width */
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .history-section {
+          padding: 18px;
+          font-size: 1.1rem;
+        }
+      }
+
+
+
+
+      /* Main container */
+.leaders-section {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #fff;
+        font-family: "Times New Roman", serif;
+        line-height: 1.8;
+      }
+      
+      /* Each leader's description */
+      .leader ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+      
+      .leader li {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        color: #333;
+        text-align: justify;
+
+      }
+      
+      /* Bold text styling */
+      .leader strong {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+      
+      /* Mobile Responsive (up to 767px) */
+      @media only screen and (max-width: 767px) {
+        .leaders-section {
+          padding: 15px;
+        }
+      
+        .leader li {
+          font-size: 1rem;
+          text-align: justify;
+        }
+      
+        .leader strong {
+          font-size: 1.1rem;
+        }
+      }
+      
+      /* Tablet Responsive (768px - 1024px) */
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .leaders-section {
+          padding: 20px;
+        }
+      
+        .leader li {
+          font-size: 1.1rem;
+        }
+      
+        .leader strong {
+          font-size: 1.2rem;
+        }
+      }
+      
+      
+    
+      
+      
