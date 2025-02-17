@@ -4,9 +4,17 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Components/Home/Home";
 import About from "./Components/AboutUs/AboutUs";
+import OurHistory from "./Components/AboutUs/OurHistory";
+import Team from "./Components/AboutUs/Team";
+import MissionVision from "./Components/AboutUs/MissionVision";
+import OurValues from "./Components/AboutUs/OurValues";
+import Supporters from './Components/AboutUs/Supporters'
+import Awards from './Components/AboutUs/Awards'
 import Contact from "./Components/Contact/Contact";
 import CSR from "./Components/Csr/Csr";
 import Gallery from "./Components/Gallery/Gallery";
+import Testimonials from "./Components/Gallery/Testimonials";
+import Photos from "./Components/Gallery/Photos";
 import Navbar from "./Components/Navbar/Navbar";
 import Services from "./Components/Services/Services";
 import SynopsisofFood from "./Components/Csr/CsrPages/Synopsis";
@@ -34,6 +42,7 @@ import Card7 from "./Components/Csr/KstepsCategory/Education/Card7";
 import Card8 from "./Components/Csr/KstepsCategory/Education/Card8";
 import Card9 from "./Components/Csr/KstepsCategory/Planetorium/Card9";
 import Card10 from "./Components/Csr/KstepsCategory/Planetorium/Card10";
+import Card11 from "./Components/Csr/KstepsCategory/STEMLabs/Card11";
 
 
 function App() {
@@ -43,10 +52,19 @@ function App() {
       <div className="content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About />} /> 
+          <Route path="/about/ourhistory" element={<OurHistory />} />
+          <Route path="/about/team" element={<Team />} />
+          <Route path="/about/missionvision" element={<MissionVision />} />
+          <Route path="/about/ourvalues" element={<OurValues />} />
+          <Route path="/about/supporters" element={<Supporters />} />
+          <Route path="/about/awards" element={<Awards />} />
+
           <Route path="/contact" element={<Contact />} />
           <Route path="/csr" element={<CSR />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/gallery/testimonials" element={<Testimonials />} />
+          <Route path="/gallery/photos" element={<Photos />} />
           <Route path="/services" element={<Services />} />
           <Route path="/synopsis" element={<SynopsisofFood />} />
           <Route path="/motilal-oswal-foundation" element={<MotilalOswal />} />
@@ -89,7 +107,8 @@ function App() {
           <Route path="/planecard1" element={<Card9 />} />
           <Route path="/planecard2" element={<Card10 />} />
           
-
+          {/* STEM category cards */}
+          <Route path="/stemcard" element={<Card11 />} />
 
         </Routes>
         <Footer />

@@ -1,3 +1,138 @@
+/* body {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  display: flex;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 45px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  position: relative;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.navbar-item a:hover {
+  color: #f0a500;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+}
+
+.dropdown-item {
+  list-style: none;
+}
+
+.dropdown-item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  font-size: 16px;
+}
+
+.dropdown-item a:hover {
+  background-color: #555;
+}
+
+.dropdown.open .dropdown-list {
+  display: flex;
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #444;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-list {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .mobile-menu .navbar-list {
+    display: flex;
+  }
+
+  .dropdown-list {
+    position: relative;
+    width: 100%;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
 /* General Styles */
 body {
   margin: 0;
@@ -50,6 +185,13 @@ body {
 /* Dropdown Styles */
 .dropdown {
   position: relative;
+  
+}
+
+/* Hover effect for dropdown */
+.navbar-item:hover .dropdown-list {
+  display: flex;
+  margin-top: 0px;
 }
 
 .dropdown-list {
@@ -81,9 +223,9 @@ body {
   background-color: #555;
 }
 
-/* Show dropdown when open */
-.dropdown.open .dropdown-list {
-  display: flex;
+.dropdown:hover .dropdown-list{
+  display: block;
+
 }
 
 /* Hamburger Icon */

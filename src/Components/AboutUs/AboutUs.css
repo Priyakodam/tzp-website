@@ -296,9 +296,9 @@
   transition: opacity 0.3s ease;
 }
 
-.step-card:hover .card-image {
+/* .step-card:hover .card-image {
   opacity: 0.8;
-}
+} */
 
 .card-image img {
   width: 100%;
