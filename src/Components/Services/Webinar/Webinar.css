@@ -37,18 +37,32 @@
     position: relative;
     min-height: 100vh;
     padding: 30px 0;
-    background: linear-gradient(45deg, #e0bec0, #4c281d, #fad0c4, #ffdde1);
-    background-size: 300% 300%;
-    animation: wavyBackground 5s infinite linear;
+    width: 100%;
+    overflow: hidden;
+    background: radial-gradient(circle, rgba(34, 193, 195, 0.8), rgba(253, 187, 45, 0.7));
+    perspective: 1000px;
 }
 
-@keyframes wavyBackground {
-    0% { background-position: 0% 50%; }
-    25% { background-position: 50% 75%; }
-    50% { background-position: 100% 50%; }
-    75% { background-position: 50% 25%; }
-    100% { background-position: 0% 50%; }
+@keyframes floatAnimation {
+    0% { transform: translateY(0px) rotateX(5deg) rotateY(5deg); }
+    50% { transform: translateY(-15px) rotateX(-5deg) rotateY(-5deg); }
+    100% { transform: translateY(0px) rotateX(5deg) rotateY(5deg); }
 }
+
+.floating-element {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    animation: floatAnimation 4s infinite ease-in-out;
+}
+
+.floating-element:nth-child(1) { top: 10%; left: 20%; animation-duration: 6s; }
+.floating-element:nth-child(2) { top: 40%; left: 60%; animation-duration: 7s; }
+.floating-element:nth-child(3) { top: 70%; left: 30%; animation-duration: 5s; }
 
 
 /* //Color Shifting Animation (Fast Gradient Change) */

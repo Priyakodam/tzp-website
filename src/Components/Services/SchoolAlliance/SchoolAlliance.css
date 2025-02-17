@@ -15,6 +15,7 @@
 /* Center the last image */
 .text-center img {
     margin-top: 10px;
+    border-radius: 16% !important
 }
 
 /* Add spacing between image and text on smaller screens */
