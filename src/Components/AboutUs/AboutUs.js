@@ -16,6 +16,12 @@ import imaget2 from './Images/DAT-Don-Thomas-with-Discovery-002-e1571322555534.j
 import imaget3 from './Images/U_R_Rao.jpg.webp'
 
 import tele from "./Images/telescope-neo50360-5-300x300.jpg"
+import teachers from "./Images/teachersimage.jpeg"
+import students from "./Images/schoolimage.jpeg"
+import school from "./Images/noofschool.jpeg"
+import plantorum from "./Images/plantorim.jpeg"
+
+
 
 
 
@@ -235,7 +241,7 @@ const AboutUs = () => {
         {/* 1) Planetariums */}
         <div className="stat-item">
           <img 
-            src="https://via.placeholder.com/80" 
+            src={plantorum} 
             alt="Planetariums Icon" 
             className="stat-icon" 
           />
@@ -246,7 +252,7 @@ const AboutUs = () => {
         {/* 2) Schools */}
         <div className="stat-item">
           <img 
-            src="https://via.placeholder.com/80" 
+            src={school} 
             alt="Schools Icon" 
             className="stat-icon" 
           />
@@ -257,7 +263,7 @@ const AboutUs = () => {
         {/* 3) Students */}
         <div className="stat-item">
           <img 
-            src="https://via.placeholder.com/80" 
+            src={students} 
             alt="Students Icon" 
             className="stat-icon" 
           />
@@ -268,7 +274,7 @@ const AboutUs = () => {
         {/* 4) Teachers */}
         <div className="stat-item">
           <img 
-            src="https://via.placeholder.com/80" 
+            src={teachers} 
             alt="Teachers Icon" 
             className="stat-icon" 
           />

@@ -4,15 +4,24 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Components/Home/Home";
 import About from "./Components/AboutUs/AboutUs";
+import OurHistory from "./Components/AboutUs/OurHistory";
+import Team from "./Components/AboutUs/Team";
+import MissionVision from "./Components/AboutUs/MissionVision";
+import OurValues from "./Components/AboutUs/OurValues";
+import Supporters from './Components/AboutUs/Supporters'
+import Awards from './Components/AboutUs/Awards'
 import Contact from "./Components/Contact/Contact";
 import CSR from "./Components/Csr/Csr";
 import Gallery from "./Components/Gallery/Gallery";
+import Testimonials from "./Components/Gallery/Testimonials";
+import Photos from "./Components/Gallery/Photos";
 import Navbar from "./Components/Navbar/Navbar";
 import Services from "./Components/Services/Services";
 import SynopsisofFood from "./Components/Csr/CsrPages/Synopsis";
 import MotilalOswal from "./Components/Csr/CsrPages/MotilalOswal";
 import Aviratha from "./Components/Csr/CsrPages/Aviratha";
 import Lti from "./Components/Csr/CsrPages/Lti";
+import Service from "./Components/Services/Service/Service";
 import SparkCuriosity from "./Components/Services/SparkCuriosity/SparkCuriosity";
 import MobilePlanetrium from "./Components/Services/MobilePlanetrium/MobilePlanetrium";
 import MobileScience from "./Components/Services/MobileScience/MobileScience";
@@ -35,7 +44,7 @@ import Card8 from "./Components/Csr/KstepsCategory/Education/Card8";
 import Card9 from "./Components/Csr/KstepsCategory/Planetorium/Card9";
 import Card10 from "./Components/Csr/KstepsCategory/Planetorium/Card10";
 import Card11 from "./Components/Csr/KstepsCategory/STEMLabs/Card11";
-
+import DaanUtsav from "./Components/Contact/DaanUtsav";
 
 function App() {
   return (
@@ -44,10 +53,19 @@ function App() {
       <div className="content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About />} /> 
+          <Route path="/about/ourhistory" element={<OurHistory />} />
+          <Route path="/about/team" element={<Team />} />
+          <Route path="/about/missionvision" element={<MissionVision />} />
+          <Route path="/about/ourvalues" element={<OurValues />} />
+          <Route path="/about/supporters" element={<Supporters />} />
+          <Route path="/about/awards" element={<Awards />} />
+
           <Route path="/contact" element={<Contact />} />
           <Route path="/csr" element={<CSR />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/gallery/testimonials" element={<Testimonials />} />
+          <Route path="/gallery/photos" element={<Photos />} />
           <Route path="/services" element={<Services />} />
           <Route path="/synopsis" element={<SynopsisofFood />} />
           <Route path="/motilal-oswal-foundation" element={<MotilalOswal />} />
@@ -55,6 +73,10 @@ function App() {
           <Route path="/lti" element={<Lti />} />
           <Route path="/ksteps-categories" element={<KstepsCategory />} />
           {/* Routes for Individual Services */}
+          <Route
+            path="/services/service"
+            element={<Service />}
+          />
           <Route
             path="/services/spark-curiosity"
             element={<SparkCuriosity />}
@@ -92,7 +114,7 @@ function App() {
           
           {/* STEM category cards */}
           <Route path="/stemcard" element={<Card11 />} />
-
+          <Route path="/daanutsav" element={<DaanUtsav />} />
         </Routes>
         <Footer />
       </div>

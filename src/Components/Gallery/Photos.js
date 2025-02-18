@@ -9,7 +9,7 @@ const Photos = () => {
         const navigate = useNavigate();
       
         const handleViewMore = () => {
-          navigate('/mobileplanitorium'); // Adjust the route as needed
+          navigate('/services/mobile-planetarium'); // Adjust the route as needed
         };
   return (
     <section className="photos-page">

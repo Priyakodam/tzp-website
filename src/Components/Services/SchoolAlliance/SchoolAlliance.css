@@ -65,11 +65,19 @@
     line-height: 1.5;
 }
 
+
 /* Fade-in Animation */
 .school-alliance-fade-in {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Center the last image */
+.text-center img {
+    margin-top: 10px;
+    border-radius: 16% !important
+
 }
 
 @keyframes fadeInUp {

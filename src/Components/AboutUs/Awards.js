@@ -24,7 +24,7 @@ const Awards = () => {
 
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
-                                        <p>
+                                        <p className='awards-p'>
                                         Tare Zameen Par Has been recognized by <strong>ISRO </strong>  as their official partner for their space outreach program (Space Tutor) 
                                         </p>
                                 </div>
@@ -36,7 +36,7 @@ const Awards = () => {
 
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
-                                        <p>
+                                        <p className='awards-p'>
                                         Our Founder Receiving the <strong> Elevate 100 Award</strong>  from Govt. of Karnataka for being recognized as one of the most innovative startups in Karnataka for Rural Outreach  Education Program.
                                         </p>
                                 </div>
@@ -53,7 +53,7 @@ const Awards = () => {
 
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
-                                        <p>
+                                        <p className='awards-p'>
                                         Tare Zameen Par received special appreciation and INR 30 Lakhs grants. Ms. Nalini was the only Indian woman entrepreneur among the top 6 pitching her social entrepreneurship at the grand finale in <strong>Tie Global Summit.</strong>
                                         </p>
                                 </div>
@@ -65,7 +65,7 @@ const Awards = () => {
 
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
-                                        <p>
+                                        <p className='awards-p'>
                                         Tare Zameen Par has won awards from <strong>PRCI (Public Relation Council of India) </strong>for Excellence in Education.
                                         </p>
                                 </div>
@@ -82,7 +82,7 @@ const Awards = () => {
 
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
-                                        <p>
+                                        <p className='awards-p'>
                                         Tare Zameen Par received <strong>most promising startup award </strong>from the CM of Karnataka Sh. Basavaraj Bommai and Cricket Veteran Sh. Kapil Dev.
                                         </p>
                                 </div>
@@ -94,7 +94,7 @@ const Awards = () => {
 
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
-                                        <p>
+                                        <p className='awards-p'>
                                         Tare Zameen Par has been awarded the 1st prize as best start-up of <strong>Beyond Bengaluru at Mysore.</strong>
                                         </p>
                                 </div>
@@ -111,7 +111,7 @@ const Awards = () => {
 
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
-                                        <p>
+                                        <p className='awards-p'>
                   Tare Zameen Par has won the best <strong>Women Led Startup</strong> award from <strong>BCIC (Bangalore Chamber of Industry and Commerce)</strong>
                                         </p>
                                 </div>
@@ -123,7 +123,7 @@ const Awards = () => {
 
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
-                                        <p>Nominated for Leaders of tomorrow Season 10 Awards in the Education Category organized by <strong>ETNOW</strong>
+                                        <p className='awards-p'>Nominated for Leaders of tomorrow Season 10 Awards in the Education Category organized by <strong>ETNOW</strong>
                                         </p>
                                 </div>
 
@@ -139,7 +139,7 @@ const Awards = () => {
 
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
-                                        <p>
+                                        <p className='awards-p'>
                                               
 Tare Zameen Par has Received special Appreciation by Indian Army for its Initiative.
                                         </p>
@@ -152,7 +152,7 @@ Tare Zameen Par has Received special Appreciation by Indian Army for its Initiat
 
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
-                                        <p>
+                                        <p className='awards-p'>
                                         Tare Zameen Par has won two awards from <strong>PRCI</strong> (Public Relation Council of India) for Excellence in Education and best start up idea of the year.
                                         </p>
                                 </div>
@@ -170,7 +170,7 @@ Tare Zameen Par has Received special Appreciation by Indian Army for its Initiat
 
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
-                                        <p>
+                                        <p className='awards-p'>
                                         Mr. Dinesh Badagandi has received well-deserved recognition and accolades from <strong>AEiF</strong> (Ajeet Entrepreneurship & Innovation Forum) and <strong>TiE</strong> Chapter Bangalore. His commendable efforts in promoting the integration of technology to foster educational equity.
 
                                         </p>

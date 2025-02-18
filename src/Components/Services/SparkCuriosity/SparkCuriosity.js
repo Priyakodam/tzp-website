@@ -61,7 +61,7 @@ const AutoScrollingImages = ({ images, direction = 1 }) => {
   return (
     <div className="scroll-container" ref={scrollContainerRef}>
       {images.map((src, index) => (
-        <div key={index} className="image-container">
+        <div key={index} className="image-container-service-scroll">
           <img src={src} alt={`Scrolling Image ${index + 1}`} className="scroll-image" />
         </div>
       ))}
@@ -158,11 +158,12 @@ const SparkCuriosity = () => {
 
           {/* Right Side - Images */}
           <div className="col-12 col-md-6 text-center">
-            <div className="image-container">
-              <img src={fairImage1} alt="Science Fair 1" className="fair-image w-100"/>
-              <img src={fairImage2} alt="Science Fair 2" className="fair-image w-100" />
-            </div>
-          </div>
+  <div className="image-container-service">
+    <img src={fairImage1} alt="Science Fair 1" className="fair-image img-stacked" />
+    <img src={fairImage2} alt="Science Fair 2" className="fair-image img-stacked" />
+  </div>
+</div>
+
         </div>
       </div>
 
@@ -194,7 +195,7 @@ const SparkCuriosity = () => {
     </div>
 
     {/* Forward Scrolling */}
-    <div className="col-12 text-center mt-3">
+    <div className="col-12 text-center mt-3 image-container-service-scroll">
       <AutoScrollingImages images={OfflineLectures} direction={1} /> 
     </div>
   </div>
@@ -225,7 +226,7 @@ const SparkCuriosity = () => {
           <div className="col-12 text-center">
             <h2 className="main-heading">Virtual Lectures</h2>
             <p className="paragraph-element">
-            We also arranged the lectures over ZOOM. Some schools don’t have a projector and internet facilities. We discussed with teachers to form groups of students and give them their smartphones to attend the zoom lectures. This went well and it could help us to keep in their touch to solve any problem related to science kits.
+               We also arranged the lectures over ZOOM. Some schools don’t have a projector and internet facilities. We discussed with teachers to form groups of students and give them their smartphones to attend the zoom lectures. This went well and it could help us to keep in their touch to solve any problem related to science kits.
             </p>
           </div>
 

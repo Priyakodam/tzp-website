@@ -3,9 +3,11 @@ import { motion } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Webinar.css"; // Importing the CSS file for background animation
 
+
 const Webinar = () => {
   return (
     <div className="webinar-container">
+ 
       <div className="container my-5">
         {/* Webinar Introduction */}
         <motion.div

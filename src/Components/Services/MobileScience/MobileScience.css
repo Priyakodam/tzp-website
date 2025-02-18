@@ -1,0 +1,28 @@
+.bg-section {
+    position: relative;
+    background-image: url('../MobileScience/images/MobileScienceImg5.jpeg'); /* Update with correct path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+/* Left Side Overlay Effect */
+.bg-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjust width for the overlay */
+    height: 100%;
+    background: rgba(-3, 13, 40, 0.7);
+    z-index: 1;
+}
+
+/* Ensure content stays above overlay */
+.bg-section .container {
+    position: relative;
+    z-index: 2;
+}
