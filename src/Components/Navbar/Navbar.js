@@ -190,7 +190,23 @@ const Navbar = () => {
             )}
           </li>
 
-          <li className="navbar-item"><Link to="/csr">CSR</Link></li>
+          {/* <li className="navbar-item"><Link to="/csr">CSR</Link></li> */}
+          
+          {/* Dropdown for Gallery */}
+          <li className={`navbar-item dropdown ${isCsrDropdownOpen ? 'open' : ''}`} 
+              onMouseEnter={toggleCsrDropdown} onMouseLeave={() => setIsGalleryDropdownOpen(false)}>
+            <Link className="dropdown-toggle" to="/csr">CSR</Link>
+            {isGalleryDropdownOpen && (
+              <ul className="dropdown-list">
+                <li className="dropdown-item"><Link to="/synopsis">Synopsis</Link></li>
+                <li className="dropdown-item"><Link to="/motilal-oswal-foundation">MotilalOswal</Link></li>
+                <li className="dropdown-item"><Link to="/aviratha">Aviratha</Link></li>
+                <li className="dropdown-item"><Link to="/lti">LTI</Link></li>
+                <li className="dropdown-item"><Link to="/ksteps-categories">ksteps</Link></li>
+
+              </ul>
+            )}
+          </li>
 
           {/* Dropdown for Gallery */}
           <li className={`navbar-item dropdown ${isGalleryDropdownOpen ? 'open' : ''}`} 
