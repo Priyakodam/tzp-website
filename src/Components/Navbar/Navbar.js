@@ -166,7 +166,7 @@ const Navbar = () => {
           {/* Dropdown for Services */}
           <li className={`navbar-item dropdown ${isServicesDropdownOpen ? 'open' : ''}`} 
               onMouseEnter={toggleServicesDropdown} onMouseLeave={() => setIsServicesDropdownOpen(false)}>
-            <Link className="dropdown-toggle">Services</Link>
+            <Link to="/services/service" className="dropdown-toggle">Services</Link>
             {isServicesDropdownOpen && (
               <ul className="dropdown-list">
                 <li className="dropdown-item"><Link to="/services/spark-curiosity">Spark of Curiosity</Link></li>

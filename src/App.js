@@ -21,6 +21,7 @@ import SynopsisofFood from "./Components/Csr/CsrPages/Synopsis";
 import MotilalOswal from "./Components/Csr/CsrPages/MotilalOswal";
 import Aviratha from "./Components/Csr/CsrPages/Aviratha";
 import Lti from "./Components/Csr/CsrPages/Lti";
+import Service from "./Components/Services/Service/Service";
 import SparkCuriosity from "./Components/Services/SparkCuriosity/SparkCuriosity";
 import MobilePlanetrium from "./Components/Services/MobilePlanetrium/MobilePlanetrium";
 import MobileScience from "./Components/Services/MobileScience/MobileScience";
@@ -72,6 +73,10 @@ function App() {
           <Route path="/lti" element={<Lti />} />
           <Route path="/ksteps-categories" element={<KstepsCategory />} />
           {/* Routes for Individual Services */}
+          <Route
+            path="/services/service"
+            element={<Service />}
+          />
           <Route
             path="/services/spark-curiosity"
             element={<SparkCuriosity />}
