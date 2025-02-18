@@ -1,15 +1,15 @@
 import React from 'react';
 import image1 from '../../Images/catcsr1.png';
-// import '../stylecategory.css'
+import '../stylecategory.css'
 
 const Card1 = () => {
     return (
-        <div className="container mt-4">
-            <h2 className="text-primary text-center mb-4 main-heading">
+        <div className="kstep-container mt-4">
+            <h2 className="text-primary text-center mb-4 kstep-main-heading">
                 Role of CSR in Bridging the Education Gap for Underprivileged Children
             </h2>
-            <div className="row justify-content-center">
-                <div className="col-md-6 d-flex justify-content-center align-items-center">
+            <div className="kstep-row justify-content-center">
+                <div className="kstep-col-md-6 d-flex justify-content-center align-items-center">
                     <img src={image1} alt="Card 1" className="img-fluid" />
                 </div>
             </div>
@@ -19,21 +19,21 @@ const Card1 = () => {
             </section>
 
             <section className="mt-4">
-                <h3 className='Sub-Heading'>Understanding the Education Gap</h3>
-                <p className='paragraph-element'>
+                <h3 className='kstep-Sub-Heading'>Understanding the Education Gap</h3>
+                <p className='kstep-paragraph-element'>
                     The education gap refers to disparities in access to quality education and learning opportunities among different segments of society. For underprivileged children, factors such as poverty, lack of infrastructure, and socio-economic barriers often hinder their educational attainment. As a result, they are deprived of the essential knowledge and skills needed to thrive in today’s rapidly evolving world.
                 </p>
             </section>
 
             <section className="mt-4">
-                <h3 className='Sub-Heading'>The Role of CSR in Bridging the Education Gap</h3>
-                <p className='paragraph-element'>
+                <h3 className='kstep-Sub-Heading'>The Role of CSR in Bridging the Education Gap</h3>
+                <p className='kstep-paragraph-element'>
                     CSR initiatives play a pivotal role in addressing the root causes of the education gap and empowering underprivileged children to unlock their full potential. By leveraging their resources, expertise, and influence, corporations can make a meaningful impact on education outcomes and contribute to sustainable social change. Tare Zameen Par, a leading organization dedicated to holistic education, exemplifies the transformative potential of CSR in bridging the education gap.
                 </p>
             </section>
 
             <section className="mt-4">
-                <h3 className='Sub-Heading'>Tare Zameen Par's Approach to CSR in Education</h3>
+                <h3 className='kstep-Sub-Heading'>Tare Zameen Par's Approach to CSR in Education</h3>
                 <ul>
                     <li>
                         <strong>Access to Quality Education:</strong> Collaborating with schools, governments, and local communities to improve education through infrastructure development, teacher training, and provision of educational resources.
@@ -48,15 +48,15 @@ const Card1 = () => {
             </section>
 
             <section className="mt-4">
-                <h3 className='Sub-Heading'>Impact and Success Stories</h3>
-                <p className='paragraph-element'>
+                <h3 className='kstep-Sub-Heading'>Impact and Success Stories</h3>
+                <p className='kstep-paragraph-element'>
                     The impact of Tare Zameen Par’s CSR initiatives in education is evident in the countless success stories of underprivileged children who have overcome adversity and achieved remarkable academic and personal growth. From rural villages to urban slums, Tare Zameen Par’s programs have empowered children to break the cycle of poverty, pursue their dreams, and become agents of positive change in their communities.
                 </p>
             </section>
 
             <section className="mt-4">
-                <h3 className='Sub-Heading'>Conclusion</h3>
-                <p className='paragraph-element'>
+                <h3 className='kstep-Sub-Heading'>Conclusion</h3>
+                <p className='kstep-paragraph-element'>
                     In conclusion, CSR has a vital role to play in bridging the education gap for underprivileged children, and Tare Zameen Par stands at the forefront of this noble endeavor. Through its holistic approach to CSR in education, Tare Zameen Par is transforming lives, fostering inclusive development, and paving the way for a brighter and more equitable future for all. As we collectively strive towards building a world where every child has the opportunity to thrive, let us draw inspiration from Tare Zameen Par’s commitment to leaving no child behind.
                 </p>
             </section>

@@ -72,6 +72,14 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-direction: column; /* Stack image and text */
+    overflow: hidden; /* Prevent overflow issues */
+  }
+
+  .ksteps-category-card img {
+    width: 100%;
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Crop and fit the image */
   }
   
   .ksteps-category-card-title {
@@ -84,12 +92,13 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
   }
 
-  .category-image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-  }
+ .category-image {
+  width: 100%;
+  height: 100%; /* Ensure image takes up the entire height */
+  object-fit: cover; /* Ensure images are cropped properly to fit */
+  border-radius: 10px 10px 0 0;
+}
+
   
   
   /* Responsive Styles */

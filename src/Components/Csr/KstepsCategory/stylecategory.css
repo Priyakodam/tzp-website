@@ -1,24 +1,16 @@
-/* Universal Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
 
-.container {
-    max-width: 1100px;
+.kstep-container {
+    max-width: 1200px;
     margin: auto;
     padding: 20px;
-    background: #ffffff;
+    background: wheat;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
 }
 
 /* Heading Styles */
-.main-heading {
+.kstep-main-heading {
     font-size: 2rem;
     font-weight: 700;
     color: #007bff;
@@ -26,20 +18,20 @@ body {
     margin-bottom: 20px;
 }
 
-.Sub-Heading {
+.kstep-Sub-Heading {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #333;
+    color: black;
     margin-top: 20px;
     border-bottom: 3px solid #007bff;
     padding-bottom: 5px;
 }
 
 /* Paragraph Styling */
-.paragraph-element {
+.kstep-paragraph-element {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #555;
+    color: black;
     text-align: justify;
 }
 
@@ -57,20 +49,20 @@ img:hover {
 }
 
 /* Responsive Grid */
-.row {
+.kstep-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.col-md-6 {
+.kstep-col-md-6 {
     flex: 0 0 50%;
     max-width: 50%;
     padding: 10px;
 }
 
 @media (max-width: 768px) {
-    .col-md-6 {
+    .kstep-col-md-6 {
         flex: 0 0 100%;
         max-width: 100%;
     }
@@ -85,7 +77,7 @@ ul {
 ul li {
     font-size: 1.1rem;
     margin-bottom: 10px;
-    color: #333;
+    color: black;
 }
 
 ul li strong {
@@ -93,7 +85,7 @@ ul li strong {
 }
 
 /* Button Styling */
-.button {
+.kstep-button {
     display: inline-block;
     background: #007bff;
     color: #fff;
@@ -105,7 +97,7 @@ ul li strong {
     margin-top: 20px;
 }
 
-.button:hover {
+.kstep-button:hover {
     background: #0056b3;
 }
 
@@ -121,6 +113,6 @@ ul li strong {
     }
 }
 
-.container, .main-heading, .Sub-Heading, .paragraph-element {
+.kstep-container, .kstep-main-heading, .kstep-Sub-Heading, .kstep-paragraph-element {
     animation: fadeIn 0.8s ease-in-out;
 }
