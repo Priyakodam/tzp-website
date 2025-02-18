@@ -44,7 +44,7 @@ import Card8 from "./Components/Csr/KstepsCategory/Education/Card8";
 import Card9 from "./Components/Csr/KstepsCategory/Planetorium/Card9";
 import Card10 from "./Components/Csr/KstepsCategory/Planetorium/Card10";
 import Card11 from "./Components/Csr/KstepsCategory/STEMLabs/Card11";
-
+import DaanUtsav from "./Components/Contact/DaanUtsav";
 
 function App() {
   return (
@@ -114,7 +114,7 @@ function App() {
           
           {/* STEM category cards */}
           <Route path="/stemcard" element={<Card11 />} />
-
+          <Route path="/daanutsav" element={<DaanUtsav />} />
         </Routes>
         <Footer />
       </div>

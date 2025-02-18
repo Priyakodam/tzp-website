@@ -1,0 +1,57 @@
+.daan-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    /* font-family: "Arial", sans-serif; */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .daan-title {
+    text-align: center;
+    color: #d9534f;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .daan-intro {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .daan-section {
+    background-color: #fff;
+    padding: 15px;
+    margin: 20px 0;
+    border-left: 5px solid #d9534f;
+    border-radius: 5px;
+  }
+  
+  /* .daan-subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5bc0de;
+  } */
+  
+  .daan-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .daan-list li {
+    font-size: 16px;
+    padding: 5px 0;
+    color: #333;
+  }
+  
+  .daan-thank-you {
+    text-align: center;
+    font-size: 18px;
+    color: #d9534f;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  

@@ -109,6 +109,7 @@ const Navbar = () => {
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
   const [isGalleryDropdownOpen, setIsGalleryDropdownOpen] = useState(false);
+  const [isCsrDropdownOpen, setIsCsrDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -118,16 +119,25 @@ const Navbar = () => {
     setIsAboutDropdownOpen(!isAboutDropdownOpen);
     setIsServicesDropdownOpen(false); // Close other dropdowns
     setIsGalleryDropdownOpen(false); // Close other dropdowns
+    setIsCsrDropdownOpen(false);
   };
 
   const toggleServicesDropdown = () => {
     setIsServicesDropdownOpen(!isServicesDropdownOpen);
     setIsAboutDropdownOpen(false); // Close other dropdowns
     setIsGalleryDropdownOpen(false); // Close other dropdowns
+    setIsCsrDropdownOpen(false);
   };
 
   const toggleGalleryDropdown = () => {
     setIsGalleryDropdownOpen(!isGalleryDropdownOpen);
+    setIsAboutDropdownOpen(false); // Close other dropdowns
+    setIsServicesDropdownOpen(false); // Close other dropdowns
+    setIsCsrDropdownOpen(false);
+  };
+
+  const toggleCsrDropdown = () => {
+    setIsGalleryDropdownOpen(!isCsrDropdownOpen);
     setIsAboutDropdownOpen(false); // Close other dropdowns
     setIsServicesDropdownOpen(false); // Close other dropdowns
   };
@@ -137,6 +147,7 @@ const Navbar = () => {
       setIsAboutDropdownOpen(false);
       setIsServicesDropdownOpen(false);
       setIsGalleryDropdownOpen(false);
+      setIsCsrDropdownOpen(false);
     }
   };
 
