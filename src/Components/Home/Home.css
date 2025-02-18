@@ -1,8 +1,9 @@
 .home-container {
         /* width: 100%; */
-        max-width: 1500px;
+        max-width: 1550px;
         margin: auto;
         overflow: hidden;
+        margin-top: -10px;
       }
       
       .slide {
@@ -17,14 +18,24 @@
       
       .slide-content {
         position: absolute;
-        bottom: 10%;
-        left: 50%;
-        transform: translateX(-50%);
+        bottom: 30%;
+        left: 15%;
+        transform: translateX(-100%);
         color: white;
         text-align: center;
         background: rgba(0, 0, 0, 0.5);
         padding: 20px;
         border-radius: 8px;
+      }
+   
+      .slide-content h2{
+        font-size: 30px;
+        color: white;
+      }
+
+      .slide-content p{
+        font-size: 18px;
+        color: white;
       }
       
       .learn-more-btn {
@@ -34,12 +45,13 @@
         border: none;
         cursor: pointer;
         font-size: 16px;
-        border-radius: 5px;
+        border-radius: 30px;
         transition: background 0.3s ease;
       }
       
       .learn-more-btn:hover {
-        background-color: #e55b00;
+        background-color: #a19790;
+        color: #333;
       }
       
 
@@ -55,37 +67,63 @@
         justify-content: space-around;
         gap: 20px;
         padding: 20px;
+        flex-wrap: wrap; /* Ensures proper wrapping on smaller screens */
       }
       
       .event-card {
         width: 30%;
         background-color: white;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         text-align: center;
-        padding: 20px;
-        transition: transform 0.3s;
+        padding: 25px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        position: relative;
+        overflow: hidden;
       }
       
       .event-card:hover {
-        transform: scale(1.05);
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
       }
       
       .icon {
         font-size: 50px;
         color: #4A90E2;
+        transition: transform 0.3s ease-in-out;
+        display: inline-block;
+      }
+      
+      .event-card:hover .icon {
+        transform: translateY(-8px) rotate(10deg); /* Moves icon up and slightly rotates */
       }
       
       .event-title {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
-        margin-top: 10px;
+        margin-top: 15px;
+        color: #333;
       }
       
       .event-description {
         font-size: 14px;
         color: gray;
+        margin-top: 8px;
       }
+      
+      /* Responsive Design */
+      @media (max-width: 992px) {
+        .event-card {
+          width: 45%;
+        }
+      }
+      
+      @media (max-width: 600px) {
+        .event-card {
+          width: 100%;
+        }
+      }
+      
       
 
 
@@ -417,12 +455,18 @@
 
 /* Section Styling */
 .team-section {
-  padding: 50px 20px;
+  /* padding: 50px 20px; */
+  opacity: 'blur';
   text-align: center;
+  background-image: url('./Images/imagesback.jpeg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
 }
 
 .container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
 }
 
@@ -430,7 +474,7 @@
 .team-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #333;
+  color: white;
   margin-bottom: 10px;
 }
 
@@ -440,7 +484,7 @@
 
 .team-description {
   font-size: 1.1rem;
-  color: #666;
+  color: white;
   max-width: 800px;
   margin: 0 auto 30px;
 }
@@ -484,12 +528,12 @@
 .team-name {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #333;
+  color: #01045b;
 }
 
 .team-designation {
   font-size: 1rem;
-  color: #666;
+  color: #1d0229;
 }
 
 /* Responsive Design */

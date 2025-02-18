@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Home.css";
-import ban1 from './Images/HERO-ART-microsoft_azure_1920x1000_nologo.jpg'
-import ban2 from './Images/ban2.png'
+import ban1 from './Images/homenewlogo.png'
+import ban2 from './Images/homenewlogo2.png'
 import ban3 from './Images/valuesimage.webp'
 import product1 from "./Images/domehome1.jpg";
 import product2 from "./Images/bushome2.jpeg";
@@ -47,12 +47,13 @@ const Home = () => {
   const slides = [
     {
       image: ban1, // Replace with actual image URL
-      title: "Dome Based Learning Through Portable Planetarium",
+      title: "A Planetarium On Wheels! Bringing Space Down To Earth For India’s Rural Kids!",
       buttonText: "Learn More",
     },
     {
       image: ban2, // Replace with actual image URL
-      title: "Tare Zameen Par – Designed For Education And Fun",
+      title: "Dome Based Learning Through Portable Planetarium",
+      titile2:"Tare Zameen Par Provides mobile planetarium to schools creating the same experience in visiting a science planetarium but at a low cost.",
       buttonText: "Learn More",
     },
   ];
@@ -179,6 +180,7 @@ const galleryImages = [
               className="slide-content"
             >
               <h2>{slide.title}</h2>
+              <p>{slide.titile2}</p>
               <button className="learn-more-btn">{slide.buttonText}</button>
             </motion.div>
           </div>
