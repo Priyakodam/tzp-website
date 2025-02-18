@@ -1,7 +1,8 @@
 import React from 'react';
 import image1 from '../../Images/catcsr1.png';
+// import '../stylecategory.css'
 
-const CSRPage = () => {
+const Card1 = () => {
     return (
         <div className="container mt-4">
             <h2 className="text-primary text-center mb-4 main-heading">
@@ -63,4 +64,4 @@ const CSRPage = () => {
     );
 };
 
-export default CSRPage;
+export default Card1;
