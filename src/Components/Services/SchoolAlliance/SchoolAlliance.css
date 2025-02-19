@@ -1,30 +1,107 @@
-/* SchoolAlliance.css */
-
-/* General styling for images */
-.img-fluid {
-    border-radius: 50px; /* Rounded corners */
+/* General Page Styling */
+.school-alliance-container {
+    background: linear-gradient(to bottom, #1061b1, #022d4c);
+    padding: 40px 15px;
+    border-radius: 10px;
 }
 
-/* Styling for the text */
-.text-start {
-    padding-left: 15px;
+/* Section Title */
+.school-alliance-section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.school-alliance-section-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Card Styling */
+.school-alliance-card-container {
+    transition: transform 0.3s ease-in-out;
+}
+
+.school-alliance-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.school-alliance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.school-alliance-card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* Zoom Effect on Hover */
+.school-alliance-zoom-effect {
+    transition: transform 0.3s ease-in-out;
+}
+
+.school-alliance-zoom-effect:hover {
+    transform: scale(1.05);
+}
+
+/* Card Text */
+.school-alliance-card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.school-alliance-card-text {
     font-size: 1rem;
     color: #333;
+    line-height: 1.5;
+}
+
+
+/* Fade-in Animation */
+.school-alliance-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
 }
 
 /* Center the last image */
 .text-center img {
     margin-top: 10px;
     border-radius: 16% !important
+
 }
 
-/* Add spacing between image and text on smaller screens */
-@media (max-width: 768px) {
-    .row {
-        margin-bottom: 30px; /* Increases space between sections */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-  
-    .col-md-6 {
-        margin-bottom: 15px; /* Adds space between image and text */
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .school-alliance-section-title {
+        font-size: 1.8rem;
+    }
+    
+    .school-alliance-section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .school-alliance-card-text {
+        font-size: 0.9rem;
     }
 }
