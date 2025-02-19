@@ -9,7 +9,7 @@ const Team = () => {
     return (
         <div className="team-container">
             <div className="team-header">
-                <h2>Team - Tare Zameen Par Trust</h2>
+                <h2 className='main-heading'>Team - Tare Zameen Par Trust</h2>
             </div>
             <div className="team-members">
                 <div className="team-member">
@@ -19,7 +19,7 @@ const Team = () => {
                 </div>
                 <div className="team-member">
                     <img src={image2} alt="Mr. Dinesh Badagandi" />
-                    <h3>Mr. Dinesh Badagandi</h3>
+                    <h3 >Mr. Dinesh Badagandi</h3>
                     <p>Co-Founder, Decades of Entrepreneurial Experience.</p>
                 </div>
                 <div className="team-member">

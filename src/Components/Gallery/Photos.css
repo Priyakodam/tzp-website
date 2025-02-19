@@ -4,7 +4,6 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 40px 0;
-        font-family: sans-serif;
       }
       
       /* Page title */
@@ -44,10 +43,12 @@
       
       /* Card heading */
       .photo-heading {
-        font-size: 2rem;
+        font-size: 42px;
         margin: 15px 0;
         color: #333;
         font-weight: 700;
+        font-family:LoLato, san-serif;
+
       }
       
       /* View More button */
