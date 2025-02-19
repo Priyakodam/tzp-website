@@ -8,16 +8,17 @@ const Card2 = () => {
                 Lunar Lessons: How CSR Brightens the Future of Planetarium Outreach
             </h2>
 
-            <div className="kstep-row justify-content-center">
-                <div className="kstep-col-md-6 d-flex justify-content-center align-items-center">
+            <div className="kstep-row d-flex align-items-center">
+                <div className="kstep-col-md-6">
+                    <p className='kstep-paragraph-element'>
+                        In the vast expanse of the universe, as we marvel at the twinkling stars and distant galaxies, there lies a beacon of hope for the future of education and outreach. Tare Zameen Par, a pioneering initiative committed to breaking down barriers and spreading the light of knowledge to every corner of India, embodies this hope through its innovative approach to planetarium outreach. In this exploration, we delve into the transformative power of Corporate Social Responsibility (CSR) in illuminating the minds of young learners and fostering a brighter future for planetarium education.
+                    </p>
+                </div>
+                <div className="kstep-col-md-6 d-flex justify-content-center">
                     <img src={image2} alt="Card 2" className="img-fluid" />
                 </div>
             </div>
 
-
-            <section className="mt-4">
-                In the vast expanse of the universe, as we marvel at the twinkling stars and distant galaxies, there lies a beacon of hope for the future of education and outreach. Tare Zameen Par, a pioneering initiative committed to breaking down barriers and spreading the light of knowledge to every corner of India, embodies this hope through its innovative approach to planetarium outreach. In this exploration, we delve into the transformative power of Corporate Social Responsibility (CSR) in illuminating the minds of young learners and fostering a brighter future for planetarium education.
-            </section>
 
             <section className="mt-4">
                 <p className='kstep-paragraph-element'>

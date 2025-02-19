@@ -8,15 +8,17 @@ const Card1 = () => {
             <h2 className="text-primary text-center mb-4 kstep-main-heading">
                 Role of CSR in Bridging the Education Gap for Underprivileged Children
             </h2>
-            <div className="kstep-row justify-content-center">
-                <div className="kstep-col-md-6 d-flex justify-content-center align-items-center">
+            <div className="kstep-row d-flex align-items-center">
+                <div className="kstep-col-md-6">
+                    <p className='kstep-paragraph-element'>
+                        Corporate Social Responsibility (CSR) has emerged as a powerful tool for addressing social inequities and fostering inclusive development. One of the most pressing challenges facing societies worldwide is the education gap that disproportionately affects underprivileged children. In this Quora post, we delve into the transformative role of CSR initiatives, with a spotlight on Tare Zameen Par’s exemplary efforts in bridging the education gap for underprivileged children.
+                    </p>
+                </div>
+                <div className="kstep-col-md-6 d-flex justify-content-center">
                     <img src={image1} alt="Card 1" className="img-fluid" />
                 </div>
             </div>
 
-            <section className="mt-4">
-                Corporate Social Responsibility (CSR) has emerged as a powerful tool for addressing social inequities and fostering inclusive development. One of the most pressing challenges facing societies worldwide is the education gap that disproportionately affects underprivileged children. In this Quora post, we delve into the transformative role of CSR initiatives, with a spotlight on Tare Zameen Par’s exemplary efforts in bridging the education gap for underprivileged children.
-            </section>
 
             <section className="mt-4">
                 <h3 className='kstep-Sub-Heading'>Understanding the Education Gap</h3>

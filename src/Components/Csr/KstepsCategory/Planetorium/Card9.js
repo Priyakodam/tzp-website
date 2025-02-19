@@ -8,17 +8,17 @@ const Card9 = () => {
                 Bringing the Universe to You: Portable 360 Dome-Based Planetariums for Schools
             </h2>
 
-            <div className="kstep-row justify-content-center">
-                <div className="kstep-col-md-6 d-flex justify-content-center align-items-center">
+            <div className="kstep-row d-flex align-items-center">
+                <div className="kstep-col-md-6">
+                    <p className='kstep-paragraph-element'>
+                        In an era where technology continues to bridge gaps in education, the quest to bring the marvels of the universe closer to students has taken a revolutionary turn. Portable 360 dome-based planetariums have emerged as a beacon of innovation, promising to transform the way we perceive and teach astronomy in schools. Tare Zameen Par, with its unwavering commitment to holistic education, has embraced this cutting-edge technology to enrich the learning experiences of students across the globe. Let’s delve into the significance, benefits, and transformative impact of these portable planetariums in educational settings.
+                    </p>
+                </div>
+                <div className="kstep-col-md-6 d-flex justify-content-center">
                     <img src={image9} alt="Card 9" className="img-fluid" />
                 </div>
             </div>
 
-            <section className="mt-4">
-                <p className='kstep-paragraph-element'>
-                    In an era where technology continues to bridge gaps in education, the quest to bring the marvels of the universe closer to students has taken a revolutionary turn. Portable 360 dome-based planetariums have emerged as a beacon of innovation, promising to transform the way we perceive and teach astronomy in schools. Tare Zameen Par, with its unwavering commitment to holistic education, has embraced this cutting-edge technology to enrich the learning experiences of students across the globe. Let’s delve into the significance, benefits, and transformative impact of these portable planetariums in educational settings.
-                </p>
-            </section>
 
             <h5 className='kstep-Sub-Heading'>Understanding Portable 360 Dome-Based Planetariums:</h5>
             <section className="mt-4">

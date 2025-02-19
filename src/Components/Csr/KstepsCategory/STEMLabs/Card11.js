@@ -8,17 +8,17 @@ const Card11 = () => {
                 Transform Your Classroom with a STEM Lab
             </h2>
 
-            <div className="kstep-row justify-content-center">
-                <div className="kstep-col-md-6 d-flex justify-content-center align-items-center">
-                    <img src={image1} alt="Card 2" className="img-fluid" />
+            <div className="kstep-row d-flex align-items-center">
+                <div className="kstep-col-md-6">
+                    <p className='kstep-paragraph-element'>
+                        In the diverse landscape of India’s educational system, there exists a glaring disparity between the resources available to students in urban centres and those in rural areas. While urban schools often boast state-of-the-art facilities and a plethora of educational opportunities, their rural counterparts grapple with limited access to modern tools and knowledge. However, amidst this disparity, organizations like Tare Zameen Par Trust emerge as champions of equity, dedicated to breaking down barriers and bringing the wonders of STEM education to every child’s doorstep.
+                    </p>
+                </div>
+                <div className="kstep-col-md-6 d-flex justify-content-center">
+                    <img src={image1} alt="Card 1" className="img-fluid" />
                 </div>
             </div>
 
-            <section className="mt-4">
-                <p className='kstep-paragraph-element'>
-                    In the diverse landscape of India’s educational system, there exists a glaring disparity between the resources available to students in urban centres and those in rural areas. While urban schools often boast state-of-the-art facilities and a plethora of educational opportunities, their rural counterparts grapple with limited access to modern tools and knowledge. However, amidst this disparity, organizations like Tare Zameen Par Trust emerge as champions of equity, dedicated to breaking down barriers and bringing the wonders of STEM education to every child’s doorstep.
-                </p>
-            </section>
 
             <h5 className='kstep-Sub-Heading'>The Mission of Tare Zameen Par Trust</h5>
             <section className="mt-4">

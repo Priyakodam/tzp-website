@@ -8,17 +8,17 @@ const Card10 = () => {
                 The Benefits of Planetarium Shows for Education and Outreach
             </h1>
 
-            <div className="kstep-row justify-content-center">
-                <div className="kstep-col-md-6 d-flex justify-content-center align-items-center">
+            <div className="kstep-row d-flex align-items-center">
+                <div className="kstep-col-md-6">
+                    <p className='kstep-paragraph-element'>
+                        In the pursuit of equitable education, organizations like Tare Zameen Par stand as beacons of hope, striving to bridge the gap between educational resources and underserved communities. Among the myriad tools utilized by such organizations, planetarium shows emerge as powerful catalysts for education and outreach. In this exploration, we delve into the profound benefits of planetarium shows, particularly within the context of Tare Zameen Par’s mission to illuminate young minds across India’s diverse landscape.
+                    </p>
+                </div>
+                <div className="kstep-col-md-6 d-flex justify-content-center">
                     <img src={image2} alt="Card 2" className="img-fluid" />
                 </div>
             </div>
 
-            <section className="mt-4">
-                <p className='kstep-paragraph-element'>
-                    In the pursuit of equitable education, organizations like Tare Zameen Par stand as beacons of hope, striving to bridge the gap between educational resources and underserved communities. Among the myriad tools utilized by such organizations, planetarium shows emerge as powerful catalysts for education and outreach. In this exploration, we delve into the profound benefits of planetarium shows, particularly within the context of Tare Zameen Par’s mission to illuminate young minds across India’s diverse landscape.
-                </p>
-            </section>
 
             <h5 className='kstep-Sub-Heading'>Unveiling the Universe: The Power of Planetarium Shows</h5>
             <section className="mt-4">

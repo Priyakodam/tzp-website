@@ -1,71 +1,149 @@
+/* General Card Styling */
+.contact-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px; /* Slightly reduced border-radius */
+  background: linear-gradient(white, #f8f9fa); /* Light gradient background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
 
-  /* Styling for the form card */
-  .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 15px;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
+.contact-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}
 
-  .contact-card {
-    transition: transform 0.3s ease-in-out;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .contact-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #007bff;
-    margin-bottom: 15px;
-  }
-  
-  .contact-icon {
-    font-size: 1rem;
-    color: white;
-  }
-  
-  
-  /* Styling for the office sections */
+
+/* Button Styling */
+.btn-gradient {
+  background: linear-gradient(90deg, #007bff, #0056b3); /* Gradient background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 25px; /* Rounded corners */
+  padding: 10px 20px; /* Padding */
+  transition: background 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(90deg, #0056b3, #007bff); /* Reverse gradient on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .border-end {
-    border-right: 1px solid #ddd;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
   }
-  
-  @media (max-width: 768px) {
-    .border-end {
-      border-right: none;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 15px;
-    }
-  }
-  
-  
-  .btn-light {
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .btn-light:hover {
-    background-color: #fff;
-    color: #007bff;
-    transform: scale(1.1);
-  }
-  
+}
 
-  
+.contact2-card {
+  transition: transform 0.3s ease-in-out;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light gray background for contact cards */
+}
 
-  
-  
+.contact2-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Unique Colors for Contact Cards */
+.contact2-card:nth-child(1) {
+  background-color: #e9ecef; /* Light gray */
+  color: #343a40; /* Dark gray text */
+}
+
+.contact2-card:nth-child(2) {
+  background-color: #f1f3f5; /* Very light gray */
+  color: #343a40; /* Dark gray text */
+}
+
+.contact2-card:nth-child(3) {
+  background-color: #ffffff; /* White */
+  color: #343a40; /* Dark gray text */
+}
+
+/* Unique Colors for Office Cards */
+.office-card:nth-child(1) {
+  background-color: #f0f4f8; /* Very light blue */
+  color: #343a40; /* Dark gray text */
+}
+
+.office-card:nth-child(2) {
+  background-color: #e9ecef; /* Light gray */
+  color: #343a40; /* Dark gray text */
+}
+
+.office-card:nth-child(3) {
+  background-color: #f1f3f5; /* Very light gray */
+  color: #343a40; /* Dark gray text */
+}
+
+/* Icon Styling */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff; /* White background for icons */
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+.icon-container svg {
+  color: cornflowerblue; /* Gray color for icons */
+  font-size: 1.5rem;
+}
+
+.icon-container-p {
+  font-size: 14px;
+  color: #495057; /* Darker gray for text */
+}
+
+/* Button Styling */
+.btn-light {
+  transition: all 0.3s ease-in-out;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #007bff; /* Primary blue */
+  color: white; /* White text */
+}
+
+.btn-light:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .border-end {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+  }
+}
+
+/* Additional Styles for Enhanced Visuals */
+.contact-glass {
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+ 
+}
+
+.office-card {
+  transition: transform 0.3s ease;
+}
+
+.office-card:hover {
+  transform: translateY(-10px);
+}
+
+h1, h3, h5 {
+  transition: color 0.3s ease;
+}
+

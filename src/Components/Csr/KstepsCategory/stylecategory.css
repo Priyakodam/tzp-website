@@ -11,6 +11,7 @@
 
 /* Heading Styles */
 .kstep-main-heading {
+    font-family:LoLato, san-serif;
     font-size: 2rem;
     font-weight: 700;
     color: #007bff;
@@ -19,6 +20,7 @@
 }
 
 .kstep-Sub-Heading {
+    font-family:LoLato, san-serif;
     font-size: 1.5rem;
     font-weight: 600;
     color: black;
@@ -29,6 +31,7 @@
 
 /* Paragraph Styling */
 .kstep-paragraph-element {
+    font-family:LoLato, san-serif;
     font-size: 1.1rem;
     line-height: 1.8;
     color: black;
@@ -48,18 +51,6 @@ img:hover {
     transform: scale(1.05);
 }
 
-/* Responsive Grid */
-.kstep-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.kstep-col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 10px;
-}
 
 @media (max-width: 768px) {
     .kstep-col-md-6 {
@@ -72,12 +63,14 @@ img:hover {
 ul {
     padding-left: 20px;
     margin-top: 10px;
+    font-family:LoLato, san-serif;
 }
 
 ul li {
     font-size: 1.1rem;
     margin-bottom: 10px;
     color: black;
+    font-family:LoLato, san-serif;
 }
 
 ul li strong {
@@ -116,3 +109,87 @@ ul li strong {
 .kstep-container, .kstep-main-heading, .kstep-Sub-Heading, .kstep-paragraph-element {
     animation: fadeIn 0.8s ease-in-out;
 }
+
+/* Responsive Grid */
+.kstep-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Column Layout */
+.kstep-col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 10px;
+}
+
+/* Adjustments for Tablets (iPad Mini and similar) */
+@media (max-width: 1024px) {
+    .kstep-col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .kstep-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .kstep-paragraph-element {
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+    .kstep-col-md-6 img {
+        width: 90%;
+        max-height: 300px;
+        object-fit: cover;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .kstep-col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .kstep-paragraph-element {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .kstep-col-md-6 img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .kstep-container {
+        padding: 15px;
+    }
+
+    .kstep-main-heading {
+        font-size: 1.5rem;
+    }
+
+    .kstep-Sub-Heading {
+        font-size: 1.2rem;
+    }
+
+    .kstep-paragraph-element {
+        font-size: 0.95rem;
+    }
+
+    .kstep-button {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+

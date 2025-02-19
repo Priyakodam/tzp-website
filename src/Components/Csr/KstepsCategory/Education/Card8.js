@@ -8,22 +8,28 @@ const Card8 = () => {
         Hands-On Science: Engaging Students with Science Kits
       </h2>
 
-      <div className="kstep-row justify-content-center">
-                <div className="kstep-col-md-6 d-flex justify-content-center align-items-center">
-                    <img src={image6} alt="Card 6" className="img-fluid" />
-                </div>
-            </div>
+      <div className="kstep-row d-flex align-items-center">
+        <div className="kstep-col-md-6">
+          <p className='kstep-paragraph-element'>
+            In the realm of education, hands-on learning experiences hold a special place for their ability to
+            captivate students’ interest and foster deep understanding. Science, in particular, thrives on
+            exploration and experimentation. Tare Zameen Par recognizes the immense value of hands-on science
+            education and is committed to providing students with engaging tools and resources. One such
+            initiative is the introduction of science kits, designed to empower students to become active
+            participants in their learning journey.
+          </p>
+        </div>
 
-      <section className="mt-4">
-        <p className='kstep-paragraph-element'>
-        In the realm of education, hands-on learning experiences hold a special place for their ability to captivate students’ interest and foster deep understanding. Science, in particular, thrives on exploration and experimentation. Tare Zameen Par recognizes the immense value of hands-on science education and is committed to providing students with engaging tools and resources. One such initiative is the introduction of science kits, designed to empower students to become active participants in their learning journey.
-        </p>
-      </section>
+        <div className="kstep-col-md-6 d-flex justify-content-center">
+          <img src={image6} alt="Card 6" className="img-fluid" />
+        </div>
+      </div>
+
 
       <section className="mt-4">
         <h5 className='kstep-Sub-Heading'>The Importance of Hands-On Science Education</h5>
         <p className='kstep-paragraph-element'>
-        Hands-on science education offers numerous benefits that go beyond traditional classroom instruction. By allowing students to manipulate materials, conduct experiments, and make observations firsthand, hands-on learning promotes critical thinking, problem-solving skills, and scientific inquiry. Moreover, it sparks curiosity and cultivates a lifelong love for science by making abstract concepts tangible and accessible.
+          Hands-on science education offers numerous benefits that go beyond traditional classroom instruction. By allowing students to manipulate materials, conduct experiments, and make observations firsthand, hands-on learning promotes critical thinking, problem-solving skills, and scientific inquiry. Moreover, it sparks curiosity and cultivates a lifelong love for science by making abstract concepts tangible and accessible.
         </p>
       </section>
 

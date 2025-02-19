@@ -8,23 +8,23 @@ const Card4 = () => {
         Celebration of National Space Day: India's Journey to the Moon
       </h2>
 
-      <div className="kstep-row justify-content-center">
-        <div className="kstep-col-md-6 d-flex justify-content-center align-items-center">
+      <div className="kstep-row d-flex align-items-center">
+        <div className="kstep-col-md-6">
+          <h4 className='kstep-Sub-Heading'>Celebration of National Space Day: India’s Journey to the Moon</h4>
+
+          <h5 className='kstep-Sub-Heading mt-4'>National Space Day Significance</h5>
+          <p className='kstep-paragraph-element'>
+            National Space Day is celebrated on August 23 to mark and rejoice in the success and progress made in space travel.
+            It is used as a venue to inform people about the relevance of space missions and to inspire new generations of
+            scientists and explorers. We highlight the year’s outstanding contributions from India to lunar exploration via
+            its Chandrayaan missions.
+          </p>
+        </div>
+        <div className="kstep-col-md-6 d-flex justify-content-center">
           <img src={image2} alt="Card 2" className="img-fluid" />
         </div>
       </div>
 
-
-      <section className="mt-4">
-        <h4 className='kstep-Sub-Heading'>Celebration of National Space Day: India’s Journey to the Moon</h4>
-      </section>
-
-      <section className="mt-4">
-        <h5 className='kstep-Sub-Heading'>National Space Day Significance</h5>
-        <p className='kstep-paragraph-element'>
-          National Space Day is celebrated on August 23 to mark and rejoice in the success and progress made in space travel. It is used as a venue to inform people about the relevance of space missions and to inspire new generations of scientists and explorers. We highlight the year’s outstanding contributions from India to lunar exploration via its Chandrayaan missions.
-        </p>
-      </section>
 
       <section className="mt-4">
         <h5 className='kstep-Sub-Heading'>Chandrayaan 1</h5>
