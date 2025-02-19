@@ -86,30 +86,40 @@ const Home = () => {
       title: "Science Outreach Programs",
       description:
         "Our innovative Science outreach Program includes Digital Planetarium Shows, Science experiments demonstration and training.",
+        link: "/spark-curiosity",
+
     },
     {
       icon: <FaChalkboardTeacher />,
       title: "Teachers Training Programs",
       description:
         "The Technology is always getting updated. We train Teachers and introduce them to the latest Pedagogy so Students can learn more effectively.",
+        link: "/spark-curiosity",
+
     },
     {
       icon: <FaQuestionCircle />,
       title: "Quiz Competitions",
       description:
         'The Quiz competition like "Kaun Banega Saupati" (Inspired by Television Show Kaun Banega Karodpati). That Brings Joy and Fun While Learning New Things.',
+        link: "/spark-curiosity",
+
     },
     {
       icon: <FaLightbulb />,
       title: "Eradication of Superstitious Belief",
       description:
         "Even in the 21st Century, many people have fear and misunderstanding. Our programs bring awareness to help them get rid of superstitious beliefs.",
+        link: "/spark-curiosity",
+
     },
     {
       icon: <FaUserTie />,
       title: "Expert Talk",
       description:
         "We bring experts from institutions like BARC, ISRO, etc., to interact with students and youth. These programs are conducted online as well as offline.",
+        link: "/spark-curiosity",
+
     },
   ];
 
@@ -179,8 +189,8 @@ const galleryImages = [
               transition={{ duration: 1 }}
               className="slide-content"
             >
-              <h2>{slide.title}</h2>
-              <p>{slide.titile2}</p>
+              <h2 className="Sub-Heading">{slide.title}</h2>
+              <p className="paragraph-element">{slide.titile2}</p>
               <button className="learn-more-btn">{slide.buttonText}</button>
             </motion.div>
           </div>
@@ -191,14 +201,14 @@ const galleryImages = [
       {events.map((event, index) => (
         <div key={index} className="event-card">
           {event.icon}
-          <h3 className="event-title">{event.title}</h3>
-          <p className="event-description">{event.description}</p>
+          <h3 className="Sub-Heading">{event.title}</h3>
+          <p className="paragraph-element">{event.description}</p>
         </div>
       ))}
     </div>
 
     <div className="services-container">
-      <h2>Our Services</h2>
+      <h2  className="Sub-Heading">Our Services</h2>
       <p>Under the brand name Tare Zameen Par, we provide the following services:</p>
 
       {/* First row - Always visible */}
@@ -207,7 +217,7 @@ const galleryImages = [
           <div key={index} className="service-card">
             <div className="icon">{service.icon}</div>
             <h3>{service.title}</h3>
-            <p>{service.description}</p>
+            <p className="paragraph-element">{service.description}</p>
           </div>
         ))}
       </div>
@@ -219,7 +229,7 @@ const galleryImages = [
             <div key={index} className="service-card">
               <div className="icon">{service.icon}</div>
               <h3>{service.title}</h3>
-              <p>{service.description}</p>
+              <p  className="paragraph-element">{service.description}</p>
             </div>
           ))}
         </div>

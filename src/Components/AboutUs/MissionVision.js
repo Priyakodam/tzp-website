@@ -5,8 +5,8 @@ const MissionVision = () => {
   return (
     <div className="mission-vision-container">
       <div className="mission-section">
-        <h2>Mission</h2>
-        <p>
+        <h2 className='main-heading' >Mission</h2>
+        <p className='paragraph-element'>
           Tare Zameen Par’s mission is to break down the barriers that have historically limited the access of rural 
           students to modern educational resources. We are committed to bringing the wonders of astronomy, science, 
           and mathematics to the doorstep of every child in India. Our mobile science labs, portable planetariums, 
@@ -15,8 +15,8 @@ const MissionVision = () => {
       </div>
 
       <div className="vision-section">
-        <h2>Vision</h2>
-        <p>
+        <h2 className='main-heading'>Vision</h2>
+        <p className='paragraph-element'>
           Tare Zameen Par envisions a future where the brilliance of India’s youth knows no geographical bounds. Our 
           vision is to empower every student, regardless of their location, with the tools and knowledge to excel in the 
           fields of science, astronomy, and mathematics. We believe that every young mind, be it in a bustling metropolis 
