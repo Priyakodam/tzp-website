@@ -15,7 +15,7 @@ const Card2 = () => {
                     </p>
                 </div>
                 <div className="kstep-col-md-6 d-flex justify-content-center">
-                    <img src={image2} alt="Card 2" className="img-fluid" />
+                    <img src={image2} alt="Card 2" className="kstep-img" />
                 </div>
             </div>
 
@@ -64,14 +64,14 @@ const Card2 = () => {
 
             <section className="mt-4">
                 <h3 className='kstep-Sub-Heading'>Digital Mobile Planetarium Shows</h3>
-                <ul>
-                    <li>
+                <ul className="kstep-list">
+                    <li className="kstep-list-item">
                         Tare Zameen Par’s digital mobile planetarium shows serve as a beacon of enlightenment, transcending physical barriers to bring the wonders of the universe directly to the doorstep of students in remote areas.
                     </li>
-                    <li>
+                    <li className="kstep-list-item">
                         Through immersive visuals and interactive presentations, these shows not only educate but also inspire, igniting a passion for astronomy and science in young hearts.
                     </li>
-                    <li>
+                    <li className="kstep-list-item">
                         By incorporating storytelling and real-life examples, Tare Zameen Par creates a captivating learning experience that resonates with students of all ages and backgrounds.
                     </li>
                 </ul>
@@ -79,14 +79,14 @@ const Card2 = () => {
 
             <section className="mt-4">
                 <h3 className='kstep-Sub-Heading'>Science Kits Distribution</h3>
-                <ul>
-                    <li>
+                <ul className="kstep-list">
+                    <li className="kstep-list-item">
                         The distribution of science kits represents a tangible investment in hands-on learning experiences, providing students with the tools they need to explore scientific concepts firsthand.
                     </li>
-                    <li>
+                    <li className="kstep-list-item">
                         These kits not only supplement classroom instruction but also encourage independent inquiry and experimentation, fostering a spirit of curiosity and discovery.
                     </li>
-                    <li>
+                    <li className="kstep-list-item">
                         By ensuring access to quality educational resources, Tare Zameen Par empowers students to take ownership of their learning journey and explore the wonders of science at their own pace.
                     </li>
                 </ul>
@@ -94,14 +94,14 @@ const Card2 = () => {
 
             <section className="mt-4">
                 <h3 className='kstep-Sub-Heading'>Offline and Virtual Lectures</h3>
-                <ul>
-                    <li>
+                <ul className="kstep-list">
+                    <li className="kstep-list-item">
                         Tare Zameen Par’s comprehensive approach to education includes both offline and virtual lectures, catering to the diverse learning needs of students across India.
                     </li>
-                    <li>
+                    <li className="kstep-list-item">
                         Offline lectures provide face-to-face interaction with educators, fostering meaningful connections and personalized learning experiences.
                     </li>
-                    <li>
+                    <li className="kstep-list-item">
                         Virtual lectures leverage technology to reach students in even the most remote areas, ensuring that no child is left behind in their pursuit of knowledge.
                     </li>
                 </ul>
@@ -109,11 +109,11 @@ const Card2 = () => {
 
             <section className="mt-4">
                 <h3 className='kstep-Sub-Heading'>Virtual Teacher Training</h3>
-                <ul>
-                    <li>
+                <ul className="kstep-list">
+                    <li className="kstep-list-item">
                         Recognizing the critical role of educators in shaping the future of planetarium outreach, Tare Zameen Par offers virtual teacher training programs to enhance pedagogical skills and content knowledge.
                     </li>
-                    <li>
+                    <li className="kstep-list-item">
                         By equipping teachers with the tools and resources they need to effectively engage students in scientific inquiry, Tare Zameen Par is fostering a culture of lifelong learning and professional development.
                     </li>
                 </ul>
@@ -121,14 +121,14 @@ const Card2 = () => {
 
             <section className="mt-4">
                 <h3 className='kstep-Sub-Heading'>Group Activities and Interaction with Indian Scientists</h3>
-                <ul>
-                    <li>
+                <ul className="kstep-list">
+                    <li className="kstep-list-item">
                         Group activities and interactions with Indian scientists serve as catalysts for inspiration and discovery, providing students with unique opportunities to engage with experts in the field.
                     </li>
-                    <li>
+                    <li className="kstep-list-item">
                         These experiences not only broaden students’ horizons but also instill a sense of pride and belonging in India’s rich scientific heritage.
                     </li>
-                    <li>
+                    <li className="kstep-list-item">
                         By showcasing the real-world applications of scientific concepts and highlighting the contributions of Indian scientists, Tare Zameen Par inspires students to pursue careers in STEM fields and contribute to the advancement of knowledge.
                     </li>
                 </ul>

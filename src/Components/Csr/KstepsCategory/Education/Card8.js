@@ -21,7 +21,7 @@ const Card8 = () => {
         </div>
 
         <div className="kstep-col-md-6 d-flex justify-content-center">
-          <img src={image6} alt="Card 6" className="img-fluid" />
+          <img src={image6} alt="Card 6" className="kstep-img " />
         </div>
       </div>
 
@@ -42,20 +42,20 @@ const Card8 = () => {
 
       <section className="mt-4">
         <h5 className='kstep-Sub-Heading'>Engaging Students with Science Kits</h5>
-        <ul>
-          <li>
+        <ul className="kstep-list">
+          <li className="kstep-list-item">
             <strong>Exploration:</strong> Science kits offer students the opportunity to explore scientific phenomena in a hands-on manner. Whether it’s building a simple circuit, observing chemical reactions, or dissecting a frog, these activities encourage active engagement and spark curiosity.
           </li>
-          <li>
+          <li className="kstep-list-item">
             <strong>Experimentation:</strong> Hands-on science kits empower students to conduct experiments and test hypotheses in a controlled environment. By manipulating variables and observing outcomes, students gain valuable insights into the scientific method and develop essential laboratory skills.
           </li>
-          <li>
+          <li className="kstep-list-item">
             <strong>Collaboration:</strong> Science kits provide a platform for collaborative learning, allowing students to work together to solve problems and share ideas. Through teamwork and peer interaction, students develop communication skills and learn to appreciate diverse perspectives.
           </li>
-          <li>
+          <li className="kstep-list-item">
             <strong>Real-World Relevance:</strong> Tare Zameen Par’s science kits are designed to highlight the real-world applications of scientific principles. By engaging in hands-on activities that mirror professional scientific practices, students gain a deeper understanding of how science impacts their daily lives and the world around them.
           </li>
-          <li>
+          <li className="kstep-list-item">
             <strong>Creativity and Innovation:</strong> Hands-on science education encourages creativity and innovation by giving students the freedom to explore and experiment. Tare Zameen Par’s science kits include open-ended activities that challenge students to think outside the box and come up with original solutions to complex problems.
           </li>
         </ul>

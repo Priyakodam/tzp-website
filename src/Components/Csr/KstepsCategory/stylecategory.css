@@ -39,7 +39,7 @@
 }
 
 /* Image Styling */
-img {
+.kstep-img {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -47,7 +47,7 @@ img {
     transition: transform 0.3s ease-in-out;
 }
 
-img:hover {
+.kstep-img:hover {
     transform: scale(1.05);
 }
 
@@ -60,22 +60,23 @@ img:hover {
 }
 
 /* List Styling */
-ul {
+.kstep-list {
     padding-left: 20px;
     margin-top: 10px;
     font-family:LoLato, san-serif;
 }
 
-ul li {
+.kstep-list-item {
     font-size: 1.1rem;
     margin-bottom: 10px;
     color: black;
     font-family:LoLato, san-serif;
 }
 
-ul li strong {
+.kstep-list-item strong {
     color: #007bff;
 }
+
 
 /* Button Styling */
 .kstep-button {
