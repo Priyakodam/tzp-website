@@ -237,7 +237,7 @@ const galleryImages = [
 
       {/* Toggle between "View More" and "No More" buttons */}
       <button className="toggle-button" onClick={() => setShowAll(!showAll)}>
-        {showAll ? "No More" : "View More"}
+        {showAll ? "Read Less" : "Read More"}
       </button>
     </div>
 
