@@ -208,7 +208,9 @@ const galleryImages = [
     </div>
 
     <div className="services-container">
-      <h2  className="Sub-Heading">Our Services</h2>
+      <h2 className="section-title">
+          Our <span className="highlight">Services</span>
+        </h2>
       <p>Under the brand name Tare Zameen Par, we provide the following services:</p>
 
       {/* First row - Always visible */}
@@ -216,7 +218,7 @@ const galleryImages = [
         {services.slice(0, 3).map((service, index) => (
           <div key={index} className="service-card">
             <div className="icon">{service.icon}</div>
-            <h3>{service.title}</h3>
+            <h3 className="Sub-Heading" >{service.title}</h3>
             <p className="paragraph-element">{service.description}</p>
           </div>
         ))}
@@ -228,7 +230,7 @@ const galleryImages = [
           {services.slice(3, 5).map((service, index) => (
             <div key={index} className="service-card">
               <div className="icon">{service.icon}</div>
-              <h3>{service.title}</h3>
+              <h3 className="Sub-Heading">{service.title}</h3>
               <p  className="paragraph-element">{service.description}</p>
             </div>
           ))}
@@ -237,7 +239,7 @@ const galleryImages = [
 
       {/* Toggle between "View More" and "No More" buttons */}
       <button className="toggle-button" onClick={() => setShowAll(!showAll)}>
-        {showAll ? "No More" : "View More"}
+        {showAll ? "Read Less" : "Read More"}
       </button>
     </div>
 

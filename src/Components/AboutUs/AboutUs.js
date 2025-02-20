@@ -83,7 +83,6 @@ const steps = [
 const AboutUs = () => {
   return (
     <div>
-      <Navbar />
       <div className="about-container">
         <div className="image-container">
           <img src={aboutimage} alt="About Us" />
