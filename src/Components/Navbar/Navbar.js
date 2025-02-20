@@ -346,6 +346,8 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
+import logo from './Images/TZP-WHITE-LOGO.png'
+
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -362,8 +364,10 @@ const Navbar = () => {
 
   return (
     <header className="navbar">
-      <div className="logo">Tare Zameen Par</div>
-
+      {/* <div className="logo">Tare Zameen Par</div> */}
+   <div className="logo">
+     <img src={logo} alt="Tare Zameen Par Logo" className="logo-img" />
+ </div>
       <nav className={`navbar-menu ${isMobileMenuOpen ? 'mobile-menu' : ''}`}>
         <ul className="navbar-list">
           <li className="navbar-item"><a href="/">Home</a></li>

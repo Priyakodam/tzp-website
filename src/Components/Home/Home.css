@@ -348,6 +348,18 @@
         background: #0056b3;
       }
       
+
+
+      .paragraph {
+        color: #333;
+        transition: color 0.3s ease;
+        cursor: pointer;
+      }
+      
+      .paragraph:hover {
+        color: #007bff; /* Change to any color you prefer */
+        text-decoration: none;
+      }
     /* Tablet View (768px - 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .cards-container {
