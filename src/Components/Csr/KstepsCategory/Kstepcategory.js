@@ -72,7 +72,7 @@ const CategoriesPage = () => {
               onClick={() => handleNavigation(subcategory.path)}
               style={{ cursor: "pointer" }} // Show clickable effect
             >
-              {subcategory.image && <img src={subcategory.image} alt={subcategory.title} className="category-image" />}
+              {subcategory.image && <img src={subcategory.image} alt={subcategory.title} className="ksteps-category-card-img" />}
               <h2 className="ksteps-category-card-title">{subcategory.title}</h2>
             </div>
           ))}

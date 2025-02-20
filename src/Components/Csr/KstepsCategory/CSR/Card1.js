@@ -15,7 +15,7 @@ const Card1 = () => {
                     </p>
                 </div>
                 <div className="kstep-col-md-6 d-flex justify-content-center">
-                    <img src={image1} alt="Card 1" className="img-fluid" />
+                    <img src={image1} alt="Card 1" className="kstep-img" />
                 </div>
             </div>
 
@@ -36,14 +36,14 @@ const Card1 = () => {
 
             <section className="mt-4">
                 <h3 className='kstep-Sub-Heading'>Tare Zameen Par's Approach to CSR in Education</h3>
-                <ul>
-                    <li>
+                <ul className="kstep-list">
+                <li className="kstep-list-item">
                         <strong>Access to Quality Education:</strong> Collaborating with schools, governments, and local communities to improve education through infrastructure development, teacher training, and provision of educational resources.
                     </li>
-                    <li>
+                    <li className="kstep-list-item">
                         <strong>Holistic Development:</strong> Focusing on children’s physical, emotional, and cognitive well-being through extracurricular activities, life skills training, and mentorship programs.
                     </li>
-                    <li>
+                    <li className="kstep-list-item">
                         <strong>Community Engagement:</strong> Mobilizing local stakeholders, fostering partnerships, and promoting advocacy for educational reform.
                     </li>
                 </ul>

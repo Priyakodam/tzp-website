@@ -19,7 +19,7 @@ const Card6 = () => {
           </p>
         </div>
         <div className="kstep-col-md-6 d-flex justify-content-center">
-          <img src={image4} alt="Card 4" className="img-fluid" />
+          <img src={image4} alt="Card 4" className="kstep-img " />
         </div>
       </div>
 

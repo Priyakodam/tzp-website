@@ -19,7 +19,7 @@ const Card3 = () => {
           </p>
         </div>
         <div className="kstep-col-md-6 d-flex justify-content-center">
-          <img src={image1} alt="Card 1" className="img-fluid" />
+          <img src={image1} alt="Card 1" className="kstep-img " />
         </div>
       </div>
 
@@ -42,9 +42,9 @@ const Card3 = () => {
 
       <h5 className='kstep-Sub-Heading'>Benefits of Immersive Learning</h5>
       <section className="mt-4">
-        <ul>
-          <li><strong>High Retention with Active Participation:</strong> Immersive learning involves students retaining much information because they actively interact with the material, increasing retention rates and participation.</li>
-          <li><strong>High Engagement:</strong> Immersive learning keeps students much more attentive and interested, particularly in STEM education, where abstract concepts are made understandable.</li>
+        <ul className="kstep-list">
+          <li className="kstep-list-item"><strong>High Retention with Active Participation:</strong> Immersive learning involves students retaining much information because they actively interact with the material, increasing retention rates and participation.</li>
+          <li className="kstep-list-item"><strong>High Engagement:</strong> Immersive learning keeps students much more attentive and interested, particularly in STEM education, where abstract concepts are made understandable.</li>
         </ul>
       </section>
 
@@ -60,10 +60,10 @@ const Card3 = () => {
       <h5 className='kstep-Sub-Heading'>Real-World Examples from Tare Zameen Par</h5>
       <section className="mt-4">
         <p className='kstep-paragraph-element'>Our VR planetarium shows at TZP enable students to:</p>
-        <ul>
-          <li>Embark on planetary surface expeditions</li>
-          <li>Witness how stars are born and die</li>
-          <li>Experience traveling through asteroid belts</li>
+        <ul className="kstep-list">
+          <li className="kstep-list-item">Embark on planetary surface expeditions</li>
+          <li className="kstep-list-item">Witness how stars are born and die</li>
+          <li className="kstep-list-item">Experience traveling through asteroid belts</li>
         </ul>
         <p className='kstep-paragraph-element'>
           These experiences provide hands-on knowledge of astronomy and allow students to visualize processes that textbooks can only describe.
@@ -72,9 +72,9 @@ const Card3 = () => {
 
       <h5 className='kstep-Sub-Heading'>Effect of Immersive Learning on Students</h5>
       <section className="mt-4">
-        <ul>
-          <li><strong>Enhancing Student Performance:</strong> Students who take part in immersive environments perform better in subjects like astronomy than those using traditional learning approaches.</li>
-          <li><strong>Developing Interest in STEM Fields:</strong> This experience helps students understand deep concepts, leading them to engage in science and technology fields.</li>
+        <ul className="kstep-list">
+          <li className="kstep-list-item"><strong>Enhancing Student Performance:</strong> Students who take part in immersive environments perform better in subjects like astronomy than those using traditional learning approaches.</li>
+          <li className="kstep-list-item"><strong>Developing Interest in STEM Fields:</strong> This experience helps students understand deep concepts, leading them to engage in science and technology fields.</li>
         </ul>
       </section>
 

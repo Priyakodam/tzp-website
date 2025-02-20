@@ -15,7 +15,7 @@ const Card9 = () => {
                     </p>
                 </div>
                 <div className="kstep-col-md-6 d-flex justify-content-center">
-                    <img src={image9} alt="Card 9" className="img-fluid" />
+                    <img src={image9} alt="Card 9" className="kstep-img " />
                 </div>
             </div>
 
@@ -30,12 +30,12 @@ const Card9 = () => {
 
             <h5 className='kstep-Sub-Heading'>The Advantages of Portable Planetariums for Schools:</h5>
             <section className="mt-4">
-                <ul>
-                    <li><strong>Accessibility:</strong> Portable planetariums transcend geographical barriers, making astronomy education accessible to students in remote areas where traditional facilities are scarce. Tare Zameen Par’s initiative ensures that every child, regardless of location, has the opportunity to gaze upon the stars and unlock the wonders of the universe.</li>
-                    <li><strong>Immersive Learning:</strong> The immersive nature of dome-based planetariums fosters experiential learning, captivating students’ imagination and curiosity. By simulating astronomical events in real time, these immersive environments facilitate deeper comprehension and retention of complex astronomical concepts.</li>
-                    <li><strong>Interactivity:</strong> Tare Zameen Par’s portable planetariums are equipped with interactive features that engage students in active participation. From guided tours of the cosmos to interactive quizzes and simulations, these experiences encourage collaboration, critical thinking, and a hands-on approach to learning.</li>
-                    <li><strong>Customization:</strong> Flexibility is a hallmark of portable planetariums, allowing educators to tailor the content and curriculum to suit the needs and interests of their students. Tare Zameen Par collaborates with educators to develop bespoke programs that align with academic standards while fostering creativity and curiosity.</li>
-                    <li><strong>Inspiring Future Explorers:</strong> By igniting a passion for astronomy at a young age, portable planetariums inspire the next generation of scientists, engineers, and explorers. Tare Zameen Par’s outreach initiatives empower students to dream big, encouraging them to pursue careers in STEM fields and contribute to the advancement of human knowledge.</li>
+                <ul className="kstep-list">
+                    <li className="kstep-list-item"><strong>Accessibility:</strong> Portable planetariums transcend geographical barriers, making astronomy education accessible to students in remote areas where traditional facilities are scarce. Tare Zameen Par’s initiative ensures that every child, regardless of location, has the opportunity to gaze upon the stars and unlock the wonders of the universe.</li>
+                    <li className="kstep-list-item"><strong>Immersive Learning:</strong> The immersive nature of dome-based planetariums fosters experiential learning, captivating students’ imagination and curiosity. By simulating astronomical events in real time, these immersive environments facilitate deeper comprehension and retention of complex astronomical concepts.</li>
+                    <li className="kstep-list-item"><strong>Interactivity:</strong> Tare Zameen Par’s portable planetariums are equipped with interactive features that engage students in active participation. From guided tours of the cosmos to interactive quizzes and simulations, these experiences encourage collaboration, critical thinking, and a hands-on approach to learning.</li>
+                    <li className="kstep-list-item"><strong>Customization:</strong> Flexibility is a hallmark of portable planetariums, allowing educators to tailor the content and curriculum to suit the needs and interests of their students. Tare Zameen Par collaborates with educators to develop bespoke programs that align with academic standards while fostering creativity and curiosity.</li>
+                    <li className="kstep-list-item"><strong>Inspiring Future Explorers:</strong> By igniting a passion for astronomy at a young age, portable planetariums inspire the next generation of scientists, engineers, and explorers. Tare Zameen Par’s outreach initiatives empower students to dream big, encouraging them to pursue careers in STEM fields and contribute to the advancement of human knowledge.</li>
                 </ul>
             </section>
 
