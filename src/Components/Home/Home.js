@@ -390,22 +390,23 @@ const Home = () => {
       </section>
 
       <div
-        className="row  align-items-center text-center text-md-start p-4 contact-section"
-        style={{ backgroundColor: 'rgba(9, 3, 69, 1)', color: 'white', borderRadius: '0' }}
-      >
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-8">
-              <h5>Do you have any ideas?</h5>
-              <h4>Let's talk about it..!</h4>
-            </div>
-            <div className="col-md-4 text-md-end contact-content">
-              <button className="btn btn-light me-3 contact-button">Join With Us</button>
-              <span className="fw-bold contact-number">+91 9035013642</span>
-            </div>
-          </div>
-        </div>
+  className="row align-items-center text-center text-md-start p-4 contact-section"
+  style={{ backgroundColor: 'rgba(9, 3, 69, 1)', color: 'white', borderRadius: '0', width: '100%', margin: '0' }}
+>
+  <div className="container-fluid">
+    <div className="row align-items-center">
+      <div className="col-md-8">
+        <h5>Do you have any ideas?</h5>
+        <h4>Let's talk about it..!</h4>
       </div>
+      <div className="col-md-4 text-md-end contact-content">
+        <button className="btn btn-light me-3 contact-button">Join With Us</button>
+        <span className="fw-bold contact-number">+91 9035013642</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     </div>
 

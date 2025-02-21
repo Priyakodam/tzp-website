@@ -184,7 +184,7 @@
 
     .sssection-container {
       position: relative;
-      width: 103%;
+      width: 100%;
       max-width: 1200px;
       margin: auto;
       overflow: hidden;
@@ -197,7 +197,7 @@
       align-items: center;
       justify-content: center;
     }
-    
+    .sssection-content
     .sssection-image {
       width: 100%;
       height: auto;
@@ -255,6 +255,14 @@
 
 
       }
+
+
+      .sssection-content
+      .sssection-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
     }
     
     /* Mobile View */
@@ -271,6 +279,14 @@
         width: 35%;
         font-size: 14px;
         padding: 12px;
+      }
+
+
+      .sssection-content
+      .sssection-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
       }
     }
     
