@@ -1,61 +1,70 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
-// import companyLogo from './images/png-1.png'
-// import footerlogo from '../Footer/Images/png-1.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons"; // Import the specific icon
-
-
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF, faTwitter, faLinkedin, faDribbble, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import logo from './images/TZP-WHITE-LOGO.png';
 const Footer = () => {
   return (
-    <footer className="footer-root mt-5">
+    <footer className="footer-root">
       <div className="footer-container">
         <div className="footer-content">
           <div className="footermainsection">
             
             {/* Logo Section */}
             <div className="footer-logo">
-              <h3>Tare Zameen Par</h3>
+    
+              <img src={logo} alt="Tare Zameen Par Logo" className="logo-img" />
             </div>
 
             {/* Quick Menu */}
             <div className="footer-section">
               <h3 className="footer-heading">Quick Menu</h3>
-              <p><a href="/" className="footer-link">Home</a></p>
-              <p><a href="/about" className="footer-link">About Us</a></p>
-              <p><a href="/csr" className="footer-link">CSR</a></p>
-              <p><a href="/gallery" className="footer-link">Gallery</a></p>
-              <p><a href="/contact" className="footer-link">Contact Us</a></p>
+              <p className="paragraph-element"><Link to="/" className="footer-link">Home</Link></p>
+              <p className="paragraph-element"><Link to="/about" className="footer-link">About Us</Link></p>
+              <p className="paragraph-element"><Link to="/csr" className="footer-link">CSR</Link></p>
+              <p className="paragraph-element"><Link to="/gallery" className="footer-link">Gallery</Link></p>
+              <p className="paragraph-element"><Link to="/contact" className="footer-link">Contact Us</Link></p>
             </div>
 
             {/* Contact Details */}
             <div className="footer-section">
               <h3 className="footer-heading">Contact Details</h3>
-              <p className="footer-info">#52, 2nd Floor, 9th Main Road, Kaveri Nagar,</p>
-              <p className="footer-info">Banashankari Stage II, Banashankari,</p>
-              <p className="footer-info">City: Bengaluru</p>
-              <p className="footer-info">State: Karnataka, 560070</p>
+              <p className="paragraph-element">#52, 2nd Floor, 9th Main Road, Kaveri Nagar,</p>
+              <p className="paragraph-element">Banashankari Stage II, Bengaluru</p>
+              <p className="paragraph-element">Karnataka, 560070</p>
             </div>
           </div>
+
+          {/* Social Media Icons */}
+          <div className="social-icons">
+            <a href="https://www.facebook.com/tzp4u/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faFacebookF} className="social-icon facebook" />
+            </a>
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2FVarnaazTech_" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faTwitter} className="social-icon twitter" />
+            </a>
+            <a href="https://www.instagram.com/tarezameenpartzp/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faInstagram} className="social-icon google" />
+            </a>
+            <a href="https://www.linkedin.com/in/tare-zameen-par/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} className="social-icon linkedin" />
+            </a>
+           
+          </div>
+
         </div>
+
         <hr className="footer-divider" />
+
+        {/* Footer Bottom Section */}
         <section className="last-footer">
-          {/* <p className="last-footer-copyright">
-            Copyright © 2024 SadāShri Ventures Private Limited. All rights reserved.
-          </p> */}
-         
-          <div className="footer">
-            <span className="float-left pr-2">
-              © {new Date().getFullYear()} All rights reserved 
-            </span>
-            <span className="float-left">
-              {/* <i className="fas fa-heart" aria-hidden="true"></i>  */}
-              <FontAwesomeIcon  style={{color:'red', paddingLeft:'5px', paddingRight:'5px'}} icon={faHeart} aria-hidden="true" />
-              by {" "}
-              <a href="https://iiiqbets.com" target="_blank" rel="noopener noreferrer">
-                iiiQBets
-              </a>
+          <div className="footer-bottom">
+            <span>© {new Date().getFullYear()} All rights reserved</span>
+            <span>
+              <FontAwesomeIcon style={{ color: 'red', padding: '0 5px' }} icon={faHeart} />
+              by <a href="https://iiiqbets.com" target="_blank" rel="noopener noreferrer">iiiQBets</a>
             </span>
           </div>
         </section>
@@ -66,4 +75,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
