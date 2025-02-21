@@ -356,8 +356,8 @@ const Home = () => {
       </section>
 
       <div
-        className="row mt-5 align-items-center text-center text-md-start p-4 contact-section"
-        style={{ backgroundColor: '#007bff', color: 'white', borderRadius: '0' }}
+        className="row  align-items-center text-center text-md-start p-4 contact-section"
+        style={{ backgroundColor: 'rgba(9, 3, 69, 1)', color: 'white', borderRadius: '0' }}
       >
         <div className="container">
           <div className="row align-items-center">

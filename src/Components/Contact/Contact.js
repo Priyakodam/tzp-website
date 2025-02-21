@@ -38,7 +38,7 @@ const Contact = () => {
         <div className="contact-page-container">
           <div className="col-md-6">
             <div className="contact-card p-4 shadow-lg contact-glass border-0">
-              <h2 className="text-center mb-3">Book An Appointment</h2>
+              <h2 className="text-center mb-3 color-c">Book An Appointment</h2>
               <h6 className="text-center mb-4">
                 Please complete the details below and then click on Submit and we’ll be in contact soon
               </h6>

@@ -58,17 +58,17 @@ const MobileScience = () => {
         <div className="col-md-12">
           <div className="row">
             <div className="col-6 col-md-6 mb-3">
-              <img src={MobileScienceImg2} alt="Image 1" className="img-fluid  w-100" />
+              <img src={MobileScienceImg2} alt="Image 1" className="img-fluid  w-100 custom-border-radius" />
             </div>
             <div className="col-6 col-md-6 mb-3">
-              <img src={MobileScienceImg4} alt="Image 3" className="img-fluid w-100" />
+              <img src={MobileScienceImg4} alt="Image 3" className="img-fluid w-100 custom-border-radius" />
             </div>
             <div className="col-6 col-md-6 mb-3">
-              <img src={MobileScienceImg3} alt="Image 2" className="img-fluid  w-100" />
+              <img src={MobileScienceImg3} alt="Image 2" className="img-fluid  w-100 custom-border-radius" />
             </div>
            
             <div className="col-6 col-md-6 mb-3">
-              <img src={MobileScienceImg5} alt="Image 4" className="img-fluid  w-100" />
+              <img src={MobileScienceImg5} alt="Image 4" className="img-fluid  w-100 custom-border-radius" />
             </div>
           </div>
         </div>

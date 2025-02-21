@@ -100,13 +100,14 @@
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #444; /* Darker gray for contrast */
+  color:  rgba(9, 3, 69, 1);
 }
 
 .office-subtitle {
   font-size: 16px;
   font-weight: 500;
   opacity: 0.8;
+
 }
 
 .office-address {
@@ -116,6 +117,12 @@
   color: #555;
 }
 
+
+.color-c{
+  color:  rgba(9, 3, 69, 1);
+
+
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
