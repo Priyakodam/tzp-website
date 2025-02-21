@@ -193,7 +193,7 @@
   }
   
   .event-card {
-      width: 30%;
+      width: 26%;
       background-color: white;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -300,7 +300,7 @@
       
       .service-card {
         margin-top: 20px;
-        width: 460px;
+        width: 385px;
         background: #f5f5f5;
         padding: 15px;
         border-radius: 10px;
@@ -323,13 +323,13 @@
 
         margin: 10px 0;
         font-size: 32px;
-        font-family:LoLato, san-serif;
+        /* font-family:LoLato, san-serif; */
 
       }
       
       p {
         font-size: 18px;
-        font-family:LoLato, san-serif;
+        /* font-family:LoLato, san-serif; */
         color: #555;
       }
       
@@ -435,7 +435,7 @@
 
 /* Title Styling */
 .section-title {
-  font-family:LoLato, san-serif;
+  /* font-family:LoLato, san-serif; */
   font-size: 42px;
   font-weight: 700;
   color: #333;
@@ -443,7 +443,7 @@
 
 .highlight {
   color: #007bff;
-  font-family:LoLato, san-serif;
+  /* font-family:LoLato, san-serif; */
   font-size: 42px;
   font-weight: 700;
 }
@@ -451,7 +451,7 @@
 .section-subtitle {
   color: #666;
   margin-top: 5px;
-  font-family:LoLato, san-serif;
+  /* font-family:LoLato, san-serif; */
   font-size: 18px;
   text-align: center;
 }
@@ -513,7 +513,7 @@
 
 
 .value-text{
-  font-family:LoLato, san-serif;
+  /* font-family:LoLato, san-serif; */
   font-size: 32px;
   font-weight: 700;
 }
@@ -621,7 +621,7 @@
   font-weight: bold;
   color: #333;
   margin-bottom: 10px;
-  font-family:LoLato, san-serif;
+  /* font-family:LoLato, san-serif; */
 
 }
 
@@ -693,7 +693,7 @@
 
 /* Read More Button */
 .read-more-btn {
-  font-family:LoLato, san-serif;
+  /* font-family:LoLato, san-serif; */
 
   margin-top: 10px;
   background-color: #007bff;
@@ -759,7 +759,7 @@
   font-weight: bold;
   color: white;
   margin-bottom: 10px;
-  font-family:LoLato, san-serif;
+  /* font-family:LoLato, san-serif; */
 
 }
 
@@ -914,7 +914,7 @@
   font-weight: bold;
   color: #333;
   margin-bottom: 30px;
-  font-family:LoLato, san-serif;
+  /* font-family:LoLato, san-serif; */
 
 }
 
@@ -976,7 +976,7 @@
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family:LoLato, san-serif;
+  /* font-family:LoLato, san-serif; */
 
 }
 
