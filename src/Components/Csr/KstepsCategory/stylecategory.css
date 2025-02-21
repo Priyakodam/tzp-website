@@ -1,0 +1,196 @@
+
+.kstep-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: wheat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Heading Styles */
+.kstep-main-heading {
+    font-family:LoLato, san-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.kstep-Sub-Heading {
+    font-family:LoLato, san-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    margin-top: 20px;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 5px;
+}
+
+/* Paragraph Styling */
+.kstep-paragraph-element {
+    font-family:LoLato, san-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: black;
+    text-align: justify;
+}
+
+/* Image Styling */
+.kstep-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.kstep-img:hover {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .kstep-col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* List Styling */
+.kstep-list {
+    padding-left: 20px;
+    margin-top: 10px;
+    font-family:LoLato, san-serif;
+}
+
+.kstep-list-item {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: black;
+    font-family:LoLato, san-serif;
+}
+
+.kstep-list-item strong {
+    color: #007bff;
+}
+
+
+/* Button Styling */
+.kstep-button {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+.kstep-button:hover {
+    background: #0056b3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.kstep-container, .kstep-main-heading, .kstep-Sub-Heading, .kstep-paragraph-element {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Responsive Grid */
+.kstep-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Column Layout */
+.kstep-col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 10px;
+}
+
+/* Adjustments for Tablets (iPad Mini and similar) */
+@media (max-width: 1024px) {
+    .kstep-col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .kstep-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .kstep-paragraph-element {
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+    .kstep-col-md-6 img {
+        width: 90%;
+        max-height: 300px;
+        object-fit: cover;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .kstep-col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .kstep-paragraph-element {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .kstep-col-md-6 img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .kstep-container {
+        padding: 15px;
+    }
+
+    .kstep-main-heading {
+        font-size: 1.5rem;
+    }
+
+    .kstep-Sub-Heading {
+        font-size: 1.2rem;
+    }
+
+    .kstep-paragraph-element {
+        font-size: 0.95rem;
+    }
+
+    .kstep-button {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+

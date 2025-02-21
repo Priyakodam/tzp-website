@@ -11,7 +11,7 @@ import image7 from './Images/81ImEps4wBL._AC_UF8941000_QL80_.jpg'
 const Supporters = () => {
     return (
         <div className="supporters-container">
-            <h2 className="support-title">Supporters - Tare Zameen Par Trust</h2>
+            <h2 className="main-heading">Supporters - Tare Zameen Par Trust</h2>
 
             {/* First Row - 4 Images */}
             <div className="supporters-row">

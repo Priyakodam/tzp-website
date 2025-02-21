@@ -1,71 +1,202 @@
+.contact-page-container {
+  background: linear-gradient(to right, #a1b5f7, #7c95e7);
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  padding: 50px 0;
+}
 
-  /* Styling for the form card */
-  .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 15px;
+/* General Card Styling */
+.contact-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  background: linear-gradient(white, #f8f9fa);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Input Fields */
+.input-group-text {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.input-group .form-control {
+  border-left: none;
+}
+
+/* Button Styling */
+.btn-gradient {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(90deg, #0056b3, #007bff);
+  transform: translateY(-2px);
+}
+
+/* General Styling for Unique Office Cards */
+.office-card {
+  width: 320px;  /* Increased from 260px */
+  height: 320px; /* Increased from 260px */
+  padding: 30px; /* Increased padding for better spacing */
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  color: #333; /* Neutral dark gray for better readability */
+  animation: bounceUpDown 1s ease-in-out infinite alternate;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Keyframes for Bouncing Effect */
+@keyframes bounceUpDown {
+  0% {
+    transform: translateY(0);
   }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Zoom-In Effect on Hover */
+.office-card:hover {
+  transform: scale(1.1); /* Zoom in */
+  animation: none; /* Stops bouncing when hovered */
+}
+/* Light Minimal Background Colors for Each Card */
+.office-card-0, .office-card-1, .office-card-2 {
+  background: #ffffff; /* White background */
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for borders */
+}
+
+/* Icon Styling */
+.contact-icon-container {
+  font-size: 32px;
+  padding: 12px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Title & Address Styling */
+.office-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #444; /* Darker gray for contrast */
+}
+
+.office-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.office-address {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px;
+  color: #555;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .office-card {
+   width: 250px;  /* Increased from 260px */
+  height: 250px; /* Increased from 260px */
+  padding: 20px; /* Increased padding for better spacing */
   }
 
-  .contact-card {
-    transition: transform 0.3s ease-in-out;
-    border-radius: 12px;
+  .office-title {
+    font-size: 18px;
+  }
+
+  .office-subtitle {
+    font-size: 14px;
+  }
+
+  .office-address {
+    font-size: 12px;
+  }
+}
+
+
+/* Contact Information Cards */
+.contact2-card {
+  transition: transform 0.3s ease-in-out;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.contact2-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Unique Colors for Contact Cards */
+.contact2-card:nth-child(1) {
+  background-color: #e9ecef;
+  color: #343a40;
+}
+
+.contact2-card:nth-child(2) {
+  background-color: #f1f3f5;
+  color: #343a40;
+}
+
+.contact2-card:nth-child(3) {
+  background-color: #ffffff;
+  color: #343a40;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .border-end {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .contact-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  
-  .contact-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #007bff;
-    margin-bottom: 15px;
-  }
-  
-  .contact-icon {
-    font-size: 1rem;
-    color: white;
-  }
-  
-  
-  /* Styling for the office sections */
-  .border-end {
-    border-right: 1px solid #ddd;
-  }
-  
-  @media (max-width: 768px) {
-    .border-end {
-      border-right: none;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 15px;
-    }
-  }
-  
-  
-  .btn-light {
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .btn-light:hover {
-    background-color: #fff;
-    color: #007bff;
-    transform: scale(1.1);
-  }
-  
 
-  
+  .contact-button {
+    margin-bottom: 10px;
+  }
 
-  
-  
+  .contact-number {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+

@@ -55,7 +55,7 @@ const Gallery = () => {
       </div>
 
       <div className="photo-gallery">
-        <h1  style= {{textAlign:'center'}}>Honorable Guest</h1>
+        <h1 >Honorable Guest</h1>
         <div className="picture-grid">
           <img src={img7} alt="Photo 1" className="gallery-photo" />
           <img src={img8} alt="Photo 2" className="gallery-photo" />
@@ -69,7 +69,7 @@ const Gallery = () => {
       </div>
 
       <div className="photo-gallery">
-      <h1  style= {{textAlign:'center'}}>Planetarium</h1>
+      <h1 >Planetarium</h1>
 
         <div className="picture-grid">
           <img src={img13} alt="Photo 1" className="gallery-photo" />
@@ -84,7 +84,7 @@ const Gallery = () => {
       </div>
 
       <div className="photo-gallery">
-      <h1  style= {{textAlign:'center'}}>Spark of Curiosity</h1>
+      <h1 >Spark of Curiosity</h1>
 
         <div className="picture-grid">
           <img src={img19} alt="Photo 1" className="gallery-photo" />
@@ -99,7 +99,7 @@ const Gallery = () => {
       </div>
 
       <div className="photo-gallery">
-      <h1  style= {{textAlign:'center'}}>Newspaper</h1>
+      <h1 >Newspaper</h1>
 
         <div className="picture-grid">
           <img src={img25} alt="Photo 1" className="gallery-photo" />

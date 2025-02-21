@@ -1,203 +1,192 @@
+/* General Styles */
 .categories-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-  }
-  
-  /* Sidebar for category selection */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Sidebar for category selection */
+.fixed-sidebar {
+  position: fixed;
+  right: 20px;
+  top: 100px;
+  width: 200px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Category Buttons */
+.category-button {
+  background: #eee;
+  border: none;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  width: 100%;
+}
+
+.category-button:hover,
+.category-button.active {
+  background: #007bff;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Main content area */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+/* Grid layout for category cards */
+.subcategories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); /* Two columns */
+  gap: 20px;
+  width: 80%;
+  max-width: 800px;
+  justify-content: center;
+}
+
+/* Hide scrollbar for horizontal scrolling */
+.subcategories::-webkit-scrollbar {
+  display: none;
+}
+
+/* Category Cards */
+.ksteps-category-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  max-width: 350px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.ksteps-category-card-img {
+  width: 100%; /* Ensures the image takes full width of the card */
+  height: auto; /* Adjust height automatically to maintain aspect ratio */
+  max-height: 150px; /* Limits the height so it doesn't get too big */
+  object-fit: contain; /* Ensures the full image is displayed without cropping */
+  border-radius: 10px 10px 0 0;
+  transform: none !important;  /* Prevent image from scaling */
+}
+
+.ksteps-category-card-title {
+  font-size: 18px;
+  line-height: 1.2;
+  margin-top: 25px;
+}
+
+.ksteps-category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
   .fixed-sidebar {
-    position: fixed;
-    right: 20px;
-    top: 100px;
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-  }
-  
-  .category-button {
-    background: #eee;
-    border: none;
-    padding: 8px;
-    margin: 5px 0;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease, color 0.3s ease;
-  }
-  
-  .category-button:hover,
-  .category-button.active {
-    background: #007bff;
-    color: white;
-    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
-  }
-  
-  /* Main content area */
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 10px;
+    position: static;
     width: 100%;
-  }
-  
-  /* Grid layout for category cards */
-  .subcategories {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Always 3 cards per row */
-    gap: 10px; /* Adjust spacing between cards */
-    width: 90%;
-    max-width: 1200px; /* Prevent cards from stretching too much */
-    justify-content: center; /* Ensure cards are centered */
-  }
-  
-  /* Hide scrollbar for horizontal scrolling */
-  .subcategories::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .ksteps-category-card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    width: 100%;
-    max-width: 350px;
-    height: 250px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .category-button {
+    flex: 1;
+    min-width: 120px;
+    max-width: 180px;
     text-align: center;
   }
-  
+
+  .subcategories {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fixed-sidebar {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+  .category-button {
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
+    width: 90%;
+    font-size: 14px;
+    padding: 6px;
+  }
+  .subcategories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    justify-content: center;
+  }
+
+  .ksteps-category-card {
+    width: 100%;
+    max-width: 100%; /* Make sure it takes up equal space */
+    height: auto;
+  }
+
   .ksteps-category-card-title {
     font-size: 18px;
-    line-height: 1.2;
   }
-  
-  .ksteps-category-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  }
+}
 
-  .category-image {
+@media (max-width: 400px) {
+  .subcategories {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 15px;
     width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
+    align-items: center;
   }
-  
-  
-  /* Responsive Styles */
-  @media (max-width: 1024px) {
-    .subcategories {
-      grid-template-columns: repeat(2, 1fr); /* 2 cards per row for tablets */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .content {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .fixed-sidebar {
-      position: static;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      width: 100%;
-      max-width: 400px;
-      margin-bottom: 20px;
-    }
-  
-    .category-button {
-      flex: 1;
-      text-align: center;
-      white-space: nowrap;
-    }
-  
-    .subcategories {
-      grid-template-columns: repeat(1, 1fr); /* 1 card per row for mobile screens */
-    }
-  
-    .ksteps-category-card {
-      width: 100%;
-      max-width: 300px;
-      height: 250px;
-      padding: 15px;
-    }
-  
-    .ksteps-category-card-title {
-      font-size: 18px;
-    }
-  }
-  
-  
 
-  @media (max-width: 1024px) {
-    .subcategories {
-      grid-template-columns: repeat(2, 1fr); /* 2 cards per row for medium screens */
-    }
+  .ksteps-category-card {
+    width: 90%; /* Ensure the cards take most of the screen width */
+    max-width: 360px; /* Prevent cards from becoming too wide */
+    height: auto;
   }
-  @media (max-width: 768px) {
-    .content {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .fixed-sidebar {
-      position: static;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      width: 100%;
-      max-width: 400px;
-      margin-bottom: 20px;
-    }
-  
-    .category-button {
-      flex: 1;
-      text-align: center;
-      white-space: nowrap;
-    }
-  
-    .subcategories {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-      gap: 10px;
-    }
-  
-    .ksteps-category-card {
-      width: 100%;
-      max-width: 300px;
-      height: 250px;
-      padding: 15px;
-    }
-  
-    .ksteps-category-card-title {
-      font-size: 18px;
-    }
-    .subcategories {
-        grid-template-columns: repeat(1, 1fr); /* 1 card per row for mobile screens */
-      }
-  }
-  @media (max-width: 1024px) {
-    .subcategories {
-      grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .subcategories {
-      grid-template-columns: repeat(1, 1fr); /* 1 card per row for mobile */
-    }
-  }
-  
-  
+}
+

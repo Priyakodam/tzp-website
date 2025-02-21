@@ -1,11 +1,15 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import './AboutUs.css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 import aboutimage from './Images/aboutusmainimage.webp'
 
-import about1 from './Images/img01.jpg'
-import about2 from './Images/img01 (1).jpg'
-import about3 from './Images/img01 (2).jpg'
+import about1 from './Images/needassess.jpeg'
+import about2 from './Images/programdesign.jpeg'
+import about3 from './Images/impimg.png'
 
 import image1 from './Images/Nalini-Aparanji-3.jpg'
 import image2 from './Images/Dinesh-Badagandi-768x1152.jpg'
@@ -14,6 +18,8 @@ import image3 from './Images/abhi-2.jpg'
 import imaget1 from './Images/anilkakodkar_img-1.jpg'
 import imaget2 from './Images/DAT-Don-Thomas-with-Discovery-002-e1571322555534.jpg'
 import imaget3 from './Images/U_R_Rao.jpg.webp'
+import imaget4 from './Images/images-1.jpeg'
+
 
 import tele from "./Images/telescope-neo50360-5-300x300.jpg"
 import teachers from "./Images/teachersimage.jpeg"
@@ -23,6 +29,37 @@ import plantorum from "./Images/plantorim.jpeg"
 
 
 
+
+const testimonials = [
+  {
+    image: imaget1,
+    name: "Dr.Anil kakodkar",
+    role: "Indian Nuclear Physics ",
+    feedback:
+      "He was the chairman of the Atomic Energy Commission of India former Director of the Bhabha Atomic Research Centre.",
+  },
+  {
+    image: imaget2,
+    name: "Don Thomas",
+    role: "Firner NASA  Astronaut",
+    feedback:
+      "He Accompanied Kalpana Chawla, and Holds Buinness Record for Spending Longest Time in the Space. ",
+  },
+  {
+    image: imaget3,
+    name: "Dr. Udupi Ramachandra Rao",
+    role: "Former Chairman of ISRO",
+    feedback:
+      "U R Rao wan an Indian space scientist, Director of U R Rao Satellite Center and chairman of the Advisory Committeefor Space Science. ",
+  },
+  {
+    image: imaget4,
+    name: "Dr. AS Kiran Kumar",
+    role: "Former Chairman of ISRO",
+    feedback:
+      "Aluru Seelin Kiran Kumar is an Indian space scientist and former chairman of the Indian Space Research Organisation .",
+  },
+];
 
 
 const steps = [
@@ -46,13 +83,12 @@ const steps = [
 const AboutUs = () => {
   return (
     <div>
-      <Navbar />
       <div className="about-container">
         <div className="image-container">
           <img src={aboutimage} alt="About Us" />
         </div>
         <div className="content-container">
-          <h2>Hello We Are Here To Educate You With Planetarium</h2>
+          <h2 className='main-heading'>Hello We Are Here To Educate You With Planetarium</h2>
           <p>
             <strong>Varnaaz Technologies</strong> is an innovative technology start-up serving various customers in the private, public, and government sectors with innovative products for process automation. Varnaaz Technologies has been constantly innovating and has successfully produced products like a GPS tracker, a farmer horticulture mobile app (connecting farmers with horticulture and agriculture experts), a mobile planetarium for immersive learning, etc.
           </p>
@@ -99,7 +135,7 @@ const AboutUs = () => {
         {/* Timeline Item 1 */}
         <div className="timeline-item">
           <div className="timeline-content">
-            <h3>2016</h3>
+            <h3>2019</h3>
             <h4>Company Established / Piolet Project</h4>
             <p>In Dec-2016 Started Piolet Project at Chikkaballapur District.</p>
           </div>
@@ -117,7 +153,7 @@ const AboutUs = () => {
         {/* Timeline Item 3 */}
         <div className="timeline-item">
           <div className="timeline-content">
-            <h3>2019</h3>
+            <h3>2016</h3>
             <h4>Extension of Division</h4>
             <p>
               After the success of Piolet Project, 4 more planetariums were added to
@@ -169,69 +205,38 @@ const AboutUs = () => {
 
     <section className="testimonial-section">
       <h2 className="testimonial-title">Our Testimonials</h2>
-      
-      <div className="testimonial-container">
 
-        {/* Card 1 */}
-        <div className="testimonial-card">
-          <div className="testimonial-body">
-            <p>
-              “Working with this team has been a fantastic experience. 
-              Their expertise and support helped us achieve our goals 
-              faster than we expected.”
-            </p>
-          </div>
-          <div className="testimonial-footer">
-            {/* Small circular image (avatar) */}
-            <img
-              src={imaget1} 
-              alt="Person One" 
-              className="testimonial-avatar"
-            />
-            <h3 className="testimonial-name">John Doe</h3>
-            <h4 className="testimonial-role">CEO, TechCorp</h4>
-          </div>
-        </div>
-
-        {/* Card 2 */}
-        <div className="testimonial-card">
-          <div className="testimonial-body">
-            <p>
-              “I’ve never experienced such dedication and professionalism. 
-              Their solutions truly transformed our business processes.”
-            </p>
-          </div>
-          <div className="testimonial-footer">
-            <img
-              src={imaget2}
-              alt="Person Two"
-              className="testimonial-avatar"
-            />
-            <h3 className="testimonial-name">Jane Smith</h3>
-            <h4 className="testimonial-role">Founder, Creative Studio</h4>
-          </div>
-        </div>
-
-        {/* Card 3 */}
-        <div className="testimonial-card">
-          <div className="testimonial-body">
-            <p>
-              “The team’s innovative approach and consistent support 
-              have been game-changers for our growth. Highly recommended!”
-            </p>
-          </div>
-          <div className="testimonial-footer">
-            <img
-              src={imaget3}
-              alt="Person Three"
-              className="testimonial-avatar"
-            />
-            <h3 className="testimonial-name">Bob Johnson</h3>
-            <h4 className="testimonial-role">Head of Operations, FinTech</h4>
-          </div>
-        </div>
-
-      </div>
+      <Swiper
+        modules={[Autoplay, Pagination]}
+        spaceBetween={20}
+        slidesPerView={1}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
+        breakpoints={{
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        className="testimonial-swiper"
+      >
+        {testimonials.map((item, index) => (
+          <SwiperSlide key={index}>
+            <div className="testimonial-card">
+              <div className="testimonial-body">
+                <p>“{item.feedback}”</p>
+              </div>
+              <div className="testimonial-footer">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="testimonial-avatar"
+                />
+                <h3 className="testimonial-name">{item.name}</h3>
+                <h4 className="testimonial-role">{item.role}</h4>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
 
 
