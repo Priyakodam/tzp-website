@@ -27,7 +27,9 @@ import students from "./Images/schoolimage.jpeg"
 import school from "./Images/noofschool.jpeg"
 import plantorum from "./Images/plantorim.jpeg"
 
-
+import team1 from "./Images/Nalini-Aparanji-3.jpg"; // Import your images
+import team2 from "./Images/Dinesh-Badagandi-768x1152.jpg";
+import team3 from "./Images/abhi-2.jpg";
 
 
 const testimonials = [
@@ -80,6 +82,17 @@ const steps = [
   },
 ];
 
+
+const teamMembers = [
+  { image: team1, name: "Mrs. Nalini Aparanji", designation: " Founder" },
+  { image: team2, name: "Mr. Dinesh Badagandi", designation: "Co-Founder" },
+  { image: team3, name: "Mr. Abhijeet Chaudhari", designation: "Head Operations" }
+
+];
+
+
+
+
 const AboutUs = () => {
   return (
     <div>
@@ -120,7 +133,9 @@ const AboutUs = () => {
                 <h3 className="step-title">{step.title}</h3>
               </div>
               <div className="card-image">
-                <img src={step.image} alt={step.title} />
+                {/* <img src={step.image} alt={step.title} /> */}
+                <img src={step.image} alt="" />
+
               </div>
             </div>
           ))}
@@ -132,7 +147,6 @@ const AboutUs = () => {
       <div className="timeline-container">
         <h2 className="timeline-title">Our Journey</h2>
 
-        {/* Timeline Item 1 */}
         <div className="timeline-item">
           <div className="timeline-content">
             <h3>2019</h3>
@@ -141,7 +155,6 @@ const AboutUs = () => {
           </div>
         </div>
 
-        {/* Timeline Item 2 */}
         <div className="timeline-item">
           <div className="timeline-content">
             <h3>2017</h3>
@@ -150,7 +163,6 @@ const AboutUs = () => {
           </div>
         </div>
 
-        {/* Timeline Item 3 */}
         <div className="timeline-item">
           <div className="timeline-content">
             <h3>2016</h3>
@@ -164,44 +176,26 @@ const AboutUs = () => {
       </div>
 
 
-      <div className="team-section">
-      <h2 className="team-title">Our Team</h2>
-      <div className="team-cards">
-        
-        {/* Card 1 */}
-        <div className="team-card">
-          <img 
-            src={image1} 
-            alt="Founder" 
-            className="team-image" 
-          />
-          <h3 className="team-name">Mrs. Nalini Aparanji</h3>
-          <p className="team-role">Founder</p>
+      <section className="team-section">
+        <div className="container">
+          <h2 className="team-title">Our <span className="highlight">Team</span></h2>
+          <p className="team-description">
+            Meet the passionate professionals behind our success. Our team is dedicated to innovation and excellence.
+          </p>
+
+          <div className="team-grid">
+            {teamMembers.map((member, index) => (
+              <div key={index} className="team-card">
+                <img src={member.image} alt="Team Member" className="team-image" />
+                <div className="team-info">
+                  <h3 className="team-name">{member.name}</h3>
+                  <p className="team-designation">{member.designation}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        
-        {/* Card 2 */}
-        <div className="team-card">
-          <img 
-            src={image2} 
-            alt="Co-Founder" 
-            className="team-image" 
-          />
-          <h3 className="team-name">Mr. Dinesh Badagandi</h3>
-          <p className="team-role">Co-Founder</p>
-        </div>
-        
-        {/* Card 3 */}
-        <div className="team-card">
-          <img 
-            src={image3} 
-            alt="Head of Operations" 
-            className="team-image" 
-          />
-          <h3 className="team-name">Mr. Abhijeet Chaudhari</h3>
-          <p className="team-role">Head of Operations</p>
-        </div>
-      </div>
-    </div>
+      </section>
 
     <section className="testimonial-section">
       <h2 className="testimonial-title">Our Testimonials</h2>
@@ -243,7 +237,6 @@ const AboutUs = () => {
     <section className="stats-section">
       <div className="stats-container">
 
-        {/* 1) Planetariums */}
         <div className="stat-item">
           <img 
             src={plantorum} 
@@ -254,7 +247,6 @@ const AboutUs = () => {
           <p className="stat-label">No of Planetariums</p>
         </div>
 
-        {/* 2) Schools */}
         <div className="stat-item">
           <img 
             src={school} 
@@ -265,7 +257,6 @@ const AboutUs = () => {
           <p className="stat-label">No of Schools</p>
         </div>
 
-        {/* 3) Students */}
         <div className="stat-item">
           <img 
             src={students} 
@@ -276,7 +267,6 @@ const AboutUs = () => {
           <p className="stat-label">No of Students</p>
         </div>
 
-        {/* 4) Teachers */}
         <div className="stat-item">
           <img 
             src={teachers} 
@@ -287,7 +277,6 @@ const AboutUs = () => {
           <p className="stat-label">No of Teachers</p>
         </div>
 
-        {/* 5) Telescopes */}
         <div className="stat-item">
           <img 
             src={tele} 

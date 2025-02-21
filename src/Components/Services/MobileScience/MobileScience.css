@@ -26,3 +26,9 @@
     position: relative;
     z-index: 2;
 }
+
+
+.custom-border-radius {
+    border-radius: 15%; /* or any value you prefer */
+  }
+  

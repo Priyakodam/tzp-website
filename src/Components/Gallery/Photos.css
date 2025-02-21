@@ -45,9 +45,9 @@
       .photo-heading {
         font-size: 42px;
         margin: 15px 0;
-        color: #333;
+        color:  rgba(9, 3, 69, 1);
         font-weight: 700;
-        font-family:LoLato, san-serif;
+        /* font-family:LoLato, san-serif; */
 
       }
       
@@ -63,7 +63,7 @@
       }
       
       .viewmore-button:hover {
-        background: #0b5ed7;
+        background: rgba(9, 3, 69, 1);
       }
       
       /* =========================
@@ -84,7 +84,7 @@
           margin: 15px 0;
           color: #333;
           font-weight: 700;
-          font-family: LoLato, san-serif;
+          /* font-family: LoLato, san-serif; */
       }
       }
       

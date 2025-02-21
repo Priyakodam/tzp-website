@@ -25,6 +25,9 @@ import gallery6 from "./Images/gal6.png";
 import gallery7 from "./Images/gal6.png";
 import gallery8 from "./Images/gal7.jpeg";
 import gallery9 from "./Images/gal8.jpeg";
+import homeban1 from './Images/homemobileban.webp'
+import homeban2 from './Images/homemobilebanner.jpg'
+
 import { useNavigate } from "react-router-dom";
 
 import { FaSchool, FaCampground, FaStar } from "react-icons/fa";
@@ -53,6 +56,21 @@ const Home = () => {
     },
     {
       image: ban2, // Replace with actual image URL
+      title: "Dome Based Learning Through Portable Planetarium",
+      titile2: "Tare Zameen Par Provides mobile planetarium to schools creating the same experience in visiting a science planetarium but at a low cost.",
+      buttonText: "Learn More",
+    },
+  ];
+
+
+  const slidess = [
+    {
+      image: homeban1, // Replace with actual image URL
+      title: "A Planetarium On Wheels! Bringing Space Down To Earth For India’s Rural Kids!",
+      buttonText: "Learn More",
+    },
+    {
+      image: homeban2, // Replace with actual image URL
       title: "Dome Based Learning Through Portable Planetarium",
       titile2: "Tare Zameen Par Provides mobile planetarium to schools creating the same experience in visiting a science planetarium but at a low cost.",
       buttonText: "Learn More",
@@ -199,6 +217,22 @@ const Home = () => {
           ))}
         </Slider>
       </div>
+      <section className="sssection-container">
+      <div className="sssection-content">
+        <img 
+          src={homeban1} 
+          alt="Sample" 
+          className="sssection-image"
+        />
+        <div className="sssection-text">
+          <h1>A Planetarium On Wheels! Bringing Space Down To Earth For India’s Rural Kids!</h1>
+          {/* <p>
+            This is a sample paragraph. You can replace this text with your own content.
+          </p> */}
+          <button className="sssection-button">Learn More</button>
+        </div>
+      </div>
+    </section>
       <div className="event-cards-container">
         {events.map((event, index) => (
           <div key={index} className="event-card">
@@ -354,6 +388,25 @@ const Home = () => {
           </div>
         )}
       </section>
+
+      <div
+  className="row align-items-center text-center text-md-start p-4 contact-section"
+  style={{ backgroundColor: 'rgba(9, 3, 69, 1)', color: 'white', borderRadius: '0', width: '100%', margin: '0' }}
+>
+  <div className="container-fluid">
+    <div className="row align-items-center">
+      <div className="col-md-8">
+        <h5>Do you have any ideas?</h5>
+        <h4>Let's talk about it..!</h4>
+      </div>
+      <div className="col-md-4 text-md-end contact-content">
+        <button className="btn btn-light me-3 contact-button">Join With Us</button>
+        <span className="fw-bold contact-number">+91 9035013642</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     </div>
 

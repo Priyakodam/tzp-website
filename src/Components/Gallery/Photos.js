@@ -11,6 +11,10 @@ const Photos = () => {
         const handleViewMore = () => {
           navigate('/services/mobile-planetarium'); // Adjust the route as needed
         };
+        const handleViewMores = () => {
+          navigate('/ksteps-categories'); // Adjust the route as needed
+        };
+
   return (
     <section className="photos-page">
       {/* <h2 className="photos-title">Photos</h2> */}
@@ -24,7 +28,7 @@ const Photos = () => {
             className="photo-image"
           />
           <h2 className="photo-heading">Mobile Science Lab </h2>
-          <button className="viewmore-button">View More</button>
+          <button className="viewmore-button"  onClick={handleViewMores}>View More</button>
         </div>
 
         {/* Card 2 */}

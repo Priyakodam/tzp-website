@@ -1,5 +1,5 @@
 .contact-page-container {
-  background: linear-gradient(to right, #a1b5f7, #7c95e7);
+  background: linear-gradient(to right, #d5d9e7, #a6b5e5);
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
@@ -100,13 +100,14 @@
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #444; /* Darker gray for contrast */
+  color:  rgba(9, 3, 69, 1);
 }
 
 .office-subtitle {
   font-size: 16px;
   font-weight: 500;
   opacity: 0.8;
+
 }
 
 .office-address {
@@ -116,6 +117,12 @@
   color: #555;
 }
 
+
+.color-c{
+  color:  rgba(9, 3, 69, 1);
+
+
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {

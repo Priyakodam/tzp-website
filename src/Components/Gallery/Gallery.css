@@ -6,10 +6,10 @@
       
 
       .photo-gallery h1{
-        font-family:LoLato, san-serif;
+        /* font-family:LoLato, san-serif; */
         font-size: 42px;
         font-weight: 700;
-        color: #007bff;
+        color:  rgba(9, 3, 69, 1);
         text-align: center;
       }
       .picture-grid {
