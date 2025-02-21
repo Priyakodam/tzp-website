@@ -56,7 +56,7 @@
 
 
       .home-container {
-        max-width: 1519px;
+        max-width: 1537px;
         margin: auto;
         overflow: hidden;
         margin-top: -10px;
@@ -176,12 +176,104 @@
         }
     }
     
-      
+    @media only screen and (min-width: 1025px) {
+      .sssection-container {
+        display: none;
+      }
+    }
+
+    .sssection-container {
+      position: relative;
+      width: 103%;
+      max-width: 1200px;
+      margin: auto;
+      overflow: hidden;
+    }
+    
+    /* Wrapper to position text over image */
+    .sssection-content {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .sssection-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    
+    /* Text overlay */
+    .sssection-text {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff; /* White text for contrast */
+      max-width: 80%;
+      background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+      padding: 20px;
+      border-radius: 10px;
+    }
+    
+    .sssection-text h1 {
+      font-size: 28px;
+      margin: 0;
+      color: white;
+
+    }
+    
+    .sssection-button {
+      background-color: #ff6600;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+    
+    .sssection-button:hover {
+      background-color: #a19790;
+      color: #333;    }
+    
+    /* Responsive Design */
+    
+    /* iPad (Tablets) */
+    @media (max-width: 1024px) {
+      .sssection-text {
+        max-width: 90%;
+        padding: 15px;
+      }
+      .sssection-text h1 {
+        font-size: 40px;
+        color: white;
+        margin-bottom: 10px;
 
 
-
-
-
+      }
+    }
+    
+    /* Mobile View */
+    @media (max-width: 767px) {
+      .sssection-text {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .sssection-text h1 {
+        font-size: 25px;
+      }
+      .sssection-button {
+        width: 35%;
+        font-size: 14px;
+        padding: 12px;
+      }
+    }
+    
 
 
     .event-cards-container {
