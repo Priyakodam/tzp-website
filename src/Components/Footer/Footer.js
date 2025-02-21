@@ -7,7 +7,7 @@ import { faFacebookF, faTwitter, faLinkedin, faDribbble, faInstagram } from "@fo
 import logo from './images/TZP-WHITE-LOGO.png';
 const Footer = () => {
   return (
-    <footer className="footer-root">
+    <footer className="footer-root mt-5">
       <div className="footer-container">
         <div className="footer-content">
           <div className="footermainsection">
