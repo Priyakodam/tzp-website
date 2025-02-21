@@ -420,11 +420,16 @@ body {
     gap: 15px;
     margin: 0;
     padding: 20px;
+
+  }
+  .mobile-menu{
+    width: 100%;
   }
 
-  .mobile-menu .navbar-list {
+  .mobile-menu .navbar-list{
     display: flex;
     text-align: center;
+    margin: 0  auto;
   }
 
   .dropdown-list {
