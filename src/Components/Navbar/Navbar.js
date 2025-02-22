@@ -423,8 +423,14 @@ const Navbar = () => {
             </ul>
           </li>
 
-          <li className="navbar-item"><a href="/contact">Contact Us</a></li>
-        </ul>
+{/* Dropdown for Contact Us */}
+<li className={`navbar-item dropdown ${activeDropdown === 'contact' ? 'active' : ''}`}
+    onClick={() => toggleDropdown('contact')}>
+  <a className="dropdown-toggle" href="/contact">Contact Us</a>
+  <ul className="dropdown-list">
+    <li className="dropdown-item"><a href="/contact/daanutsav">DaanUtsav </a></li>
+  </ul>
+</li>        </ul>
       </nav>
 
       <div className="hamburger-menu" onClick={toggleMenu}>

@@ -63,6 +63,15 @@
       width: 220px; /* Smaller width for mobile */
       height: 150px;
     }
+    .fair-image{
+      /* width:100%; */
+      display: none;
+    }
+    .img-stacked{
+      display: none;
+  
+  
+    }
   }
   
   
@@ -83,7 +92,13 @@
       margin-left: -6px;
   }
   .fair-image{
-    width:100%;
+    /* width:100%; */
+    display: none;
+  }
+  .img-stacked{
+    display: none;
+
+
   }
 }
 

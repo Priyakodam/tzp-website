@@ -25,7 +25,7 @@ const Awards = () => {
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
                                         <p className='paragraph-element'>
-                                        Tare Zameen Par Has been recognized by <span className='Sub-Heading'>ISRO </span>  as their official partner for their space outreach program (Space Tutor) 
+                                        Tare Zameen Par Has been recognized by <span className='Sub-Heading sub-head'>ISRO </span>  as their official partner for their space outreach program (Space Tutor) 
                                         </p>
                                 </div>
                         </div>
@@ -37,7 +37,7 @@ const Awards = () => {
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
                                         <p className='paragraph-element'>
-                                        Our Founder Receiving the <span className='Sub-Heading'> Elevate 100 Award</span>  from Govt. of Karnataka for being recognized as one of the most innovative startups in Karnataka for Rural Outreach  Education Program.
+                                        Our Founder Receiving the <span className='Sub-Heading sub-head'> Elevate 100 Award</span>  from Govt. of Karnataka for being recognized as one of the most innovative startups in Karnataka for Rural Outreach  Education Program.
                                         </p>
                                 </div>
 
@@ -54,7 +54,7 @@ const Awards = () => {
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
                                         <p className='paragraph-element'>
-                                        Tare Zameen Par received special appreciation and INR 30 Lakhs grants. Ms. Nalini was the only Indian woman entrepreneur among the top 6 pitching her social entrepreneurship at the grand finale in <span className='Sub-Heading'>Tie Global Summit.</span>
+                                        Tare Zameen Par received special appreciation and INR 30 Lakhs grants. Ms. Nalini was the only Indian woman entrepreneur among the top 6 pitching her social entrepreneurship at the grand finale in <span className='Sub-Heading sub-head'>Tie Global Summit.</span>
                                         </p>
                                 </div>
                         </div>
@@ -66,7 +66,7 @@ const Awards = () => {
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
                                         <p className='paragraph-element'>
-                                        Tare Zameen Par has won awards from <span className='Sub-Heading'>PRCI (Public Relation Council of India) </span>for Excellence in Education.
+                                        Tare Zameen Par has won awards from <span className='Sub-Heading sub-head'>PRCI (Public Relation Council of India) </span>for Excellence in Education.
                                         </p>
                                 </div>
 
@@ -83,7 +83,7 @@ const Awards = () => {
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
                                         <p className='paragraph-element'>
-                                        Tare Zameen Par received <span className='Sub-Heading'>most promising startup award </span>from the CM of Karnataka Sh. Basavaraj Bommai and Cricket Veteran Sh. Kapil Dev.
+                                        Tare Zameen Par received <span className='Sub-Heading sub-head'>most promising startup award </span>from the CM of Karnataka Sh. Basavaraj Bommai and Cricket Veteran Sh. Kapil Dev.
                                         </p>
                                 </div>
                         </div>
@@ -95,7 +95,7 @@ const Awards = () => {
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
                                         <p className='paragraph-element'>
-                                        Tare Zameen Par has been awarded the 1st prize as best start-up of <span className='Sub-Heading'>Beyond Bengaluru at Mysore.</span>
+                                        Tare Zameen Par has been awarded the 1st prize as best start-up of <span className='Sub-Heading sub-head'>Beyond Bengaluru at Mysore.</span>
                                         </p>
                                 </div>
 
@@ -112,7 +112,7 @@ const Awards = () => {
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
                                         <p className='paragraph-element'>
-                  Tare Zameen Par has won the best <span className='Sub-Heading'>Women Led Startup</span> award from <span className='Sub-Heading'>BCIC (Bangalore Chamber of Industry and Commerce)</span>
+                  Tare Zameen Par has won the best <span className='Sub-Heading sub-head'>Women Led Startup</span> award from <span className='Sub-Heading sub-head'>BCIC (Bangalore Chamber of Industry and Commerce)</span>
                                         </p>
                                 </div>
                         </div>
@@ -123,7 +123,7 @@ const Awards = () => {
 
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
-                                        <p className='paragraph-element'>Nominated for Leaders of tomorrow Season 10 Awards in the Education Category organized by <span className='Sub-Heading'>ETNOW</span>
+                                        <p className='paragraph-element'>Nominated for Leaders of tomorrow Season 10 Awards in the Education Category organized by <span className='Sub-Heading sub-head'>ETNOW</span>
                                         </p>
                                 </div>
 
@@ -153,7 +153,7 @@ Tare Zameen Par has Received special Appreciation by Indian Army for its Initiat
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
                                         <p className='paragraph-element'>
-                                        Tare Zameen Par has won two awards from <span className='Sub-Heading'>PRCI</span> (Public Relation Council of India) for Excellence in Education and best start up idea of the year.
+                                        Tare Zameen Par has won two awards from <span className='Sub-Heading sub-head'>PRCI</span> (Public Relation Council of India) for Excellence in Education and best start up idea of the year.
                                         </p>
                                 </div>
 
@@ -171,7 +171,7 @@ Tare Zameen Par has Received special Appreciation by Indian Army for its Initiat
                                 {/* Right Side - Content */}
                                 <div className="awards-content">
                                         <p className='paragraph-element'>
-                                        Mr. Dinesh Badagandi has received well-deserved recognition and accolades from <span className='Sub-Heading'>AEiF</span> (Ajeet Entrepreneurship & Innovation Forum) and <span className='Sub-Heading'>TiE</span> Chapter Bangalore. His commendable efforts in promoting the integration of technology to foster educational equity.
+                                        Mr. Dinesh Badagandi has received well-deserved recognition and accolades from <span className='Sub-Heading sub-head'>AEiF</span> (Ajeet Entrepreneurship & Innovation Forum) and <span className='Sub-Heading sub-head'>TiE</span> Chapter Bangalore. His commendable efforts in promoting the integration of technology to foster educational equity.
 
                                         </p>
                                 </div>

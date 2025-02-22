@@ -57,6 +57,11 @@
         .awards-content {
             font-size: 17px;
         }
+
+.awards-content
+        .sub-head{
+            font-size: 28px;
+        }
     }
     
     /* Mobile View (max-width: 767px) */
@@ -73,5 +78,11 @@
         .awards-content {
             font-size: 16px;
         }
+
+        
+.awards-content
+.sub-head{
+    font-size: 25px;
+}
     }
     

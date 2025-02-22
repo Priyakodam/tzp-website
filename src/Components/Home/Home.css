@@ -212,7 +212,7 @@
       transform: translate(-50%, -50%);
       text-align: center;
       color: #fff; /* White text for contrast */
-      max-width: 80%;
+      /* max-width: 80%; */
       background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
       padding: 20px;
       border-radius: 10px;
@@ -245,7 +245,7 @@
     /* iPad (Tablets) */
     @media (max-width: 1024px) {
       .sssection-text {
-        max-width: 90%;
+        width: 90%;
         padding: 15px;
       }
       .sssection-text h1 {

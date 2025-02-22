@@ -5,16 +5,16 @@ import GlimpsesImage from "./images/Glimpses.png";
 import KitImage from "./images/KITIMAGE.png";
 import fairImage1 from "./images/Picture1.png";
 import fairImage2 from "./images/Picture3.png";
-import OfflineLecture1 from "./images/Lecture1.jpg"; 
+import OfflineLecture1 from "./images/Lecture1.jpg";
 import OfflineLecture2 from "./images/Lecture2.jpeg";
 import OfflineLectures3 from "./images/Lecture3.png";
-import OfflineLecture4 from "./images/Lecture4.jpeg"; 
+import OfflineLecture4 from "./images/Lecture4.jpeg";
 import OfflineLecture5 from "./images/Lecture5.jpeg";
 import OfflineLecture6 from "./images/Lecture6.jpeg";
-import OfflineLecture7 from "./images/Lecture7.jpg"; 
+import OfflineLecture7 from "./images/Lecture7.jpg";
 import OfflineLecture8 from "./images/Lecture8.jpeg";
 import OfflineLecture9 from "./images/Lecture9.jpg";
-import trainingImage1 from "./images/Training1.jpg"; 
+import trainingImage1 from "./images/Training1.jpg";
 import trainingImage2 from "./images/Training2.jpg";
 import trainingImage3 from "./images/Training3.jpg";
 import trainingImage4 from "./images/Training4.jpg";
@@ -34,7 +34,7 @@ import Goal9 from "./images/Goal9.jpg";
 
 
 // Image list for scrolling sections
-const OfflineLectures = [OfflineLecture1, OfflineLecture2, OfflineLectures3, OfflineLecture4, OfflineLecture5, OfflineLecture6, OfflineLecture7, OfflineLecture8, OfflineLecture9 ];
+const OfflineLectures = [OfflineLecture1, OfflineLecture2, OfflineLectures3, OfflineLecture4, OfflineLecture5, OfflineLecture6, OfflineLecture7, OfflineLecture8, OfflineLecture9];
 
 const AutoScrollingImages = ({ images, direction = 1 }) => {
   const scrollContainerRef = useRef(null);
@@ -130,7 +130,7 @@ const SparkCuriosity = () => {
               <li className="mt-4"><strong>Replication :</strong> The same process was followed in future Science Kit distributions.</li>
               <li className="mt-4">
                 <strong>Glimpses:</strong>
-                
+
               </li>
               <img src={GlimpsesImage} alt="Glimpses" className="img-fluid glimpses-image glimpses-text-image " />
             </ul>
@@ -158,11 +158,11 @@ const SparkCuriosity = () => {
 
           {/* Right Side - Images */}
           <div className="col-12 col-md-6 text-center">
-  <div className="image-container-service">
-    <img src={fairImage1} alt="Science Fair 1" className="fair-image img-stacked" />
-    <img src={fairImage2} alt="Science Fair 2" className="fair-image img-stacked" />
-  </div>
-</div>
+            <div className="image-container-service">
+              <img src={fairImage1} alt="Science Fair 1" className="fair-image img-stacked" />
+              <img src={fairImage2} alt="Science Fair 2" className="fair-image img-stacked" />
+            </div>
+          </div>
 
         </div>
       </div>
@@ -186,37 +186,37 @@ const SparkCuriosity = () => {
       </div>
 
       <div className="container mt-5">
-  <div className="row">
-    <div className="col-12 text-center">
-      <h2 className="main-heading">Offline Lectures</h2>
-      <p className="paragraph-element">
-        We always focus on conceptual learning. Learning science is more effective and useful if the concept is understood more practically keeping the topics and experiment in mind. We had arranged offline lectures where our science teachers used to explain the deep concept behind the experiments, Origami activities, and career guidance have helped students to choose the right path in their career.
-      </p>
-    </div>
+        <div className="row">
+          <div className="col-12 text-center">
+            <h2 className="main-heading">Offline Lectures</h2>
+            <p className="paragraph-element">
+              We always focus on conceptual learning. Learning science is more effective and useful if the concept is understood more practically keeping the topics and experiment in mind. We had arranged offline lectures where our science teachers used to explain the deep concept behind the experiments, Origami activities, and career guidance have helped students to choose the right path in their career.
+            </p>
+          </div>
 
-    {/* Forward Scrolling */}
-    <div className="col-12 text-center mt-3 image-container-service-scroll">
-      <AutoScrollingImages images={OfflineLectures} direction={1} /> 
-    </div>
-  </div>
-</div>
+          {/* Forward Scrolling */}
+          <div className="col-12 text-center mt-3 image-container-service-scroll">
+            <AutoScrollingImages images={OfflineLectures} direction={1} />
+          </div>
+        </div>
+      </div>
       <div className="container mt-5">
         <div className="row">
           <div className="col-12 text-center">
             <h2 className="main-heading">Teacher’s Training</h2>
             <p className="paragraph-element">
-            We organized a two-day residential training camp in Mysore for at least one teacher from each school and the cluster head. A well-known academician who developed the Muni International method of education Mr. Ashok Thakur, and well-known trainer and Speaker Mr. Chetan Ram mentored all teachers. During this training, teachers from targeted rural schools learned innovative teaching methods and 21st-century life skills that they can apply to their regular teaching. To aid them further, we provided a free online platform with access to the latest learning tools, animated education content, and assessment platform for teachers and students. The teachers were thrilled to be a part of this training and expressed their gratitude to Synopsys and Tare Zameen Par team for this opportunity.
+              We organized a two-day residential training camp in Mysore for at least one teacher from each school and the cluster head. A well-known academician who developed the Muni International method of education Mr. Ashok Thakur, and well-known trainer and Speaker Mr. Chetan Ram mentored all teachers. During this training, teachers from targeted rural schools learned innovative teaching methods and 21st-century life skills that they can apply to their regular teaching. To aid them further, we provided a free online platform with access to the latest learning tools, animated education content, and assessment platform for teachers and students. The teachers were thrilled to be a part of this training and expressed their gratitude to Synopsys and Tare Zameen Par team for this opportunity.
             </p>
           </div>
 
           {/* Auto-Scrolling Images */}
           <div className="col-12 text-center mt-3">
-          <div className="image-grid">
-            <img src={trainingImage1} alt="Teacher Training 1" className="grid-image" />
-            <img src={trainingImage2} alt="Teacher Training 2" className="grid-image" />
-            <img src={trainingImage3} alt="Teacher Training 3" className="grid-image" />
-            <img src={trainingImage4} alt="Teacher Training 4" className="grid-image" />
-          </div>
+            <div className="image-grid">
+              <img src={trainingImage1} alt="Teacher Training 1" className="grid-image" />
+              <img src={trainingImage2} alt="Teacher Training 2" className="grid-image" />
+              <img src={trainingImage3} alt="Teacher Training 3" className="grid-image" />
+              <img src={trainingImage4} alt="Teacher Training 4" className="grid-image" />
+            </div>
           </div>
         </div>
       </div>
@@ -226,56 +226,56 @@ const SparkCuriosity = () => {
           <div className="col-12 text-center">
             <h2 className="main-heading">Virtual Lectures</h2>
             <p className="paragraph-element">
-               We also arranged the lectures over ZOOM. Some schools don’t have a projector and internet facilities. We discussed with teachers to form groups of students and give them their smartphones to attend the zoom lectures. This went well and it could help us to keep in their touch to solve any problem related to science kits.
+              We also arranged the lectures over ZOOM. Some schools don’t have a projector and internet facilities. We discussed with teachers to form groups of students and give them their smartphones to attend the zoom lectures. This went well and it could help us to keep in their touch to solve any problem related to science kits.
             </p>
           </div>
 
           {/* Auto-Scrolling Images */}
           <div className="col-12 text-center mt-3">
-          <div className="image-grid">
-            <img src={VtrainingImage1} alt="Virtual Lectures 1" className="grid-image" />
-            <img src={VtrainingImage2} alt="Virtual Lectures 2" className="grid-image" />
-            <img src={VtrainingImage3} alt="Virtual Lectures 3" className="grid-image" />
-            <img src={VtrainingImage4} alt="Virtual Lectures 4" className="grid-image" />
-          </div>
+            <div className="image-grid">
+              <img src={VtrainingImage1} alt="Virtual Lectures 1" className="grid-image" />
+              <img src={VtrainingImage2} alt="Virtual Lectures 2" className="grid-image" />
+              <img src={VtrainingImage3} alt="Virtual Lectures 3" className="grid-image" />
+              <img src={VtrainingImage4} alt="Virtual Lectures 4" className="grid-image" />
+            </div>
           </div>
         </div>
       </div>
 
       <div className="container mt-5">
-  <div className="row">
-    <div className="col-12 text-center">
-      <h2 className="main-heading">Our Goals</h2>
-      <p className="paragraph-element">
-        We also arranged the lectures over ZOOM. Some schools don’t have a projector and internet facilities. We discussed with teachers to form groups of students and give them their smartphones to attend the zoom lectures. This went well and it could help us to keep in their touch to solve any problem related to science kits.
-      </p>
-    </div>
+        <div className="row">
+          <div className="col-12 text-center">
+            <h2 className="main-heading">Our Goals</h2>
+            <p className="paragraph-element">
+              We also arranged the lectures over ZOOM. Some schools don’t have a projector and internet facilities. We discussed with teachers to form groups of students and give them their smartphones to attend the zoom lectures. This went well and it could help us to keep in their touch to solve any problem related to science kits.
+            </p>
+          </div>
 
-  
 
-    {/* Numbered List */}
-    <div className="col-12 text-center mt-3">
-      <ol className="paragraph-element">
-        <li className="mt-3">
-          <strong>Importance of Rural Education :</strong> In India, education in the rural segment is not only important to eradicate poverty and illiteracy, but also for a variety of other social, economic, cultural, and political reasons.
-        </li>
-        <li className="mt-4">
-          <strong>Schools in Rural India:</strong> Eighty-seven percent of the schools in India are in the country’s villages. Government statistics and independent surveys have revealed that over 90 percent of the rural schools at the elementary level are run by the government.
-        </li>
-        <li className="mt-4">
-          <strong>Importance of Science Education:</strong> Science education gives students the opportunity to gain a better knowledge of how and why things function. Science can teach children about the world that surrounds them. Beyond the potential scientific breakthroughs, there are individual benefits to learning science, such as developing our ability to ask questions, collect information, organize and test our ideas, solve problems, and apply what we learn.
-        </li>
-        <li className="mt-4">
-          <strong>Challenges in Learning Science:</strong> Science can be learned better practically. But the government-run schools from rural areas are not able to provide quality education. They do not have a well-equipped lab, a good teacher, or access to the latest technologies. Even they find it very difficult to go and visit the Science centers that are located in metro cities.
-        </li>
-      </ol>
-    </div>
-      {/* Reverse Scrolling */}
-      <div className="col-12 text-center mt-3">
-      <AutoScrollingImages images={[Goal1, Goal2, Goal3, Goal4, Goal5, Goal6, Goal7,Goal8, Goal9]} direction={-1} />
-    </div>
-  </div>
-</div>
+
+          {/* Numbered List */}
+          <div className="col-12 text-center mt-3">
+            <ol className="paragraph-element">
+              <li className="mt-3">
+                <strong>Importance of Rural Education :</strong> In India, education in the rural segment is not only important to eradicate poverty and illiteracy, but also for a variety of other social, economic, cultural, and political reasons.
+              </li>
+              <li className="mt-4">
+                <strong>Schools in Rural India:</strong> Eighty-seven percent of the schools in India are in the country’s villages. Government statistics and independent surveys have revealed that over 90 percent of the rural schools at the elementary level are run by the government.
+              </li>
+              <li className="mt-4">
+                <strong>Importance of Science Education:</strong> Science education gives students the opportunity to gain a better knowledge of how and why things function. Science can teach children about the world that surrounds them. Beyond the potential scientific breakthroughs, there are individual benefits to learning science, such as developing our ability to ask questions, collect information, organize and test our ideas, solve problems, and apply what we learn.
+              </li>
+              <li className="mt-4">
+                <strong>Challenges in Learning Science:</strong> Science can be learned better practically. But the government-run schools from rural areas are not able to provide quality education. They do not have a well-equipped lab, a good teacher, or access to the latest technologies. Even they find it very difficult to go and visit the Science centers that are located in metro cities.
+              </li>
+            </ol>
+          </div>
+          {/* Reverse Scrolling */}
+          <div className="col-12 text-center mt-3">
+            <AutoScrollingImages images={[Goal1, Goal2, Goal3, Goal4, Goal5, Goal6, Goal7, Goal8, Goal9]} direction={-1} />
+          </div>
+        </div>
+      </div>
 
     </>
   );

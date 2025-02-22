@@ -114,7 +114,7 @@ function App() {
           
           {/* STEM category cards */}
           <Route path="/stemcard" element={<Card11 />} />
-          <Route path="/daanutsav" element={<DaanUtsav />} />
+          <Route path="/contact/daanutsav" element={<DaanUtsav />} />
         </Routes>
         <Footer />
       </div>
