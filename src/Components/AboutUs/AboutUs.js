@@ -150,27 +150,33 @@ const AboutUs = () => {
         <div className="timeline-item">
           <div className="timeline-content">
             <h3>2019</h3>
-            <h4>Company Established / Piolet Project</h4>
-            <p>In Dec-2016 Started Piolet Project at Chikkaballapur District.</p>
+            <h4>Extension to KKRDB</h4>
+            <p>Planetariums Extended to all Districts of KKRDB</p>
+           
           </div>
         </div>
 
         <div className="timeline-item">
           <div className="timeline-content">
             <h3>2017</h3>
-            <h4>Extension to KKDRB</h4>
-            <p>Planetariums extended to all the Districts of KKDRB.</p>
+            <h4>Extension of Division</h4>
+            <p>
+              After the success of Piolet Project, 4 more planetariums were added to
+              the fleet, and we won the Elevate 100 Award.
+            </p> 
           </div>
         </div>
 
         <div className="timeline-item">
           <div className="timeline-content">
             <h3>2016</h3>
-            <h4>Extension of Division</h4>
+            <h4>Company Established / Piolet Project</h4>
+            <p>In Dec-2016 Started Piolet Project at Chikkaballapur District.</p>
+            {/* <h4>Extension of Division</h4>
             <p>
               After the success of Piolet Project, 4 more planetariums were added to
               the fleet, and we won the Elevate 100 Award.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
