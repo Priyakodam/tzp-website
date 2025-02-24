@@ -12,7 +12,7 @@ const Photos = () => {
           navigate('/services/mobile-planetarium'); // Adjust the route as needed
         };
         const handleViewMores = () => {
-          navigate('/ksteps-categories'); // Adjust the route as needed
+          navigate('/services/mobile-science'); // Adjust the route as needed
         };
 
   return (

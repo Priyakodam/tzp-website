@@ -45,6 +45,8 @@ import Card9 from "./Components/Csr/KstepsCategory/Planetorium/Card9";
 import Card10 from "./Components/Csr/KstepsCategory/Planetorium/Card10";
 import Card11 from "./Components/Csr/KstepsCategory/STEMLabs/Card11";
 import DaanUtsav from "./Components/Contact/DaanUtsav";
+import TermsAndConditions from "./Components/AboutUs/TermsAndConditions";
+
 
 function App() {
   return (
@@ -115,6 +117,8 @@ function App() {
           {/* STEM category cards */}
           <Route path="/stemcard" element={<Card11 />} />
           <Route path="/contact/daanutsav" element={<DaanUtsav />} />
+          <Route path="/termsandconditions" element={<TermsAndConditions />} />
+
         </Routes>
         <Footer />
       </div>

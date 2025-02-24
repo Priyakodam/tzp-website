@@ -26,6 +26,8 @@ const Footer = () => {
               <p className="paragraph-element"><Link to="/csr" className="footer-link">CSR</Link></p>
               <p className="paragraph-element"><Link to="/gallery" className="footer-link">Gallery</Link></p>
               <p className="paragraph-element"><Link to="/contact" className="footer-link">Contact Us</Link></p>
+              <p className="paragraph-element"><Link to="/termsandconditions" className="footer-link">Terms & Conditions</Link></p>
+
             </div>
 
             {/* Contact Details */}
