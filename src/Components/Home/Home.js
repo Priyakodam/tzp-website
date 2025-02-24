@@ -45,7 +45,8 @@ const Home = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
+
   };
 
   const slides = [
@@ -183,7 +184,7 @@ const Home = () => {
     { src: gallery6, title: " " },
     { src: gallery7, title: "Founder of TZP Mr. Dinesh Badagandi felicitating Sri Mukesh B A Director Finance Synopsys INCgallery" },
     { src: gallery8, title: "Former ISRO Chairman prof UR Rao experiencing planetarium showsgallery" },
-    { src: gallery9, title: "Gallery " }
+    // { src: gallery9, title: "Gallery " }
   ];
 
 
@@ -233,7 +234,15 @@ const Home = () => {
         </div>
       </div>
     </section>
+    {/* <div style={{backgroundColor:'#f0f0f0'}} >
+    <h2 style={{textAlign:'center'}} className="section-title">
+          Our <span className="highlight">Events</span>
+        </h2> */}
+        <div className="events-section">
+        <h2  style={{textAlign:'center'}}className="section-title">     Our <span className="highlight">Events</span></h2>
+
       <div className="event-cards-container">
+      
         {events.map((event, index) => (
           <div key={index} className="event-card">
             {event.icon}
@@ -242,50 +251,26 @@ const Home = () => {
           </div>
         ))}
       </div>
-
-      <div className="services-container">
-        <h2 className="section-title">
-          Our <span className="highlight">Services</span>
-        </h2>
-        <p>Under the brand name Tare Zameen Par, we provide the following services:</p>
-
-        {/* First row - Always visible */}
-        <div className="cards-container">
-          {services.slice(0, 3).map((service, index) => (
-            <div key={index} className="service-card">
-              <div className="icon">{service.icon}</div>
-              <h3
-                className="Sub-Heading paragraph"
-                onClick={() => navigate(service.link)} // Navigate on click
-              >
-                {service.title}
-              </h3>            <p className="paragraph-element ">{service.description}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* Second row - Appears after clicking */}
-        {showAll && (
-          <div className="cards-container">
-            {services.slice(3, 5).map((service, index) => (
-              <div key={index} className="service-card">
-                <div className="icon">{service.icon}</div>
-                <h3
-                  className="Sub-Heading paragraph"
-                  onClick={() => navigate(service.link)} // Navigate on click
-                >
-                  {service.title}
-                </h3>                 <p className="paragraph-element">{service.description}</p>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Toggle between "View More" and "No More" buttons */}
-        <button className="toggle-button" onClick={() => setShowAll(!showAll)}>
-          {showAll ? "Read Less" : "Read More"}
-        </button>
       </div>
+      <div className="services-container">
+      <h2 className="section-title">
+        Our <span className="highlight">Services</span>
+      </h2>
+      <p>Under the brand name Tare Zameen Par, we provide the following services:</p>
+
+      {/* Display all service cards */}
+      <div className="cards-container">
+        {services.map((service, index) => (
+          <div key={index} className="service-card">
+            <div className="icon">{service.icon}</div>
+            <h3 className="Sub-Heading paragraph" onClick={() => navigate(service.link)}>
+              {service.title}
+            </h3>
+            <p className="paragraph-element">{service.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
 
 
       <section className="values-section">

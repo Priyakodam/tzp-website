@@ -132,7 +132,7 @@ const SparkCuriosity = () => {
                 <strong>Glimpses:</strong>
 
               </li>
-              <img src={GlimpsesImage} alt="Glimpses" className="img-fluid glimpses-image glimpses-text-image " />
+              <img style={{borderRadius:'35px'}} src={GlimpsesImage} alt="Glimpses" className="img-fluid glimpses-image glimpses-text-image " />
             </ul>
           </div>
         </div>

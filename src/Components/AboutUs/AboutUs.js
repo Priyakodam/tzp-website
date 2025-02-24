@@ -108,8 +108,8 @@ const AboutUs = () => {
 
           <hr />
           <h3>Call To Ask Any Question</h3>
-          <p>+91 90350 13642</p>
-        </div>
+          <p><i className="fa fa-phone green-icon"></i> +91 90350 13642</p>
+          </div>
       </div>
 
 
@@ -122,7 +122,7 @@ const AboutUs = () => {
         </div>
 
         {/* Our Steps Title */}
-        <h2 className="our-steps-title">Our Steps</h2>
+        <h2 className="our-steps-title">Our Approach</h2>
 
         {/* Circular Step Cards */}
         <div className="steps-cards">
@@ -149,9 +149,9 @@ const AboutUs = () => {
 
         <div className="timeline-item">
           <div className="timeline-content">
-            <h3>2019</h3>
-            <h4>Extension to KKRDB</h4>
-            <p>Planetariums Extended to all Districts of KKRDB</p>
+          <h3>2016</h3>
+            <h4>Company Established / Piolet Project</h4>
+            <p>In Dec-2016 Started Piolet Project at Chikkaballapur District.</p>
            
           </div>
         </div>
@@ -169,14 +169,11 @@ const AboutUs = () => {
 
         <div className="timeline-item">
           <div className="timeline-content">
-            <h3>2016</h3>
-            <h4>Company Established / Piolet Project</h4>
-            <p>In Dec-2016 Started Piolet Project at Chikkaballapur District.</p>
-            {/* <h4>Extension of Division</h4>
-            <p>
-              After the success of Piolet Project, 4 more planetariums were added to
-              the fleet, and we won the Elevate 100 Award.
-            </p> */}
+          
+
+            <h3>2019</h3>
+            <h4>Extension to KKRDB</h4>
+            <p>Planetariums Extended to all Districts of KKRDB</p>
           </div>
         </div>
       </div>

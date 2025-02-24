@@ -100,9 +100,9 @@
     /* Apply the animation to the images inside team-member */
     .team-member img {
         width: 420px;
-        height: 640px;
+        height: 500px;
         object-fit: cover;
-        border-radius: 50px;
+        border-radius: 15px;
         transition: transform 0.3s ease-in-out;
         animation: scaleIn 1s ease-in;
     }

@@ -20,7 +20,7 @@
         width: 100%;
         height: auto;
         max-height: 400px;
-        border-radius: 16%;
+        border-radius: 15px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
     

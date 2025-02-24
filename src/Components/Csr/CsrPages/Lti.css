@@ -1,7 +1,7 @@
 
 .lti-container {
-    max-width: 1500px;
-    margin: 20px auto;
+    width: 80%;
+    margin: 10px auto;
     padding: 20px;
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -11,6 +11,8 @@
   h1, h2 {
 
     color: #007bff;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   .lti-section {
