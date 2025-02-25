@@ -28,10 +28,10 @@ const MobilePlanetrium = () => {
         <div className="col-12 text-center">
           <div className="row">
             <div className="col-md-6 mb-4">
-              <img src={benefits1} alt="Planetarium 1" className="img-fluid" />
+              <img src={benefits1} alt="Planetarium 1 image" className="img-fluid" />
             </div>
             <div className="col-md-6 mb-4">
-              <img src={benefits2} alt="Planetarium 2" className="img-fluid" />
+              <img src={benefits2} alt="Planetarium 2 image" className="img-fluid" />
             </div>
           </div>
           <p className="paragraph-element">Immersive Learning Techniques are proven to be the best pedagogy of teaching as prescribed by the international Educational Scientists. Dome based learning is one such effective method of learning which is mobile and easy to set up in all places with very less effort and time. As the Cap Ex involved in setting up such infrastructure which involves domes/projectors/High quality content/Audio video equipment/software is quite high, Not every school can afford to own or build the on their own.</p>
@@ -44,13 +44,13 @@ const MobilePlanetrium = () => {
         <div className="col-12 text-center">
           <div className="row">
             <div className="col-md-4 mb-4">
-              <img src={planetarium3} alt="Planetarium 3" className="img-fluid" />
+              <img src={planetarium3} alt="Planetarium 3 image" className="img-fluid" />
             </div>
             <div className="col-md-4 mb-4">
-              <img src={planetarium1} alt="Planetarium 1" className="img-fluid" />
+              <img src={planetarium1} alt="Planetarium 1 image" className="img-fluid" />
             </div>
-            <div className="col-md-4 mb-4">
-              <img src={planetarium2} alt="Planetarium 2" className="img-fluid" />
+            <div className="col-md-4 mb-4"> 
+              <img src={planetarium2} alt="Planetarium 2 image" className="img-fluid" />
             </div>
           </div>
         </div>

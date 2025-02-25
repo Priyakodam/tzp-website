@@ -6,6 +6,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import aboutimage from './Images/aboutusmainimage.webp'
+import CountUp from "react-countup";
 
 import about1 from './Images/needassess.jpeg'
 import about2 from './Images/programdesign.jpeg'
@@ -19,6 +20,10 @@ import imaget1 from './Images/anilkakodkar_img-1.jpg'
 import imaget2 from './Images/DAT-Don-Thomas-with-Discovery-002-e1571322555534.jpg'
 import imaget3 from './Images/U_R_Rao.jpg.webp'
 import imaget4 from './Images/images-1.jpeg'
+import imaget5  from './Images/U_R_Rao.jpg.webp'
+import imaget6  from './Images/images-1.jpeg'
+import imaget7  from './Images/images-1.jpeg'
+
 
 
 import tele from "./Images/telescope-neo50360-5-300x300.jpg"
@@ -30,55 +35,109 @@ import plantorum from "./Images/plantorim.jpeg"
 import team1 from "./Images/Nalini-Aparanji-3.jpg"; // Import your images
 import team2 from "./Images/Dinesh-Badagandi-768x1152.jpg";
 import team3 from "./Images/abhi-2.jpg";
+import { useInView } from "react-intersection-observer";
 
+
+
+
+
+// const testimonials = [
+//   {
+//     image: imaget1,
+//     name: "Dr.Anil kakodkar",
+//     role: "Indian Nuclear Physics ",
+//     feedback:
+//       "He was the chairman of the Atomic Energy Commission of India former Director of the Bhabha Atomic Research Centre.",
+//   },
+//   {
+//     image: imaget2,
+//     name: "Don Thomas",
+//     role: "Firner NASA  Astronaut",
+//     feedback:
+//       "He Accompanied Kalpana Chawla, and Holds Buinness Record for Spending Longest Time in the Space. ",
+//   },
+//   {
+//     image: imaget3,
+//     name: "Dr. Udupi Ramachandra Rao",
+//     role: "Former Chairman of ISRO",
+//     feedback:
+//       "U R Rao wan an Indian space scientist, Director of U R Rao Satellite Center and chairman of the Advisory Committeefor Space Science. ",
+//   },
+//   {
+//     image: imaget4,
+//     name: "Dr. AS Kiran Kumar",
+//     role: "Former Chairman of ISRO",
+//     feedback:
+//       "Aluru Seelin Kiran Kumar is an Indian space scientist and former chairman of the Indian Space Research Organisation .",
+//   },
+// ];
 
 const testimonials = [
   {
     image: imaget1,
-    name: "Dr.Anil kakodkar",
-    role: "Indian Nuclear Physics ",
+    name: "Dr. Anil Kakodkar",
+    role: "Indian Nuclear Physicist",
     feedback:
-      "He was the chairman of the Atomic Energy Commission of India former Director of the Bhabha Atomic Research Centre.",
+      "Former Chairman of India's Atomic Energy Commission and ex-Director of Bhabha Atomic Research Centre.",
   },
   {
     image: imaget2,
     name: "Don Thomas",
-    role: "Firner NASA  Astronaut",
+    role: "Former NASA Astronaut",
     feedback:
-      "He Accompanied Kalpana Chawla, and Holds Buinness Record for Spending Longest Time in the Space. ",
+      "Accompanied Kalpana Chawla and holds a Guinness Record for the longest duration spent in space.",
   },
   {
     image: imaget3,
     name: "Dr. Udupi Ramachandra Rao",
     role: "Former Chairman of ISRO",
     feedback:
-      "U R Rao wan an Indian space scientist, Director of U R Rao Satellite Center and chairman of the Advisory Committeefor Space Science. ",
+      "Indian space scientist, Director of U R Rao Satellite Center, & chairman of the Space Science Advisory Committee."
   },
   {
     image: imaget4,
     name: "Dr. AS Kiran Kumar",
     role: "Former Chairman of ISRO",
     feedback:
-      "Aluru Seelin Kiran Kumar is an Indian space scientist and former chairman of the Indian Space Research Organisation .",
+      "Indian space scientist and former chairman of the Indian Space Research Organisation.",
+  },
+  {
+    image: imaget5,
+    name: "Rakesh Sharma",
+    role: "Indian Astronaut",
+    feedback:
+      "First Indian to travel to space aboard Soyuz T-11 in 1984, inspiring millions in India.",
+  },
+  {
+    image: imaget6,
+    name: "Kalpana Chawla",
+    role: "NASA Astronaut",
+    feedback:
+      "The first woman of Indian origin in space, remembered for her contributions to space research.",
+  },
+  {
+    image: imaget7,
+    name: "Dr. Vikram Sarabhai",
+    role: "Father of India's Space Program",
+    feedback:
+      "Pioneered India's space research and played a crucial role in establishing ISRO.",
   },
 ];
-
-
 const steps = [
   {
     title: "Need Assessment",
     // Replace with your actual image for Need Assessment
-    image: { about1 },
+    image: about1,
   },
   {
     title: "Program Design",
     // Replace with your actual image for Program Design
-    image: { about2 },
+    image: about2 ,
   },
   {
     title: "Impactful Execution",
     // Replace with your actual image for Impactful Execution
-    image: { about3 },
+    image: about3,
   },
 ];
 
@@ -92,8 +151,56 @@ const teamMembers = [
 
 
 
+const statsData = [
+  {
+    icon: plantorum,
+    alt: "Planetariums Icon",
+    value: 20,
+    label: "No of Planetariums",
+    description: "We have established planetariums to inspire curiosity about space and astronomy among students and enthusiasts."
+  },
+  {
+    icon: school,
+    alt: "Schools Icon",
+    value: 9500,
+    label: "No of Schools",
+    suffix: "+",
+    description: "Our initiatives have reached thousands of schools, bringing innovative learning experiences to students ."
+  },
+  {
+    icon: students,
+    alt: "Students Icon",
+    value: 2.5,
+    label: "No of Students",
+    suffix: "M+",
+    description: "Over 2.5 million students have benefited from our educational programs and the fostering a love for science and technology."
+  },
+  {
+    icon: teachers,
+    alt: "Teachers Icon",
+    value: 80000,
+    label: "No of Teachers",
+    suffix: "+",
+    description: "We have empowered thousands of teachers with modern educational tools to enhance classroom learning."
+  },
+  {
+    icon: tele,
+    alt: "Telescopes Icon",
+    value: 3,
+    label: "No of Telescopes",
+    suffix: "+",
+    description: "Our high-quality telescopes provide students with hands-on experience in astronomy, making learning more interactive."
+  }
+];
+
+
+
+
 
 const AboutUs = () => {
+
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
+
   return (
     <div>
       <div className="about-container">
@@ -115,6 +222,7 @@ const AboutUs = () => {
 
 
 
+    
       <section className="our-steps-section">
         {/* Animated Explore Button */}
         <div className="explore-button-container">
@@ -141,7 +249,6 @@ const AboutUs = () => {
           ))}
         </div>
       </section>
-
 
 
       <div className="timeline-container">
@@ -199,7 +306,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-
+{/* 
     <section className="testimonial-section">
       <h2 className="testimonial-title">Our Testimonials</h2>
 
@@ -234,10 +341,63 @@ const AboutUs = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+    </section> */}
+    <section className="testimonial-section">
+      <h2 className="testimonial-title">Our Testimonials</h2>
+
+      <Swiper
+        modules={[Autoplay, Pagination]}
+        spaceBetween={20}
+        slidesPerView={1}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
+        loop={true} // Enables circular movement
+        breakpoints={{
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        className="testimonial-swiper"
+      >
+        {testimonials.map((item, index) => (
+          <SwiperSlide key={index}>
+            <div className="testimonial-card">
+              <div className="testimonial-body">
+                <p>“{item.feedback}”</p>
+              </div>
+              <div className="testimonial-footer">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="testimonial-avatar"
+                />
+                <h3 className="testimonial-name">{item.name}</h3>
+                <h4 className="testimonial-role">{item.role}</h4>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
 
 
-    <section className="stats-section">
+    <section className="stats-section" ref={ref}>
+    <h2 className="stats-heading">Our Impact in Numbers</h2>
+
+      <div className="stats-container">
+        {statsData.map((stat, index) => (
+          <div className="stat-item" key={index}>
+            <img src={stat.icon} alt={stat.alt} className="stat-icon" />
+            <h3 className="stat-number">
+              {inView ? <CountUp start={0} end={stat.value} duration={2.5} separator="," /> : "0"}
+              {stat.suffix}
+            </h3>
+            <p className="stat-label">{stat.label}</p>
+            <p className="stat-description">{stat.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+    {/* <section className="stats-section">
       <div className="stats-container">
 
         <div className="stat-item">
@@ -291,7 +451,7 @@ const AboutUs = () => {
         </div>
 
       </div>
-    </section>
+    </section> */}
 
     </div>
   );

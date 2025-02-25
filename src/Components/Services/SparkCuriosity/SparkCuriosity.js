@@ -108,7 +108,7 @@ const SparkCuriosity = () => {
 
           {/* Right Side - Image */}
           <div className="col-12 col-md-6 text-center">
-            <img src={curiosityImage} alt="Curiosity Program" className="img-fluid curiosity-image" />
+            <img src={curiosityImage} alt="Curiosity Program image" className="img-fluid curiosity-image" />
           </div>
         </div>
       </div>
@@ -132,7 +132,7 @@ const SparkCuriosity = () => {
                 <strong>Glimpses:</strong>
 
               </li>
-              <img style={{borderRadius:'35px'}} src={GlimpsesImage} alt="Glimpses" className="img-fluid glimpses-image glimpses-text-image " />
+              <img style={{borderRadius:'35px'}} src={GlimpsesImage} alt="Glimpses image" className="img-fluid glimpses-image glimpses-text-image " />
             </ul>
           </div>
         </div>
@@ -159,8 +159,8 @@ const SparkCuriosity = () => {
           {/* Right Side - Images */}
           <div className="col-12 col-md-6 text-center">
             <div className="image-container-service">
-              <img src={fairImage1} alt="Science Fair 1" className="fair-image img-stacked" />
-              <img src={fairImage2} alt="Science Fair 2" className="fair-image img-stacked" />
+              <img src={fairImage1} alt="Science Fair 1 image" className="fair-image img-stacked" />
+              <img src={fairImage2} alt="Science Fair 2 image" className="fair-image img-stacked" />
             </div>
           </div>
 
@@ -180,7 +180,7 @@ const SparkCuriosity = () => {
           {/* Auto-Scrolling Images */}
           <div className="col-12 text-center mt-5">
             {/* <AutoScrollingImages /> */}
-            <img src={KitImage} alt="Glimpses" className="img-fluid glimpses-image" />
+            <img src={KitImage} alt="Glimpses image" className="img-fluid glimpses-image" />
           </div>
         </div>
       </div>
@@ -212,10 +212,10 @@ const SparkCuriosity = () => {
           {/* Auto-Scrolling Images */}
           <div className="col-12 text-center mt-3">
             <div className="image-grid">
-              <img src={trainingImage1} alt="Teacher Training 1" className="grid-image" />
-              <img src={trainingImage2} alt="Teacher Training 2" className="grid-image" />
-              <img src={trainingImage3} alt="Teacher Training 3" className="grid-image" />
-              <img src={trainingImage4} alt="Teacher Training 4" className="grid-image" />
+              <img src={trainingImage1} alt="Teacher Training 1 image" className="grid-image" />
+              <img src={trainingImage2} alt="Teacher Training 2 image" className="grid-image" />
+              <img src={trainingImage3} alt="Teacher Training 3 image" className="grid-image" />
+              <img src={trainingImage4} alt="Teacher Training 4 image" className="grid-image" />
             </div>
           </div>
         </div>
@@ -233,10 +233,10 @@ const SparkCuriosity = () => {
           {/* Auto-Scrolling Images */}
           <div className="col-12 text-center mt-3">
             <div className="image-grid">
-              <img src={VtrainingImage1} alt="Virtual Lectures 1" className="grid-image" />
-              <img src={VtrainingImage2} alt="Virtual Lectures 2" className="grid-image" />
-              <img src={VtrainingImage3} alt="Virtual Lectures 3" className="grid-image" />
-              <img src={VtrainingImage4} alt="Virtual Lectures 4" className="grid-image" />
+              <img src={VtrainingImage1} alt="Virtual Lectures 1 image" className="grid-image" />
+              <img src={VtrainingImage2} alt="Virtual Lectures 2 image" className="grid-image" />
+              <img src={VtrainingImage3} alt="Virtual Lectures 3 image" className="grid-image" />
+              <img src={VtrainingImage4} alt="Virtual Lectures 4 image" className="grid-image" />
             </div>
           </div>
         </div>

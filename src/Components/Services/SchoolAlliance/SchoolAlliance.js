@@ -16,7 +16,7 @@ const SchoolAlliance = () => {
           <div className="school-alliance-card">
             <img
               src={image1}
-              alt="Alliance 1"
+              alt="Alliance 1 image"
               className="school-alliance-card-img-top school-alliance-zoom-effect"
             />
             <div className="school-alliance-card-body">
@@ -32,7 +32,7 @@ const SchoolAlliance = () => {
           <div className="school-alliance-card">
             <img
               src={image2}
-              alt="Alliance 2"
+              alt="Alliance 2 image"
               className="school-alliance-card-img-top school-alliance-zoom-effect"
             />
             <div className="school-alliance-card-body">
@@ -51,7 +51,7 @@ const SchoolAlliance = () => {
           <div className="school-alliance-card">
             <img
               src={image3}
-              alt="Alliance 3"
+              alt="Alliance 3 image"
               className="school-alliance-card-img-top school-alliance-zoom-effect"
             />
             <div className="school-alliance-card-body">
@@ -68,7 +68,7 @@ const SchoolAlliance = () => {
           <div className="school-alliance-card">
             <img
               src={image4}
-              alt="Alliance 4"
+              alt="Alliance 4 image"
               className="school-alliance-card-img-top school-alliance-zoom-effect"
             />
             <div className="school-alliance-card-body">

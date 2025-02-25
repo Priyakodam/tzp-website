@@ -35,7 +35,7 @@ const MobileScience = () => {
   <div className="container">
     <div className="row">
       <div className="col-12">
-        <p className="Sub-Heading text-center">These MSLs have the following features:</p>
+        <p className="Sub-Heading  sub-headMSL text-center">These MSLs have the following features:</p>
         <ul className="paragraph-element">
           <li className="mt-3">It is a customized van carrying innovative science kits and exhibits that can explain around 100 science experiments.</li>
           <li className="mt-4">On one side of the bus, there is a 75-inch huge LED smart TV, which can be used to show video content and also connect students to renowned persons virtually.</li>
@@ -58,17 +58,17 @@ const MobileScience = () => {
         <div className="col-md-12">
           <div className="row">
             <div className="col-6 col-md-6 mb-3">
-              <img src={MobileScienceImg2} alt="Image 1" className="img-fluid  w-100 custom-border-radius" />
+              <img src={MobileScienceImg2} alt="Image 1 image" className="img-fluid  w-100 custom-border-radius" />
             </div>
             <div className="col-6 col-md-6 mb-3">
-              <img src={MobileScienceImg4} alt="Image 3" className="img-fluid w-100 custom-border-radius" />
+              <img src={MobileScienceImg4} alt="Image 3 image" className="img-fluid w-100 custom-border-radius" />
             </div>
             <div className="col-6 col-md-6 mb-3">
-              <img src={MobileScienceImg3} alt="Image 2" className="img-fluid  w-100 custom-border-radius" />
+              <img src={MobileScienceImg3} alt="Image 2 image" className="img-fluid  w-100 custom-border-radius" />
             </div>
            
             <div className="col-6 col-md-6 mb-3">
-              <img src={MobileScienceImg5} alt="Image 4" className="img-fluid  w-100 custom-border-radius" />
+              <img src={MobileScienceImg5} alt="Image 4 image" className="img-fluid  w-100 custom-border-radius" />
             </div>
           </div>
         </div>

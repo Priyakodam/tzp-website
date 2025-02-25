@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Home.css";
-import ban1 from './Images/homenewlogo.png'
+import ban1 from './Images/homemobileban.webp'
 import ban2 from './Images/homenewlogo2.png'
 import ban3 from './Images/valuesimage.webp'
 import product1 from "./Images/domehome1.jpg";
@@ -27,6 +28,8 @@ import gallery8 from "./Images/gal7.jpeg";
 import gallery9 from "./Images/gal8.jpeg";
 import homeban1 from './Images/homemobileban.webp'
 import homeban2 from './Images/homemobilebanner.jpg'
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Carousel, Button } from "react-bootstrap";
 
 import { useNavigate } from "react-router-dom";
 
@@ -157,13 +160,14 @@ const Home = () => {
 
 
   const productImages = [
-    { image: product1, title: "Digital Mobile Planetarium" },
-    { image: product2, title: "Mobile Science Lab" },
-    { image: product3, title: "Mobile Science Exhibition" },
-    { image: product4, title: "Science Kits and Toys" },
-    { image: product5, title: "Science Exhibits" },
-    { image: product6, title: "Telescope" }
+    { image: product1, title: "Digital Mobile Planetarium", link: "/services/mobile-planetarium" },
+    { image: product2, title: "Mobile Science Lab", link: "/services/mobile-science" },
+    { image: product3, title: "Mobile Science Exhibition", link: "/services/webinar" },
+    { image: product4, title: "Science Kits and Toys", link: "/services/school-alliance" },
+    { image: product5, title: "Science Exhibits", link: "services/jupiter-curiosity" },
+    { image: product6, title: "Telescope", link: "/services/spark-curiosity" }
   ];
+
 
 
   const teamMembers = [
@@ -199,7 +203,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="home-container">
+      {/* <div className="home-container">
         <Slider {...settings}>
           {slides.map((slide, index) => (
             <div key={index} className="slide">
@@ -217,60 +221,94 @@ const Home = () => {
             </div>
           ))}
         </Slider>
-      </div>
+      </div> */}
+
+      <div className="carousel-container">
+      <Carousel prevLabel="" nextLabel="" interval={2000} ride="carousel">
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={ban1}
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3 className="carousel-heading">Dome Based Learning Through Portable Planetarium</h3>
+            <p className="carousel-paragraph">Tare Zameen Par Provides mobile planetarium to schools creating the same experience in visiting a science planetarium but at a low cost.</p>
+            <Button className="carousel-button" variant="primary">Learn more</Button>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={ban2}
+            alt="Second slide"
+          />
+          <Carousel.Caption>
+            <h3 className="carousel-heading">A Planetarium On Wheels! Bringing Space Down To Earth For India’s Rural Kids!</h3>
+            <Button className="carousel-button" variant="primary">Learn more</Button>
+          </Carousel.Caption>
+        </Carousel.Item>
+        {/* <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://via.placeholder.com/800x400?text=Slide+3"
+            alt="Third slide"
+          />
+        </Carousel.Item> */}
+       
+      </Carousel>
+    </div>
       <section className="sssection-container">
-      <div className="sssection-content">
-        <img 
-          src={homeban1} 
-          alt="Sample" 
-          className="sssection-image"
-        />
-        <div className="sssection-text">
-          <h1>A Planetarium On Wheels! Bringing Space Down To Earth For India’s Rural Kids!</h1>
-          {/* <p>
-            This is a sample paragraph. You can replace this text with your own content.
-          </p> */}
-          <button className="sssection-button">Learn More</button>
+        <div className="sssection-content">
+          <img
+            src={homeban1}
+            alt="Sample data"
+            className="sssection-image"
+          />
+          <div className="sssection-text">
+            <h1>A Planetarium On Wheels! Bringing Space Down To Earth For India’s Rural Kids!</h1>
+          
+            <button className="sssection-button">Learn More</button>
+          </div>
         </div>
-      </div>
-    </section>
-    {/* <div style={{backgroundColor:'#f0f0f0'}} >
+      </section>
+      {/* <div style={{backgroundColor:'#f0f0f0'}} >
     <h2 style={{textAlign:'center'}} className="section-title">
           Our <span className="highlight">Events</span>
         </h2> */}
-        <div className="events-section">
-        <h2  style={{textAlign:'center'}}className="section-title">     Our <span className="highlight">Events</span></h2>
+      <div className="events-section">
+        <h2 style={{ textAlign: 'center' }} className="section-title">     Our <span className="highlight">Events</span></h2>
 
-      <div className="event-cards-container">
-      
-        {events.map((event, index) => (
-          <div key={index} className="event-card">
-            {event.icon}
-            <h3 className="Sub-Heading">{event.title}</h3>
-            <p className="paragraph-element">{event.description}</p>
-          </div>
-        ))}
-      </div>
+        <div className="event-cards-container">
+
+          {events.map((event, index) => (
+            <div key={index} className="event-card">
+              {event.icon}
+              <h3 className="Sub-Heading">{event.title}</h3>
+              <p className="paragraph-element">{event.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
       <div className="services-container">
-      <h2 className="section-title">
-        Our <span className="highlight">Services</span>
-      </h2>
-      <p>Under the brand name Tare Zameen Par, we provide the following services:</p>
+        <h2 className="section-title">
+          Our <span className="highlight">Services</span>
+        </h2>
+        <p>Under the brand name Tare Zameen Par, we provide the following services:</p>
 
-      {/* Display all service cards */}
-      <div className="cards-container">
-        {services.map((service, index) => (
-          <div key={index} className="service-card">
-            <div className="icon">{service.icon}</div>
-            <h3 className="Sub-Heading paragraph" onClick={() => navigate(service.link)}>
-              {service.title}
-            </h3>
-            <p className="paragraph-element">{service.description}</p>
-          </div>
-        ))}
+        {/* Display all service cards */}
+        <div className="cards-container">
+          {services.map((service, index) => (
+            <div key={index} className="service-card">
+              <div className="icon">{service.icon}</div>
+              <h3 className="Sub-Heading paragraph" onClick={() => navigate(service.link)}>
+                {service.title}
+              </h3>
+              <p className="paragraph-element">{service.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
 
 
       <section className="values-section">
@@ -283,7 +321,7 @@ const Home = () => {
           <div className="values-content">
             {/* Image Section */}
             <div className="image-container">
-              <img src={ban3} alt="Values" className="values-image" />
+              <img src={ban3} alt="Values sample" className="values-image" />
             </div>
 
             {/* Values Grid */}
@@ -302,7 +340,9 @@ const Home = () => {
 
       <section className="products-section">
         <div className="container">
-          <h2 className="products-title">Our <span className="highlight">Products</span></h2>
+          <h2 className="products-title">
+            Our <span className="highlight">Products</span>
+          </h2>
           <p className="products-description">
             Tare Zameen Par is always dedicatedly working to bring the most innovative products
             that would take education to the next level. Our major products are:
@@ -312,10 +352,12 @@ const Home = () => {
           <div className="products-grid">
             {productImages.map((product, index) => (
               <div key={index} className="product-card">
-                <img src={product.image} alt="Product" className="product-image" />
+                <img src={product.image} alt="Product sample" className="product-image" />
                 <div className="product-info">
                   <h3 className="product-text">{product.title}</h3>
-                  <button className="read-more-btn">Read More</button>
+                  <Link to={product.link} className="read-more-btn" style={{ textDecoration: 'none' }}>
+                    Read More
+                  </Link>
                 </div>
               </div>
             ))}
@@ -333,7 +375,7 @@ const Home = () => {
           <div className="team-grid">
             {teamMembers.map((member, index) => (
               <div key={index} className="team-card">
-                <img src={member.image} alt="Team Member" className="team-image" />
+                <img src={member.image} alt="Team Member of" className="team-image" />
                 <div className="team-info">
                   <h3 className="team-name">{member.name}</h3>
                   <p className="team-designation">{member.designation}</p>
@@ -368,7 +410,7 @@ const Home = () => {
           <div className="modal" onClick={() => setSelectedImage(null)}>
             <div className="modal-content">
               <span className="close">&times;</span>
-              <img src={selectedImage} alt="Enlarged View" className="modal-image" />
+              <img src={selectedImage} alt="Enlarged View image" className="modal-image" />
             </div>
           </div>
         )}
@@ -385,12 +427,15 @@ const Home = () => {
         <h4>Let's talk about it..!</h4>
       </div>
       <div className="col-md-4 text-md-end contact-content">
-        <button className="btn btn-light me-3 contact-button">Join With Us</button>
+        <Link to="/contact" className="btn btn-light me-3 contact-button">
+          Join With Us
+        </Link>
         <span className="fw-bold contact-number">+91 9035013642</span>
       </div>
     </div>
   </div>
 </div>
+
 
 
     </div>

@@ -293,11 +293,12 @@
 
 
 
+
 /* Section container styling */
 .our-steps-section {
   text-align: center;
   padding: 80px 20px;
-  background: linear-gradient(135deg, #e3f2fd 0%, #f9f9f9 100%);
+  background: linear-gradient(135deg, #313248 0%, #3a3d80 100%);
   position: relative;
   /* font-family: 'Lato', sans-serif; */
   overflow: hidden;
@@ -356,7 +357,7 @@
   margin: 5px 0;
   font-size: 3rem;
   font-weight: 700;
-  color:  rgba(9, 3, 69, 1);
+  color:  white;
   letter-spacing: 2px;
   position: relative;
   display: inline-block;
@@ -378,12 +379,11 @@
 .steps-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 40px;
+  gap: 30px;
   max-width: 1200px;
   margin: 60px auto 0;
   padding: 0 20px;
 }
-
 /* Individual circular card styling */
 .step-card {
   position: relative;
@@ -397,8 +397,10 @@
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   box-shadow: 0 10px 30px rgba(0, 123, 255, 0.1);
   cursor: pointer;
+  overflow: hidden;
 }
 
+/* Hover border effect */
 .step-card::before {
   content: '';
   position: absolute;
@@ -407,7 +409,7 @@
   right: -2px;
   bottom: -2px;
   border-radius: 50%;
-  background: linear-gradient(45deg, #007BFF, #00C6FF);
+  background: linear-gradient(45deg, #ffffff, #c3cfc3);
   z-index: -1;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -423,8 +425,8 @@
   box-shadow: 0 15px 35px rgba(0, 123, 255, 0.2);
 }
 
-/* Content inside the card */
-.card-content {
+/* Hide text & number on hover */
+.step-card .card-content {
   position: relative;
   z-index: 2;
   text-align: center;
@@ -434,21 +436,28 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: opacity 0.3s ease;
 }
 
+.step-card:hover .card-content {
+  opacity: 0;
+}
+
+/* Number styling */
 .step-number {
   font-size: 32px;
   font-weight: 900;
-  color: #007BFF;
+  color: navy;
   margin-bottom: 15px;
-  background: linear-gradient(45deg, #007BFF, #00C6FF);
+  background: linear-gradient(45deg, rgb(74, 74, 173), navy);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* Title styling */
 .step-title {
   font-size: 1.25rem;
-  color: #2c3e50;
+  color: black;
   font-weight: 600;
   line-height: 1.4;
 }
@@ -460,13 +469,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
   border-radius: 50%;
-  transition: opacity 0.4s ease;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .step-card:hover .card-image {
-  opacity: 0.15;
+  opacity: 1;
 }
 
 .card-image img {
@@ -474,6 +483,7 @@
   height: 100%;
   object-fit: cover;
 }
+
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
@@ -539,6 +549,8 @@
     font-size: 1rem;
   }
 }
+
+
 
 
 
@@ -922,9 +934,8 @@
 
 
 
+/* 
 
-
-/* Container for the entire testimonial section */
 .testimonial-section {
   width: 90%;
   max-width: 1200px;
@@ -933,7 +944,6 @@
   font-family: 'LoLato', sans-serif;
 }
 
-/* Section heading */
 .testimonial-title {
   text-align: center;
   font-size: 42px;
@@ -944,13 +954,11 @@
 
 }
 
-/* Swiper container */
 .testimonial-swiper {
   width: 100%;
   overflow: hidden;
 }
 
-/* Each card */
 .testimonial-card {
   background: #fff;
   border-radius: 8px;
@@ -964,7 +972,6 @@
   
 }
 
-/* Card body */
 .testimonial-body {
   padding: 20px;
   border-bottom: 1px solid #f0f0f0;
@@ -975,7 +982,6 @@
   color: #555;
 }
 
-/* Footer: avatar, name, role */
 .testimonial-footer {
   padding: 20px;
 }
@@ -997,9 +1003,90 @@
   color: #777;
 }
 
+.swiper-pagination-bullet {
+  background: #333 !important;
+} */
+
+
+
+/* Container for the entire testimonial section */
+.testimonial-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Section heading */
+.testimonial-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: rgba(9, 3, 69, 1);
+}
+
+/* Swiper container */
+.testimonial-swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Each card */
+.testimonial-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  min-width: 280px;
+  max-width: 350px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Card body */
+.testimonial-body {
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.testimonial-body p {
+  margin: 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Footer: avatar, name, role */
+.testimonial-footer {
+  padding: 20px;
+}
+
+.testimonial-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.testimonial-name {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.testimonial-role {
+  margin: 5px 0 0;
+  font-size: 0.95rem;
+  color: #777;
+}
+
 /* Pagination */
 .swiper-pagination-bullet {
   background: #333 !important;
+  margin-top: 10px;
 }
 
 /* ==============================
@@ -1032,38 +1119,32 @@
 
 
 
-
-/* Container for the entire stats section */
+/* 
 .stats-section {
   width: 90%;
-  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 40px 0;
   font-family: sans-serif;
 }
 
-/* Flex container for the stats */
 .stats-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  flex-wrap: wrap; 
   gap: 20px;
 }
 
-/* Each stat item box */
 .stat-item {
   background: #fff;
   border-radius: 8px;
   box-shadow: 2px 2px 10px rgba(0, 0, 2, 0.5);
-  /* For desktop, you can continue with flex: 1; min-width and max-width if desired */
   flex: 1;
-  min-width: 180px;  /* so it won't shrink too small */
-  max-width: 220px;  /* optional, to keep items consistent */
+  min-width: 180px;  
+  max-width: 220px; 
   text-align: center;
   padding: 20px;
 }
 
-/* The icon or image at the top */
 .stat-icon {
   width: 80px;
   height: 80px;
@@ -1071,22 +1152,18 @@
   margin-bottom: 10px;
 }
 
-/* The large stat number */
 .stat-number {
   font-size: 1.5rem;
   margin: 0;
   color: #333;
 }
 
-/* The label under the number */
 .stat-label {
   margin: 5px 0 0;
   color: #555;
 }
 
-/* ================================
-   MOBILE VIEW (max-width: 767px)
-   ================================ */
+
 @media (max-width: 767px) {
 
 
@@ -1099,18 +1176,12 @@
     flex-direction: column;
 
   }
-  /* Show 2 items per row */
   .stat-item {
     flex: 0 0 calc((100% - 20px) / 2);
-    /* gap already handles vertical spacing, so margin-bottom may be removed if not needed */
   }
 }
 
-/* =========================================
-   IPAD VIEW (min-width: 768px) and (max-width: 1024px)
-   ========================================= */
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* Show 3 items per row on iPad */
   .stat-item {
     flex: 0 0 calc((100% - 40px) / 3);
   }
@@ -1123,9 +1194,134 @@
   }
 }
 
-/* ======================================
-   DESKTOP (Above 1024px) - default
-   ====================================== */
-/* By default, 5 items can be shown in a single row 
-   because we have 5 stat-items and 'justify-content: space-between;'
-   plus 'flex-wrap: wrap;' if the screen is large enough. */
+ */
+
+
+
+
+
+ .stats-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: #f0f0f0;
+}
+
+/* Flex container for stats */
+.stats-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: center;
+}
+
+/* Individual stat item */
+.stat-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  min-width: 220px;
+  max-width: 260px;
+  text-align: center;
+  padding: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.stat-item:hover {
+  transform: translateY(-5px);
+}
+
+/* The icon at the top */
+.stat-icon {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  border-radius: 20px;
+}
+
+/* The animated stat number */
+.stat-number {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #222;
+  font-weight: bold;
+}
+
+/* The label under the number */
+.stat-label {
+  margin: 5px 0;
+  color: #555;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Description text */
+.stat-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+
+.stats-heading {
+  font-size: 42px;
+  /* font-weight: bold; */
+  color: rgba(9, 3, 69, 1);  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Tablet (iPad) View */
+@media (max-width: 1024px) {
+  .stats-container {
+    justify-content: center;
+    gap: 20px;
+  }
+  .stat-item {
+    min-width: 180px;
+    max-width: 220px;
+    padding: 20px;
+  }
+  .stat-icon {
+    width: 150px;
+    height: 150px;
+  }
+  .stat-number {
+    font-size: 1.6rem;
+  }
+  .stat-label {
+    font-size: 0.95rem;
+  }
+  .stat-description {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .stat-item {
+    width: 90%;
+    max-width: 300px;
+  }
+  .stat-icon {
+    width: 150px;
+    height: 150px;
+  }
+  .stat-number {
+    font-size: 1.5rem;
+  }
+  .stat-label {
+    font-size: 0.9rem;
+  }
+  .stat-description {
+    font-size: 0.85rem;
+  }
+}

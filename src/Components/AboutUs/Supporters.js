@@ -15,17 +15,17 @@ const Supporters = () => {
 
             {/* First Row - 4 Images */}
             <div className="supporters-row">
-                <img src={image1} alt="Supporter 1" className="supporter-img" />
-                <img src={image2} alt="Supporter 2" className="supporter-img" />
-                <img src={image3} alt="Supporter 3" className="supporter-img" />
-                <img src={image4} alt="Supporter 4" className="supporter-img" />
+                <img src={image1} alt="Supporter 1 image" className="supporter-img" />
+                <img src={image2} alt="Supporter 2 image" className="supporter-img" />
+                <img src={image3} alt="Supporter 3 image" className="supporter-img" />
+                <img src={image4} alt="Supporter 4 image" className="supporter-img" />
             </div>
 
             {/* Second Row - 3 Images */}
             <div className="supporters-row">
-                <img src={image5} alt="Supporter 5" className="supporter-img" />
-                <img src={image6} alt="Supporter 6" className="supporter-img" />
-                <img src={image7} alt="Supporter 7" className="supporter-img" />
+                <img src={image5} alt="Supporter 5 image" className="supporter-img" />
+                <img src={image6} alt="Supporter 6 image" className="supporter-img" />
+                <img src={image7} alt="Supporter 7 image" className="supporter-img" />
             </div>
         </div>
     );

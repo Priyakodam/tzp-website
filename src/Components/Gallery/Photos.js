@@ -24,7 +24,7 @@ const Photos = () => {
         <div className="photo-card">
           <img
             src={bus}
-            alt="Photo 1"
+            alt="Photo 1 image"
             className="photo-image"
           />
           <h2 className="photo-heading">Mobile Science Lab </h2>
@@ -35,7 +35,7 @@ const Photos = () => {
         <div className="photo-card">
           <img
             src={dome}
-            alt="Photo 2"
+            alt="Photo 2 image"
             className="photo-image"
           />
           <h1 className="photo-heading">Mobile Planetarium

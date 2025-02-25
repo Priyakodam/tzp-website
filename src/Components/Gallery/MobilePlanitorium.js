@@ -49,9 +49,9 @@ const MobilePlanitorium = () => {
 
                         <div className="gallery-container">
                                 <div className="image-grid">
-                                        <img src={img2} alt="Image 1" className="gallery-image" />
-                                        <img src={imag3} alt="Image 2" className="gallery-image" />
-                                        <img src={imag4} alt="Image 3" className="gallery-image" />
+                                        <img src={img2} alt="Image 1 image" className="gallery-image" />
+                                        <img src={imag3} alt="Image 2 image" className="gallery-image" />
+                                        <img src={imag4} alt="Image 3 image" className="gallery-image" />
                                 </div>
                         </div>
 

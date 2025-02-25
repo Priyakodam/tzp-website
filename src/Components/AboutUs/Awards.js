@@ -19,7 +19,7 @@ const Awards = () => {
                         <div className="awards-container">
                                 {/* Left Side - Image */}
                                 <div className="awards-image">
-                                        <img src={image1} alt="Award" />
+                                        <img src={image1} alt="Award image" />
                                 </div>
 
                                 {/* Right Side - Content */}
@@ -42,13 +42,13 @@ const Awards = () => {
                                 </div>
 
                                 <div className="awards-image">
-                                        <img src={image2} alt="Award" />
+                                        <img src={image2} alt="Award image" />
                                 </div>
                         </div>
                         <div className="awards-container">
                                 {/* Left Side - Image */}
                                 <div className="awards-image">
-                                        <img src={image3} alt="Award" />
+                                        <img src={image3} alt="Award image" />
                                 </div>
 
                                 {/* Right Side - Content */}
@@ -71,13 +71,13 @@ const Awards = () => {
                                 </div>
 
                                 <div className="awards-image">
-                                        <img src={image4} alt="Award" />
+                                        <img src={image4} alt="Award image" />
                                 </div>
                         </div>
                         <div className="awards-container">
                                 {/* Left Side - Image */}
                                 <div className="awards-image">
-                                        <img src={image5} alt="Award" />
+                                        <img src={image5} alt="Award image" />
                                 </div>
 
                                 {/* Right Side - Content */}
@@ -100,13 +100,13 @@ const Awards = () => {
                                 </div>
 
                                 <div className="awards-image">
-                                        <img src={image6} alt="Award" />
+                                        <img src={image6} alt="Award image" />
                                 </div>
                         </div>
                         <div className="awards-container">
                                 {/* Left Side - Image */}
                                 <div className="awards-image">
-                                        <img src={image7} alt="Award" />
+                                        <img src={image7} alt="Award image" />
                                 </div>
 
                                 {/* Right Side - Content */}
@@ -128,13 +128,13 @@ const Awards = () => {
                                 </div>
 
                                 <div className="awards-image">
-                                        <img src={image8} alt="Award" />
+                                        <img src={image8} alt="Award image" />
                                 </div>
                         </div>
                         <div className="awards-container">
                                 {/* Left Side - Image */}
                                 <div className="awards-image">
-                                        <img src={image9} alt="Award" />
+                                        <img src={image9} alt="Award image" />
                                 </div>
 
                                 {/* Right Side - Content */}
@@ -158,14 +158,14 @@ Tare Zameen Par has Received special Appreciation by Indian Army for its Initiat
                                 </div>
 
                                 <div className="awards-image">
-                                        <img src={image10} alt="Award" />
+                                        <img src={image10} alt="Award image" />
                                 </div>
                         </div>
 
                         <div className="awards-container">
                                 {/* Left Side - Image */}
                                 <div className="awards-image">
-                                        <img src={image11} alt="Award" />
+                                        <img src={image11} alt="Award image" />
                                 </div>
 
                                 {/* Right Side - Content */}

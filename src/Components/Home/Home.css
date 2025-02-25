@@ -53,6 +53,91 @@
       } */
       
 
+      .carousel-container {
+        width: 100%;
+        position: relative;
+      }
+      
+      .carousel-caption {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        border-radius: 10px;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 100px;
+      }
+      
+      .carousel-heading {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+      }
+      
+      .carousel-paragraph {
+        font-size: 1.2rem;
+        color: #ddd;
+      }
+      
+      .carousel-button {
+        background-color: #007bff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        transition: background 0.3s ease-in-out;
+      }
+      
+      .carousel-button:hover {
+        background-color: #0056b3;
+      }
+      
+      /* Responsive Styling */
+      @media (max-width: 768px) {
+        .carousel-caption {
+          width: 90%;
+          padding: 10px;
+          margin-left: -80px;
+        }
+      
+        .carousel-heading {
+          font-size: 1.5rem;
+        }
+      
+        .carousel-paragraph {
+          font-size: 1rem;
+        }
+      
+        .carousel-button {
+          font-size: 0.9rem;
+          padding: 8px 16px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .carousel-caption {
+          width: 100%;
+          padding: 5px;
+        }
+      
+        .carousel-heading {
+          font-size: 1.2rem;
+        }
+      
+        .carousel-paragraph {
+          font-size: 0.9rem;
+        }
+      
+        .carousel-button {
+          font-size: 0.8rem;
+          padding: 6px 12px;
+        }
+        .carousel-container {
+          display: none;
+        }
+
+      }
+      
+
       .custom-arrow {
         position: absolute;
         top: 50%;
@@ -270,6 +355,9 @@
     
     /* iPad (Tablets) */
     @media (max-width: 1024px) {
+      .sssection-container {
+        display: none;
+      }
       .sssection-text {
         width: 90%;
         padding: 15px;
@@ -451,7 +539,7 @@
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 2, 0.5);
     transition: transform 0.3s ease;
   }
   

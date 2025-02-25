@@ -43,28 +43,28 @@ const Gallery = () => {
     <div>
       <div className="photo-gallery">
         <div className="picture-grid">
-          <img src={img1} alt="Photo 1" className="gallery-photo" />
+          <img src={img1} alt="Photo 1 image" className="gallery-photo" />
           <img src={img2} alt="Photo 2" className="gallery-photo" />
           <img src={img3} alt="Photo 3" className="gallery-photo" />
         </div>
         <div className="picture-grid">
-          <img src={img4} alt="Photo 1" className="gallery-photo" />
-          <img src={img5} alt="Photo 2" className="gallery-photo" />
-          <img src={img6} alt="Photo 3" className="gallery-photo" />
+          <img src={img4} alt="Photo 1 image" className="gallery-photo" />
+          <img src={img5} alt="Photo 2 image" className="gallery-photo" />
+          <img src={img6} alt="Photo 3 image" className="gallery-photo" />
         </div>
       </div>
 
       <div className="photo-gallery">
         <h1 >Honorable Guest</h1>
         <div className="picture-grid">
-          <img src={img7} alt="Photo 1" className="gallery-photo" />
-          <img src={img8} alt="Photo 2" className="gallery-photo" />
-          <img src={img9} alt="Photo 3" className="gallery-photo" />
+          <img src={img7} alt="Photo 1 image" className="gallery-photo" />
+          <img src={img8} alt="Photo 2 image" className="gallery-photo" />
+          <img src={img9} alt="Photo 3 image" className="gallery-photo" />
         </div>
         <div className="picture-grid">
-          <img src={img10} alt="Photo 1" className="gallery-photo" />
-          <img src={img11} alt="Photo 2" className="gallery-photo" />
-          <img src={img12} alt="Photo 3" className="gallery-photo" />
+          <img src={img10} alt="Photo 1 image" className="gallery-photo" />
+          <img src={img11} alt="Photo 2 image" className="gallery-photo" />
+          <img src={img12} alt="Photo 3 image" className="gallery-photo" />
         </div>
       </div>
 
@@ -72,14 +72,14 @@ const Gallery = () => {
       <h1 >Planetarium</h1>
 
         <div className="picture-grid">
-          <img src={img13} alt="Photo 1" className="gallery-photo" />
-          <img src={img14} alt="Photo 2" className="gallery-photo" />
-          <img src={img15} alt="Photo 3" className="gallery-photo" />
+          <img src={img13} alt="Photo 1 image" className="gallery-photo" />
+          <img src={img14} alt="Photo 2 image" className="gallery-photo" />
+          <img src={img15} alt="Photo 3 image" className="gallery-photo" />
         </div>
         <div className="picture-grid">
-          <img src={img16} alt="Photo 1" className="gallery-photo" />
-          <img src={img17} alt="Photo 2" className="gallery-photo" />
-          <img src={img18} alt="Photo 3" className="gallery-photo" />
+          <img src={img16} alt="Photo 1 image" className="gallery-photo" />
+          <img src={img17} alt="Photo 2 image" className="gallery-photo" />
+          <img src={img18} alt="Photo 3 image" className="gallery-photo" />
         </div>
       </div>
 
@@ -87,14 +87,14 @@ const Gallery = () => {
       <h1 >Spark of Curiosity</h1>
 
         <div className="picture-grid">
-          <img src={img19} alt="Photo 1" className="gallery-photo" />
-          <img src={img20} alt="Photo 2" className="gallery-photo" />
-          <img src={img21} alt="Photo 3" className="gallery-photo" />
+          <img src={img19} alt="Photo 1 image" className="gallery-photo" />
+          <img src={img20} alt="Photo 2 image" className="gallery-photo" />
+          <img src={img21} alt="Photo 3 image" className="gallery-photo" />
         </div>
         <div className="picture-grid">
-          <img src={img22} alt="Photo 1" className="gallery-photo" />
-          <img src={img23} alt="Photo 2" className="gallery-photo" />
-          <img src={img24} alt="Photo 3" className="gallery-photo" />
+          <img src={img22} alt="Photo 1 image" className="gallery-photo" />
+          <img src={img23} alt="Photo 2 image" className="gallery-photo" />
+          <img src={img24} alt="Photo 3 image" className="gallery-photo" />
         </div>
       </div>
 
@@ -102,14 +102,14 @@ const Gallery = () => {
       <h1 >Newspaper</h1>
 
         <div className="picture-grid">
-          <img src={img25} alt="Photo 1" className="gallery-photo" />
-          <img src={img26} alt="Photo 2" className="gallery-photo" />
-          <img src={img27} alt="Photo 3" className="gallery-photo" />
+          <img src={img25} alt="Photo 1 image" className="gallery-photo" />
+          <img src={img26} alt="Photo 2 image" className="gallery-photo" />
+          <img src={img27} alt="Photo 3 image" className="gallery-photo" />
         </div>
         <div className="picture-grid">
-          <img src={img28} alt="Photo 1" className="gallery-photo" />
-          <img src={img29} alt="Photo 2" className="gallery-photo" />
-          <img src={img30} alt="Photo 3" className="gallery-photo" />
+          <img src={img28} alt="Photo 1 image" className="gallery-photo" />
+          <img src={img29} alt="Photo 2 image" className="gallery-photo" />
+          <img src={img30} alt="Photo 3 image" className="gallery-photo" />
         </div>
       </div>
     </div>
