@@ -81,11 +81,11 @@
 
      .team-container {
         text-align: center;
-        padding: 20px;
+        padding: 5px;
     }
     
     .team-header {
-        margin-bottom: 40px;
+        margin-bottom: 10px;
     }
 
     /* .team-header  h2{
@@ -100,7 +100,7 @@
     /* Apply the animation to the images inside team-member */
     .team-member img {
         width: 420px;
-        height: 500px;
+        height: 470px;
         object-fit: cover;
         border-radius: 15px;
         transition: transform 0.3s ease-in-out;

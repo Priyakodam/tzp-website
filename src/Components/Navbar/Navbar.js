@@ -378,6 +378,7 @@ const Navbar = () => {
             <a className="dropdown-toggle" href="/about">About Us</a>
             <ul className="dropdown-list">
               <li className="dropdown-item"><a href="/about/ourhistory">Our History</a></li>
+              <li className="dropdown-item"><a href="/about/blog">Blog</a></li>
               <li className="dropdown-item"><a href="/about/team">Team</a></li>
               <li className="dropdown-item"><a href="/about/missionvision">Mission & Vision</a></li>
               <li className="dropdown-item"><a href="/about/ourvalues">Our Values</a></li>

@@ -8,6 +8,7 @@ const firebaseConfig = {
     authDomain: "tzp-website.firebaseapp.com",
     projectId: "tzp-website",
     storageBucket: "tzp-website.firebasestorage.app",
+    // storageBucket: "tzp-website.appspot.com",
     messagingSenderId: "326803755984",
     appId: "1:326803755984:web:750dd8cf9580662e669fd5"
   };

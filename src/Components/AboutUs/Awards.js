@@ -11,25 +11,44 @@ import image8 from './Images/lotawardsimage.jpg'
 import image9 from './Images/Indian-Army.jpeg.jpg'
 import image10 from './Images/prciiin-1024x508.jpg'
 import image11 from './Images/aeifimage.jpg'
+import { motion } from "framer-motion";
 
 
 const Awards = () => {
         return (
                 <div>
-                        <div className="awards-container">
-                                {/* Left Side - Image */}
+                        {/* <div className="awards-container">
                                 <div className="awards-image">
                                         <img src={image1} alt="Award image" />
                                 </div>
 
-                                {/* Right Side - Content */}
                                 <div className="awards-content">
                                         <p className='paragraph-element'>
                                         Tare Zameen Par Has been recognized by <span className='Sub-Heading sub-head'>ISRO </span>  as their official partner for their space outreach program (Space Tutor) 
                                         </p>
                                 </div>
-                        </div>
+                        </div> */}
+ <motion.div
+      className="awards-container"
+      initial={{ opacity: 0, y: 50 }} // Animation start state
+      whileInView={{ opacity: 1, y: 0 }} // Animation when in viewport
+      transition={{ duration: 0.8, ease: "easeOut" }} // Smooth effect
+      viewport={{ once: true }} // Ensures it plays once per session
+    >
+      {/* Left Side - Image */}
+      <div className="awards-image">
+        <img src={image1} alt="Award image" />
+      </div>
 
+      {/* Right Side - Content */}
+      <div className="awards-content">
+        <p className="paragraph-element">
+          <span className="highlight">Tare Zameen Par</span> has been recognized by  
+          <span className="sub-head"> ISRO </span> as their official partner for their 
+          space outreach program (<span className="highlight">Space Tutor</span>).
+        </p>
+      </div>
+    </motion.div>
                         <div className="awards-container">
                                 {/* Left Side - Image */}
 

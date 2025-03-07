@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Home.css";
-import ban1 from './Images/homemobileban.webp'
+// import ban1 from './Images/homemobileban.webp'
+import ban1 from './Images/homecarou2.png'
 import ban2 from './Images/homenewlogo2.png'
 import ban3 from './Images/valuesimage.webp'
 import product1 from "./Images/domehome1.jpg";
@@ -224,40 +225,25 @@ const Home = () => {
       </div> */}
 
       <div className="carousel-container">
-      <Carousel prevLabel="" nextLabel="" interval={2000} ride="carousel">
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={ban1}
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3 className="carousel-heading">Dome Based Learning Through Portable Planetarium</h3>
-            <p className="carousel-paragraph">Tare Zameen Par Provides mobile planetarium to schools creating the same experience in visiting a science planetarium but at a low cost.</p>
-            <Button className="carousel-button" variant="primary">Learn more</Button>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={ban2}
-            alt="Second slide"
-          />
-          <Carousel.Caption>
-            <h3 className="carousel-heading">A Planetarium On Wheels! Bringing Space Down To Earth For India’s Rural Kids!</h3>
-            <Button className="carousel-button" variant="primary">Learn more</Button>
-          </Carousel.Caption>
-        </Carousel.Item>
-        {/* <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://via.placeholder.com/800x400?text=Slide+3"
-            alt="Third slide"
-          />
-        </Carousel.Item> */}
-       
-      </Carousel>
-    </div>
+        <Carousel interval={3000} pause={false} controls={true} indicators={true}>
+          <Carousel.Item>
+            <img className="d-block w-100" src={ban1} alt="First slide" />
+            <Carousel.Caption>
+              <h3 className="carousel-heading">Dome Based Learning Through Portable Planetarium</h3>
+              <p className="carousel-paragraph">Tare Zameen Par Provides mobile planetarium to schools creating the same experience in visiting a science planetarium but at a low cost.</p>
+              <Button className="carousel-button" variant="primary">Learn more</Button>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <img className="d-block w-100" src={ban2} alt="Second slide" />
+            <Carousel.Caption>
+              <h3 className="carousel-heading">A Planetarium On Wheels! Bringing Space Down To Earth For India’s Rural Kids!</h3>
+              <Button className="carousel-button" variant="primary">Learn more</Button>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+      </div>
       <section className="sssection-container">
         <div className="sssection-content">
           <img
@@ -267,7 +253,7 @@ const Home = () => {
           />
           <div className="sssection-text">
             <h1>A Planetarium On Wheels! Bringing Space Down To Earth For India’s Rural Kids!</h1>
-          
+
             <button className="sssection-button">Learn More</button>
           </div>
         </div>
@@ -354,7 +340,7 @@ const Home = () => {
               <div key={index} className="product-card">
                 <img src={product.image} alt="Product sample" className="product-image" />
                 <div className="product-info">
-                  <h3 className="product-text">{product.title}</h3>
+                  <h1 className="product-text">{product.title}</h1>
                   <Link to={product.link} className="read-more-btn" style={{ textDecoration: 'none' }}>
                     Read More
                   </Link>
@@ -416,26 +402,57 @@ const Home = () => {
         )}
       </section>
 
-      <div
-  className="row align-items-center text-center text-md-start p-4 contact-section"
-  style={{ backgroundColor: 'rgba(9, 3, 69, 1)', color: 'white', borderRadius: '0', width: '100%', margin: '0' }}
->
-  <div className="container-fluid">
-    <div className="row align-items-center">
-      <div className="col-md-8">
-        <h5>Do you have any ideas?</h5>
-        <h4>Let's talk about it..!</h4>
-      </div>
-      <div className="col-md-4 text-md-end contact-content">
-        <Link to="/contact" className="btn btn-light me-3 contact-button">
-          Join With Us
-        </Link>
-        <span className="fw-bold contact-number">+91 9035013642</span>
-      </div>
-    </div>
-  </div>
-</div>
+      {/* <div
+        className="row align-items-center text-center text-md-start p-4 contact-section"
+        style={{ backgroundColor: 'rgba(9, 3, 69, 1)', color: 'white', borderRadius: '0', width: '100%', margin: '0' }}
+      >
+        <div className="container-fluid">
+          <div className="row align-items-center">
+            <div className="col-md-8">
+              <h5>Do you have any ideas?</h5>
+              <h4>Let's talk about it..!</h4>
+            </div>
+            <div className="col-md-4 text-md-end contact-content">
+              <Link to="/contact" className="btn btn-light me-3 contact-button">
+                Join With Us
+              </Link>
+              <span className="fw-bold contact-number">+91 9035013642</span>
+            </div>
+          </div>
+        </div>
+      </div> */}
 
+
+<motion.div
+      className="row align-items-center text-center text-md-start p-4 contact-section"
+      style={{
+        backgroundColor: "rgba(9, 3, 69, 1)",
+        color: "white",
+        borderRadius: "12px",
+        width: "100%",
+        margin: "0",
+        boxShadow: "0px 4px 20px rgba(255, 255, 255, 0.2)",
+      }}
+      initial={{ opacity: 0, y: 50 }}  // Start invisible & below
+      whileInView={{ opacity: 1, y: 0 }}  // Animate when scrolled into view
+      transition={{ duration: 0.8, ease: "easeOut" }}  // Smooth animation
+      viewport={{ once: true }}  // Ensures it only animates once
+    >
+      <div className="container-fluid">
+        <div className="row align-items-center">
+          <div className="col-md-8">
+            <h5 className="animated-text">Do you have any ideas?</h5>
+            <h4 className="animated-text">Let's talk about it..!</h4>
+          </div>
+          <div className="col-md-4 text-md-end contact-content">
+            <Link to="/contact" className="btn btn-light me-3 contact-button">
+              Join With Us
+            </Link>
+            <span className="fw-bold contact-number">+91 9035013642</span>
+          </div>
+        </div>
+      </div>
+    </motion.div>
 
 
     </div>
